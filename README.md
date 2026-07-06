@@ -123,14 +123,15 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 ## 22 de junho de 2026
 **Ata 4**
 
-* **Participantes presentes:** * *Bryan Henrique*
+* **Participantes presentes:**
+   * *Bryan Henrique*
   * *David dos Santos*
   * *Gustavo schmitz*
   * *Heitor Lisboa*
 
 * **Participantes ausentes:**
   * *Davi Lucas*
-  * *Kauã Dias*
+  * *Kauã Dias* com justificativa
 
 ### **Anotações**
 
