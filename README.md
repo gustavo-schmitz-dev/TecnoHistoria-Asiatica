@@ -182,7 +182,7 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 * **Responsabilidades:**
   * *Bryan Henrique*: Auxílio na pesquisa (ajudou na pesquisa após finalizar suas tarefas anteriores)
   * *David dos Santos*: Auxílio na pesquisa (ajudou na pesquisa após finalizar suas tarefas anteriores)
-  * *Gustavo schmitz*: Organização do github
+  * *Gustavo schmitz*: realização da ata (uma substituição temporaria) e pesquisando as convenções de arquivos do projeto
   * *Heitor Lisboa*: Encarregado da pesquisa
   * *Davi Lucas*: Encarregado da pesquisa
   * *Kauã Dias*: Finalizando wireframe
