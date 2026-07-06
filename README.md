@@ -151,3 +151,44 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
   * Organização do Github e ata
   * Pesquisa sobre tópicos (China, Índia etc)
   * Alterações no wireframe (nova ideia de design)
+
+---
+
+## 6 de julho de 2026
+**Ata 5**
+
+* **Participantes presentes:**
+   * *Bryan Henrique*
+  * *David dos Santos*
+  * *Gustavo schmitz*
+  * *Heitor Lisboa*
+  * *Davi Lucas*
+  * *Kauã Dias*
+
+ 
+* **Participantes ausentes:**
+
+### **Anotações**
+
+**O professor Kennedy aceitou ser o coaborador do projeto**
+
+* **Tema:** Comércio e circulação de tecnologia
+* **Cargos:**
+  * **Líder:** *Gustavo*
+  * **Secretário:** *Kauã*
+  * **Professores do Projeto:** *Ivan* e *Mehran*
+  * **Colaborador do projeto:** *Kennedy Araujo*
+
+* **Responsabilidades:**
+  * *Bryan Henrique*: Auxílio na pesquisa (ajudou na pesquisa após finalizar suas tarefas anteriores)
+  * *David dos Santos*: Auxílio na pesquisa (ajudou na pesquisa após finalizar suas tarefas anteriores)
+  * *Gustavo schmitz*: Organização do github
+  * *Heitor Lisboa*: Encarregado da pesquisa
+  * *Davi Lucas*: Encarregado da pesquisa
+  * *Kauã Dias*: Finalizando wireframe
+
+* **Ações realizadas:**
+  * Continuando a pesquisa sobre tópicos (China, Índia etc)
+  * Finalizando o wireFrame no novo modelo
+
+---
