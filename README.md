@@ -230,5 +230,6 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
   * Finalização do Figma
   * Organização da pesquisa e filtro da pesquisa
   * Criação das redes sociais
+  * Inicio da criação do HTML
 
 ---
