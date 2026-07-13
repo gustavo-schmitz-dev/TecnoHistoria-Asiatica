@@ -37,7 +37,7 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
   * Pesquisa sobre civilizações que podem ser utilizadas
   * Pesquisa da paleta de cores
 
-* **Civilizações/Regiões que PODEM ser usadas:**
+* **Civilizações ou Regiões que PODEM ser usadas:**
   * Mesopotâmia
   * Egito Antigo
   * China Antiga
