@@ -3,7 +3,7 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 
 ## Atas:
 
-# Atas de Reunião - Projeto: Comércio e Circulação de Tecnologia
+# Atas de Reunião - Projeto Comércio e Circulação de Tecnologia
 
 ## 1 de junho de 2026
 **Ata 1**
