@@ -9,7 +9,7 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 **Ata 1**
 
 * **Participantes presentes:** *
-* *Kauã Dias*
+  *Kauã Dias*
   * *Bryan Henrique*
   * *David dos Santos*
   * *Heitor Lisboa*
