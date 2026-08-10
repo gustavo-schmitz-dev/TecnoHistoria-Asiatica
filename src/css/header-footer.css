@@ -1,0 +1,26 @@
+header{
+    padding: 1vw 4vw;
+}
+
+.atual{
+    color: blue; /*preciso da cor em hexadecimal*/
+}
+
+header p{
+    background-color: rgb(128, 138, 146);
+    padding: 0.5vw;
+    border-radius: 40px;
+}
+
+header span{
+    color: blue; /*preciso da cor em hexadecimal*/
+}
+
+footer {
+    padding: 6vw 4vw;
+    background-color: blue; /*preciso da cor em hexadecimal*/
+}
+
+footer p{
+    font-weight: 300;
+}
