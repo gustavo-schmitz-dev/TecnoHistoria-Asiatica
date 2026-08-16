@@ -1,0 +1,10 @@
+.banner{
+    background-color: #1D2638;
+    text-align: center;
+    padding: 5vw 2vw 5vw 2vw;
+}
+.banner h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+}
