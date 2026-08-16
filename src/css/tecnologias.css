@@ -11,6 +11,19 @@ html {
     font-family: "Epilogue", sans-serif;
 }
 
+.banner{
+  background-color: #11182A;
+  color: white;
+  text-align: center;
+  padding: 6vw 4vw;
+}
+
+.banner h1{
+  margin: 2vw 0;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
 /*===INVENCOES===*/
 section.invencoes {
     text-align: center;
@@ -18,7 +31,7 @@ section.invencoes {
 }
 
 section.invencoes h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bolder;
 }
 
@@ -184,15 +197,20 @@ section.curiosidades ul li {
 
 
 /* MEDIA QUERY - DESKTOP */
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 
     /*===INVECOES===*/
+    
+    .banner h1{
+      font-size: 4rem;
+    }
+    
     section.invencoes {
         text-align: center;
     }
 
     section.invencoes h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     section.invencoes ul {
