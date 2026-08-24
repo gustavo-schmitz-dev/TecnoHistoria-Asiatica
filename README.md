@@ -351,3 +351,31 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
  * Fotografias dos integrantes para site
   
 ---
+## 24 de Agosto de 2026
+**ata 10**
+
+* **Participantes presentes:**
+   * *Bryan Henrique*
+  * *David dos Santos*
+  * *Gustavo schmitz*
+  * *Davi Lucas*
+  * *Kauã Dias*
+  * *Heitor Lisboa* 
+
+### **Anotações**
+
+**Finalização do CSS, Organização do Github e Realização do documento individual de realizações no segundo trimestre**
+* **Tema:** Comércio e circulação de tecnologia
+* * **Cargos:**
+  * **Líder:** *Gustavo*
+  * **Secretário:** *Kauã*
+  * **Professores do Projeto:** *Ivan* e *Mehran*
+  * **Colaborador do projeto:** *Kennedy Araujo*
+
+* **Responsabilidades:**
+  * *	•	Bryan Henrique: Inicio do CSS e criou o documento individual;
+	* * •	David dos Santos: Criou o documento individual;
+	* * •	Gustavo schmitz: Criou o documento individual;
+	* * •	Davi Lucas: Finalizou o CSS, enviou os arquivos pro GitHub e Criou o documento individual;
+	* * •	Kauã Dias: Organização do GitHub, realização do documento individual e organização das atas de reunião;
+	* * •	Heitor Lisboa: Finalizou o HTML, iniciou o CSS e Criou o documento individual.
