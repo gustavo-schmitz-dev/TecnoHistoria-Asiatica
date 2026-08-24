@@ -109,7 +109,7 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 
 * **Responsabilidades:**
   * *Kauã Dias*: Começou a criação da logo
-  * *Bryan Henrique*: Finalizou o wireframe
+  * *Bryan Henrique*: consertou erros no wireframe
   * *David dos Santos*: Auxiliou na finalização do wireframe
   * *Davi Lucas*: Pesquisa de vários artigos e vídeos
   * *Gustavo schmitz*: Github, Pesquisa de artigos
@@ -143,7 +143,7 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
   * **Professores do Projeto:** *Ivan* e *Mehran*
 
 * **Responsabilidades:**
-  * *Bryan Henrique*: Finalizou o wireframe
+  * *Bryan Henrique*: consertos técnicos do wireframe
   * *David dos Santos*: Auxiliou na finalização do wireframe
   * *Gustavo schmitz*: Github e substituição do responsável da ata (*Kauã Dias*)
   * *Heitor Lisboa*: Pesquisa
@@ -220,7 +220,7 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
   * **Colaborador do projeto:** *Kennedy Araujo*
 
 * **Responsabilidades:**
-  * *Bryan Henrique*: Organizou o wireframe e auxiliou na organização da pesquisa
+  * *Bryan Henrique*: Organizou o modelo básico do figma e auxiliou na organização da pesquisa
   * *David dos Santos*: Finalizou o figma
   * *Gustavo schmitz*: Criou a raiz de arquivos do Github
   * *Heitor Lisboa*: Organizou o documento da pesquisa no google docs
@@ -301,7 +301,7 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
   * **Colaborador do projeto:** *Kennedy Araujo*
 
 * **Responsabilidades:**
-  * *Bryan Henrique*: Reformulação da logo, wireframe e Logo
+  * *Bryan Henrique*: feito a logo em svg no canva
   * *David dos Santos*: Continuação da página HTML individual
   * *Gustavo schmitz*: Continuação da página HTML individual e ensinou as necessidades (ensinar git e github CLI ao grupo e o JS para o Quiz)
   * *Davi Lucas*: Continuação da página HTML individual 
