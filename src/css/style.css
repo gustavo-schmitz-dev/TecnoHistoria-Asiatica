@@ -1,0 +1,29 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* === Banner === */
+.banner {
+    text-align: center;
+    background: #09042c;
+    color: white;
+    padding: 8vw 2vw 10vw 2vw;
+}
+.banner h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 2vw 2vw 2vw 2vw;
+}
+.banner p {
+    font-size: 8px;
+}
+
+/* === Objetivo === */
+.objetivo {
+    text-align: center;
+    background: rgb(212, 212, 212);
+    margin: 4vw 4vw 4vw 4vw;
+    padding: 2vw 2vw 2vw 2vw;
+    border-radius: 10px;
+    border: #F59E0B;
+}
