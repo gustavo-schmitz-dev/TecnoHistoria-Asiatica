@@ -1,15 +1,24 @@
 header{
-    padding: 1vw 4vw;
+    padding: 2vw 4vw;
     text-align: center;
 }
 
 header h1{
-  margin: 2vw 0;
-  font-weight: 800;
+  margin: 2vw 0 12vw 0;
+  font-size: 1.2rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+header img{
+    width: 15vw;
 }
 
 header li{
-  margin: 4vw 0;
+  margin: 10vw 0;
 }
 
 .atual{
@@ -23,7 +32,34 @@ header p{
 }
 
 header span{
+    display: block;
     color: #2563EB;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.nacoes{
+    text-align: center;
+    padding: 10vw 6vw;
+}
+
+.nacoes h2{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.nacoes p{
+    margin: 6vw 0;
+}
+
+.nacoes h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.nacoes img{
+    border-radius: 20px;
 }
 
 footer {
