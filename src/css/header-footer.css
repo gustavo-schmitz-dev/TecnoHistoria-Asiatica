@@ -46,3 +46,7 @@ footer div p{
     margin: 4vw 0;
     font-weight: 400;
 }
+
+@media only screen and (min-width: 600px){
+    
+}
