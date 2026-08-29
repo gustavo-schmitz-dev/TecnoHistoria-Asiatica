@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+
+html {
+    font-size: clamp(1rem, 0.8vw + 1rem, 3rem);
+    font-family: "Epilogue", sans-serif;
+}
+
+.banner{
+    text-align: center;
+    padding: 12vw;
+    background-color: #1D2638;
+    color: white; 
+}
+
+.banner h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.nacoes{
+    padding: 8vw;
+    text-align: center;
+    color: #1D2638;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nacoes ul, .nacoes li{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nacoes li div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nacoes h3{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1D2638;
+}
+
+.nacoes h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1D2638;
+}
+
+.nacoes img{
+    border-radius: 20px;
+}
