@@ -35,3 +35,230 @@ header img{
   max-width: 600px;
   margin: 0 auto;
 }
+
+/* === INVENÇÕES === */
+section.invencoes {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+section.invencoes h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section.invencoes h2 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+section.invencoes ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section.invencoes ul li {
+  text-align: left;
+  border-style: solid;
+  border-width: 3px;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+section.invencoes ul li img {
+  width: 48px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+section.invencoes ul li h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos de Cores por Classe */
+section.invencoes ul li.orange {
+  border-color: #FFA500;
+}
+section.invencoes ul li.orange h3 {
+  color: #FFA500;
+}
+section.invencoes ul li.orange .impacto {
+  background-color: rgba(255, 166, 0, 0.15);
+}
+
+section.invencoes ul li.blue {
+  border-color: #2563EB;
+}
+section.invencoes ul li.blue h3 {
+  color: #2563EB;
+}
+section.invencoes ul li.blue .impacto {
+  background-color: rgba(37, 99, 235, 0.15);
+}
+
+section.invencoes ul li.purple {
+  border-color: #9B0BF5;
+}
+section.invencoes ul li.purple h3 {
+  color: #9B0BF5;
+}
+section.invencoes ul li.purple .impacto {
+  background-color: rgba(155, 11, 245, 0.15);
+}
+
+section.invencoes ul li.green {
+  border-color: #25EB5D;
+}
+section.invencoes ul li.green h3 {
+  color: #25EB5D;
+}
+section.invencoes ul li.green .impacto {
+  background-color: rgba(37, 235, 93, 0.15);
+}
+
+/* Blocos de Versões */
+section.invencoes ul li .blocos {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+section.invencoes ul li .blocos div {
+  flex: 1;
+  background-color: #E9E9E9;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+section.invencoes ul li .blocos p {
+  color: #616161;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+section.invencoes ul li .blocos h4 {
+  font-size: 0.95rem;
+}
+
+section.invencoes ul li .impacto {
+  font-size: 0.9rem;
+  color: #333;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+section.invencoes ul li .impacto h4 {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+
+/* === CURIOSIDADES === */
+section.curiosidades {
+  text-align: center;
+  background-color: #2563EB;
+  color: white;
+  padding: 3rem 1.5rem;
+}
+
+section.curiosidades h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+section.curiosidades h2 {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+section.curiosidades ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section.curiosidades ul li {
+  background-color: #467EFA;
+  padding: 1.5rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+section.curiosidades ul li img {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   === MEDIA QUERIES (RESPONSIVIDADE) === 
+========================================= */
+
+@media only screen and (min-width: 768px) {
+  
+  .banner {
+    padding: 4rem 2rem;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  section.invencoes {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  section.invencoes ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  section.curiosidades ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  .banner {
+    padding: 6rem 2rem;
+  }
+
+  .banner h1 {
+    font-size: 4rem;
+  }
+
+  section.invencoes {
+    max-width: 1200px;
+  }
+
+  section.curiosidades {
+    padding: 4rem 2rem;
+  }
+
+  section.curiosidades ul {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+  }
+}
