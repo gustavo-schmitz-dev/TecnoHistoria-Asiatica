@@ -1,48 +1,146 @@
-header{
-    padding: 1vw 4vw;
+/* =========================================
+   CABEÇALHO (Estilos Padrão / Mobile)
+========================================= */
+header {
+    padding: 4vw 5vw;
     text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+header h1 img{
+        width: 6vw;
+    }
+
+header h1 {
+    margin: 2vw 0 4vw 0;
+    font-weight: 800;
+    font-size: 1.5rem;
 }
 
-header h1{
-  margin: 2vw 0;
-  font-weight: 800;
-}
-
-header li{
-  margin: 4vw 0;
-}
-
-.atual{
+header span {
     color: #2563EB;
 }
 
-header p{
-    background-color: #1E2A3F;
-    padding: 0.5vw;
-    border-radius: 40px;
+/* Links do Menu */
+header ul {
+    list-style: none;
+    padding: 0;
 }
 
-header span{
+header li {
+    margin: 4vw 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    transition: color 0.3s ease; 
+}
+header h1 img{
+    width:8vw;
+}
+
+/* =========================================
+   EFEITOS (Hover e Página Atual)
+========================================= */
+
+/* Fica azul quando o mouse passa por cima */
+header a:hover {
     color: #2563EB;
 }
 
+.atual {
+    color: #2563EB;
+}
+
+/* =========================================
+   RODAPÉ (Estilos Padrão / Mobile)
+========================================= */
 footer {
     text-align: center;
-    padding: 6vw 8vw;
+    padding: 8vw 5vw;
     background-color: #0F172A;
     color: white;
 }
 
-footer p{
-    margin: 4vw 0;
+footer p {
+    margin: 2vw 0;
     font-weight: 700;
 }
 
-footer strong{
-  font-weight: 800;
+footer strong {
+    font-weight: 800;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1vw;
 }
 
-footer div p{
-    margin: 4vw 0;
+footer div p {
+    margin: 2vw 0;
     font-weight: 400;
+    color: #9CA3AF;
+}
+footer img{
+    width: 17vw;
+}
+
+/* =========================================
+   MEDIA QUERIES (Telas Maiores / Desktop)
+========================================= */
+@media (min-width: 768px) {
+    
+    /* Cabeçalho lado a lado */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5vw 4vw;
+        text-align: left;
+    }
+    header h1 img{
+        width: 4vw;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        gap: 2.5vw; 
+    }
+
+    header li {
+        margin: 0;
+    }
+
+    /* Rodapé lado a lado */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3vw 6vw;
+        text-align: left;
+    }
+
+    .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 1.5vw;
+    }
+
+    .footer-right {
+        text-align: right;
+    }
+
+    footer p, 
+    footer div p {
+        margin: 0.5vw 0;
+    }
+    footer img{
+        width: 4vw;
+    }
 }
