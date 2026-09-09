@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecno-História Asiática - Quiz do Explorador</title>
+    <!-- Caminhos dos estilos CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="../../assets/icons/logonew.png" alt="Logo Tecno-História">
+                <span>Tecno-História Asiática</span>
+            </a>
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="conhecendo.html">Conhecendo a Ásia</a></li>
+                <li><a href="comercio.html">Comércio</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+                <li><a href="destaques.html">Destaques</a></li>
+                <li><a href="quiz.html" class="atual">Quiz</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-quiz">
+        <div class="quiz-content-wrapper">
+            <!-- TÍTULO DO QUIZ -->
+            <div class="quiz-title-box">
+                <h1>✨ Quiz do Explorador ✨</h1>
+                <p>Teste seus conhecimentos sobre a Tecno-História Asiática</p>
+            </div>
+
+            <!-- CONTAINER DO QUIZ (CARTÃO DOURADO) -->
+            <section class="quiz-card" id="quiz-card">
+
+                <!-- TELA INICIAL -->
+                <div id="start-screen" class="quiz-screen active">
+                    <h2>Preparado para a Jornada?</h2>
+                    <p>Responda 10 perguntas baseadas nas inovações, países e cultura da Ásia. Cuidado com as
+                        armadilhas!</p>
+                    <button id="btn-start" class="btn-primary-quiz">Iniciar Aventura</button>
+                </div>
+
+                <!-- TELA DE PERGUNTAS -->
+                <div id="question-screen" class="quiz-screen hidden">
+
+                    <!-- Cabeçalho do Card: Contador e Pontuação -->
+                    <div class="quiz-header-info">
+                        <span id="question-counter" class="info-text">Pergunta 1 de 10</span>
+                        <span id="score-display" class="info-text">Pontuação: 0</span>
+                    </div>
+
+                    <!-- Barra de Progresso -->
+                    <div class="progress-bar-container">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+
+                    <!-- Texto da Pergunta -->
+                    <h3 id="question-text">Qual país inventou o papel?</h3>
+
+                    <!-- Alternativas -->
+                    <div id="options-container" class="options-grid">
+                        <!-- Botões gerados via JavaScript -->
+                    </div>
+
+                    <!-- Botão Próxima -->
+                    <div class="next-btn-container">
+                        <button id="btn-next" class="btn-primary-quiz hidden">Próxima</button>
+                    </div>
+                </div>
+
+                <!-- TELA DE RESULTADO -->
+                <div id="result-screen" class="quiz-screen hidden">
+                    <h2 id="result-title">Fim da Expedição!</h2>
+                    <p id="result-message">Você completou o Quiz do Explorador.</p>
+
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span>/ 10</span>
+                    </div>
+
+                    <button id="btn-restart" class="btn-primary-quiz">Tentar Novamente</button>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Faixa branca inferior igual a imagem -->
+        <div class="white-band"></div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div>
+            <img src="../../assets/icons/logo_tellow.png" alt="logo">
+            <p>
+                <strong>Tecno-História Asiática</strong>
+            </p>
+
+            <p>
+                Conectando o Passado ao Futuro
+            </p>
+        </div>
+
+        <p>
+            @ 2026 SEPE
+        </p>
+    </footer>
+
+    <!-- Script JavaScript do Quiz -->
+    <script src="../js/quiz.js"></script>
+</body>
+
+</html>
