@@ -1,0 +1,44 @@
+/* =========================================
+   IMPORTAÇÃO DE FONTE E RESET BÁSICO
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #F8F9FA; /* Fundo geral claro */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================================
+   CABEÇALHO (HEADER)
+========================================= */
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    box-shadow: 0 2px 10px #1D2638;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+header img{
+    width: 4vw;
