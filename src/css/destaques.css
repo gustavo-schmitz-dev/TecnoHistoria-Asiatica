@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap');
+
+html {
+    font-size: clamp(1rem, 0.8vw + 1rem, 1.2rem);
+    font-family: "Epilogue", sans-serif;
+    background-color: #F8FAFC; /* Fundo cinza beeeem clarinho para destacar os cards */
+}
+
+/* =========================================
+   BANNER (TOPO)
+========================================= */
+.banner {
+    text-align: center;
+    padding: 6rem 2rem;
+    background-color: #111827; /* Azul Escuro padrão do site */
+    background-image: radial-gradient(circle at center, #1D2638 0%, #111827 100%);
+    color: white; 
+    border-bottom: 4px solid #F59E0B; /* Detalhe dourado na borda inferior */
+}
+
+.banner h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #F8FAFC;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    color: #9CA3AF; /* Cinza claro */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   SEÇÃO NAÇÕES E IMPÉRIOS
+========================================= */
+.nacoes {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #1D2638;
+}
+
+.nacoes-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nacoes-intro h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1D2638;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Tracinho dourado embaixo do título principal */
+.nacoes-intro h3::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: #F59E0B;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.nacoes-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4B5563;
+}
+
+/* =========================================
+   LISTA DE CARTÕES (CARDS)
+========================================= */
+.nacoes-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.nacoes-lista li {
+    display: flex;
+    flex-direction: column; /* Mobile: Empilhado */
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Sombra elegante */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nacoes-lista li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.nacao-imagem {
+    flex: 1;
+}
+
+.nacao-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 250px;
+}
+
+.nacao-texto {
+    flex: 1.2;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nacao-texto h4 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #92400E; /* Marrom/Dourado Escuro */
+    margin-bottom: 1rem;
+}
+
+.nacao-texto p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #374151;
+    text-align: justify;
+}
+
+/* =========================================
+   RESPONSIVIDADE (DESKTOP)
+========================================= */
+@media (min-width: 992px) {
+    /* No PC, coloca a imagem de um lado e o texto do outro */
+    .nacoes-lista li {
+        flex-direction: row;
+        min-height: 400px; /* Mantém os cards com uma altura bonita */
+    }
+    
+    /* Inverte a ordem das colunas a cada card par (Efeito Z-Pattern) */
+    .nacoes-lista li:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .nacao-texto {
+        padding: 3rem 4rem;
+    }
+}
