@@ -1,10 +1,317 @@
-.banner{
-    background-color: #1D2638;
-    text-align: center;
-    padding: 5vw 2vw 5vw 2vw;
+/* =========================================
+   IMPORTAÇÃO DE FONTE E RESET BÁSICO
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.banner h1{
-    font-size: 2rem;
-    color: white;
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #F8F9FA;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================================
+   HERO BANNER
+========================================= */
+.hero-conhecendo {
+    background-color: #1D2638;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero-icon {
+    font-size: 2.5rem;
+    color: #FBBF24;
+    margin-bottom: 1rem;
+}
+header img{
+    width: 4vw;
+}
+
+.hero-conhecendo h1 {
+    font-size: 3.2rem;
     font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-conhecendo p {
+    font-size: 1.1rem;
+    color: #D1D5DB;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   SUPERLATIVOS
+========================================= */
+.superlativos-secao {
+    background-color: #E5E7EB;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.superlativos-secao h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.subtitulo {
+    color: #6B7280;
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+}
+
+.grid-superlativos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card-stat {
+    background-color: #FFFFFF;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+}
+
+.card-stat .icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #2563EB;
+}
+
+.card-stat h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 0.2rem;
+}
+
+.card-stat p {
+    color: #6B7280;
+    font-size: 0.85rem;
+}
+
+/* =========================================
+   CIVILIZAÇÕES
+========================================= */
+.civilizacoes-secao {
+    background-color: #E5E7EB;
+    padding: 1rem 5% 5rem 5%;
+    text-align: center;
+}
+
+.civilizacoes-secao h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.grid-civilizacoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card-civilizacao {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-top: 6px solid #CBD5E1;
+}
+
+/* Bordas superiores e pontos decorativos */
+.card-civilizacao.china { border-top-color: #EF4444; }
+.card-civilizacao.india { border-top-color: #F97316; }
+.card-civilizacao.japao { border-top-color: #EC4899; }
+.card-civilizacao.coreia { border-top-color: #3B82F6; }
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.card-title h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red { background-color: #EF4444; }
+.dot.orange { background-color: #F97316; }
+.dot.pink { background-color: #EC4899; }
+.dot.blue { background-color: #3B82F6; }
+
+.info-group {
+    margin-bottom: 1.2rem;
+}
+
+.info-group .label {
+    display: block;
+    font-size: 0.8rem;
+    color: #9CA3AF;
+    margin-bottom: 0.1rem;
+}
+
+.info-group p {
+    font-size: 0.95rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+.info-group p.destaque {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* =========================================
+   LINHA DO TEMPO
+========================================= */
+.linha-tempo-secao {
+    background-color: #111827;
+    color: #FFFFFF;
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.linha-tempo-secao h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.linha-tempo-secao .subtitulo {
+    color: #9CA3AF;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 3rem auto 0 auto;
+}
+
+.timeline-line {
+    position: absolute;
+    width: 2px;
+    background-color: #3B82F6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 1rem 0;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+    padding-right: 2.5rem;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    padding-left: 2.5rem;
+    text-align: left;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #FBBF24;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.timeline-item.left::after {
+    right: -6px;
+}
+
+.timeline-item.right::after {
+    left: -6px;
+}
+
+.timeline-content {
+    background-color: #1F2937;
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #374151;
+}
+
+.timeline-content h4 {
+    color: #FBBF24;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-content p {
+    color: #D1D5DB;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+@media (max-width: 992px) {
+    .grid-superlativos { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .hero-conhecendo h1 { font-size: 2.2rem; }
+    .grid-superlativos { grid-template-columns: 1fr; }
+    .grid-civilizacoes { grid-template-columns: 1fr; }
+
+    /* Ajuste da linha do tempo no Mobile */
+    .timeline-line { left: 20px; }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 3rem !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+    
+    .timeline-item.left { left: 0; }
+    .timeline-item.right { left: 0; }
+    
+    .timeline-item.left::after, .timeline-item.right::after {
+        left: 14px;
+    }
 }
