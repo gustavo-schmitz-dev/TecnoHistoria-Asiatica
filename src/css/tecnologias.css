@@ -263,3 +263,19 @@ section.curiosidades ul li img {
     max-width: 1200px;
   }
 }
+/* Efeito de entrada (a página surge suavemente ao carregar) */
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Classe ativada pelo JS quando você clica em um link para sair */
+body.fade-out {
+    opacity: 0 !important;
+    transition: opacity 0.4s ease-in-out !important;
+}
