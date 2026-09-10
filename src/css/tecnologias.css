@@ -18,7 +18,7 @@ html {
   padding: 3rem 1.5rem;
 }
 .banner img{
-  width: 5vw;
+  width: 9vw;
 }
 header img{
     width: 4vw;
@@ -34,6 +34,7 @@ header img{
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
+  color: #9CA3AF;
 }
 
 /* === INVENÇÕES === */
