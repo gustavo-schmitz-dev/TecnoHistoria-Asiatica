@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Tecno-História Asiática - Home</title>
+    <!-- Caminhos dos estilos CSS -->
     <link rel="stylesheet" href="../css/reset.css">
-
-    <link rel="stylesheet" href="../css/header.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    	<header>
+
+    <!-- CABEÇALHO -->
+   <header>
         <h1>
-            <img src="" alt="Logo Tecno-História">
+            <img src="../../assets/icons/logonew.png" alt="Logo Tecno-História">
             <a href="index.html">
                 <span>Tecno-História</span>
                 <span>Asiática</span>
@@ -21,7 +23,7 @@
 
         <ul>
             <li>
-                <a href="index.html" class="atual">Home</a>
+                <a href="index.html"class="atual">Home</a>
             </li>
 
             <li>
@@ -37,7 +39,7 @@
             </li>
 
             <li>
-                <a href="">Línguas</a>
+                <a href="destaques.html">Destaques</a>
             </li>
 
             <li>
@@ -48,22 +50,93 @@
                 <a href="sobre.html">Sobre</a>
             </li>
         </ul>
+    </header>
 
-    <footer>
-        <div>
-            <img src="" alt="logo">
-            <p>
-                <strong>Tecno-História Asiática</strong>
-            <p>
+    <main class="main-home">
+        <!-- SEÇÃO HERO -->
+        <section class="hero-home">
+            <p class="tagline">BEM-VINDO AO FUTURO DO PASSADO</p>
+            <h1>
+                TECNO-HISTÓRIA
+                <span class="highlight">ASIÁTICA</span>
+            </h1>
+            <p class="hero-subtitle">Conectando o Passado ao Futuro</p>
+            
+            <div class="botoes-hero">
+                <a href="conhecendo.html" class="btn btn-primary">Iniciar Jornada &rarr;</a>
+                <a href="quiz.html" class="btn btn-outline">Testar Conhecimento</a>
+            </div>
+        </section>
 
-            <p>
-                Conectando o Passado ao Futuro
-            </p>
+        <!-- SEÇÃO EXPLORE -->
+        <section class="explore-secao">
+            <h2>Explore a Ásia</h2>
+            <p class="explore-desc">Descubra como o continente asiático moldou<br> o mundo através de suas contribuições</p>
+
+            <div class="grid-explore">
+                <!-- Card 1: Comércio -->
+                <div class="card-explore">
+                    <div class="icon-box">🛍️</div>
+                    <h3>Comércio</h3>
+                    <p>Descubra a rota da seda e os produtos que conectaram civilizações</p>
+                    <a href="comercio.html" class="link-explorar">Explorar</a>
+                </div>
+
+                <!-- Card 2: Tecnologia -->
+                <div class="card-explore">
+                    <div class="icon-box">🖲️</div>
+                    <h3>Tecnologia</h3>
+                    <p>Explore invenções Asiáticas que revolucionaram o mundo</p>
+                    <a href="tecnologias.html" class="link-explorar">Explorar</a>
+                </div>
+
+                <!-- Card 3: Linguagem -->
+                <div class="card-explore">
+                    <div class="icon-box">🔤</div>
+                    <h3>Destaques</h3>
+                    <p>Conheça as nações destaques da Àsia</p>
+                    <a href="destaques.html" class="link-explorar">Explorar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CALL TO ACTION (CTA) -->
+        <div class="cta-wrapper">
+            <section class="cta-secao">
+                <h2>Prontos para a aventura?</h2>
+                <p>Teste seus conhecimentos sobre a história e tecnologia asiática</p>
+                <a href="quiz.html" class="btn-quiz">Começar Quiz &rarr;</a>
+            </section>
         </div>
+    </main>
 
-        <p>
-            @ 2026 SEPE 
-        </p>
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="../../assets/icons/logo_tellow.png" alt="Logo Tecno-História Asiática">
+                <div>
+                    <strong>Tecno-História Asiática</strong>
+                    <p>Conectando o Passado ao Futuro</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <span>Siga-nos:</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/tecnohistoria_asiatica?stkn=Y3NwOWZsYmV5bW9r" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 SEPE - Projeto integrador</p>
+                <p>Desenvolvido com ❤️ pela equipe</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
