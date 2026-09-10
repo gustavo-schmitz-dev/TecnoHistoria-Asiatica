@@ -1,1 +1,269 @@
+/* =========================================
+   IMPORTAÇÃO DE FONTE E RESET BÁSICO
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================================
+   HERO SEÇÃO
+========================================= */
+.hero-home {
+    background-color: #1D2638; /* Fundo azul bem escuro */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagline {
+    color: #FBBF24; /* Amarelo/Laranja */
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.hero-home h1 {
+    font-size: 4.5rem;
+    font-weight: 300; /* Texto mais fino */
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-home h1 .highlight {
+    color: #3B82F6; /* Azul destaque */
+    font-weight: 800; /* Texto mais grosso */
+    display: block;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #E5E7EB;
+    margin-bottom: 3.5rem;
+    font-weight: 400;
+}
+header img{
+    width: 4vw;
+}
+
+/* Botões do Hero */
+.botoes-hero {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn {
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    border: 2px solid #3B82F6;
+}
+
+.btn-primary:hover {
+    background-color: #2563EB;
+    border-color: #2563EB;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #FFFFFF;
+}
+
+/* =========================================
+   EXPLORE A ÁSIA
+========================================= */
+.explore-secao {
+    background-color: #FFFFFF;
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+.explore-secao h2 {
+    font-size: 2.8rem;
+    color: #000000;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.explore-desc {
+    font-size: 1.15rem;
+    color: #374151;
+    margin-bottom: 4rem;
+    line-height: 1.5;
+}
+
+.grid-explore {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.card-explore {
+    border: 2px solid #111827; /* Borda preta/escura */
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: left;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-explore:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.icon-box {
+    background-color: #EFF6FF; /* Fundo azul claro */
+    color: #3B82F6;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-explore h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 0.8rem;
+}
+
+.card-explore p {
+    font-size: 0.85rem;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    flex-grow: 1; /* Empurra o link para baixo */
+}
+
+.link-explorar {
+    color: #2563EB;
+    font-weight: 800;
+    font-size: 0.95rem;
+    margin-top: auto;
+}
+
+.link-explorar:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   CALL TO ACTION (CTA)
+========================================= */
+.cta-wrapper {
+    background-color: #FFFFFF;
+    padding-bottom: 4rem; /* Cria a faixa branca no final da página idêntica a imagem */
+}
+
+.cta-secao {
+    background-color: #2563EB; /* Azul vibrante */
+    color: #FFFFFF;
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.cta-secao h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.cta-secao p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.btn-quiz {
+    background-color: #F59E0B; /* Laranja vibrante */
+    color: #FFFFFF;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-quiz:hover {
+    background-color: #D97706; /* Laranja mais escuro no hover */
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+@media (max-width: 992px) {
+    .grid-explore {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-home h1 {
+        font-size: 3rem;
+    }
+    
+    .botoes-hero {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .grid-explore {
+        grid-template-columns: 1fr;
+    }
+    
+    .explore-secao h2, .cta-secao h2 {
+        font-size: 2.2rem;
+    }
+}
