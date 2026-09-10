@@ -1,127 +1,323 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+/* =========================================
+   IMPORTAÇÃO E RESET
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecno-História Asiática - Quiz do Explorador</title>
-    <!-- Caminhos dos estilos CSS -->
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header-footer.css">
-    <link rel="stylesheet" href="../css/quiz.css">
-</head>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: #111827; /* Fundo azul escuro idêntico a imagem */
+}
 
-    <!-- CABEÇALHO -->
-    <header>
-        <h1 class="logo">
-            <a href="index.html">
-                <img src="../../assets/icons/logonew.png" alt="Logo Tecno-História">
-                <span>Tecno-História Asiática</span>
-            </a>
-        </h1>
+/* =========================================
+   ESTRUTURA PRINCIPAL
+========================================= */
+.main-quiz {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="conhecendo.html">Conhecendo a Ásia</a></li>
-                <li><a href="comercio.html">Comércio</a></li>
-                <li><a href="tecnologias.html">Tecnologias</a></li>
-                <li><a href="destaques.html">Destaques</a></li>
-                <li><a href="quiz.html" class="atual">Quiz</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
+.quiz-content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+}
 
-    <main class="main-quiz">
-        <div class="quiz-content-wrapper">
-            <!-- TÍTULO DO QUIZ -->
-            <div class="quiz-title-box">
-                <h1>✨ Quiz do Explorador ✨</h1>
-                <p>Teste seus conhecimentos sobre a Tecno-História Asiática</p>
-            </div>
+.white-band {
+    background-color: #FFFFFF;
+    height: 120px;
+    width: 100%;
+}
 
-            <!-- CONTAINER DO QUIZ (CARTÃO DOURADO) -->
-            <section class="quiz-card" id="quiz-card">
+/* =========================================
+   CAIXA DO TÍTULO
+========================================= */
+.quiz-title-box {
+    background-color: #1D2638;
+    border-radius: 12px;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
-                <!-- TELA INICIAL -->
-                <div id="start-screen" class="quiz-screen active">
-                    <h2>Preparado para a Jornada?</h2>
-                    <p>Responda 10 perguntas baseadas nas inovações, países e cultura da Ásia. Cuidado com as
-                        armadilhas!</p>
-                    <button id="btn-start" class="btn-primary-quiz">Iniciar Aventura</button>
-                </div>
+.quiz-title-box h1 {
+    color: #F8FAFC;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+header img{
+    width: 4vw;
+}
 
-                <!-- TELA DE PERGUNTAS -->
-                <div id="question-screen" class="quiz-screen hidden">
+.quiz-title-box p {
+    color: #9CA3AF;
+    font-size: 1.1rem;
+}
 
-                    <!-- Cabeçalho do Card: Contador e Pontuação -->
-                    <div class="quiz-header-info">
-                        <span id="question-counter" class="info-text">Pergunta 1 de 10</span>
-                        <span id="score-display" class="info-text">Pontuação: 0</span>
-                    </div>
+/* =========================================
+   CARTÃO DO QUIZ (ESTILO PAPIRO ESCURO)
+========================================= */
+.quiz-card {
+    /* Textura de papiro antigo e escuro para destacar letras brancas */
+    background-image: 
+        radial-gradient(circle at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.6) 100%),
+        repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(255, 255, 255, 0.02) 11px, transparent 12px),
+        repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(255, 255, 255, 0.03) 16px, transparent 17px),
+        linear-gradient(135deg, #4A2E15 0%, #2A1708 100%);
+    
+    border: 2px solid #8B5A2B;
+    border-radius: 4px 12px 6px 15px; /* Bordas levemente irregulares */
+    
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.5), 
+        inset 0 0 25px rgba(0, 0, 0, 0.5); /* Sombra interna para profundidade */
+    
+    width: 100%;
+    max-width: 750px;
+    padding: 2.5rem 3rem;
+    position: relative;
+}
 
-                    <!-- Barra de Progresso -->
-                    <div class="progress-bar-container">
-                        <div id="progress-fill" class="progress-fill"></div>
-                    </div>
+.quiz-screen {
+    display: none;
+    flex-direction: column;
+    animation: fadeIn 0.4s ease-in-out;
+}
 
-                    <!-- Texto da Pergunta -->
-                    <h3 id="question-text">Qual país inventou o papel?</h3>
+.quiz-screen.active {
+    display: flex;
+}
 
-                    <!-- Alternativas -->
-                    <div id="options-container" class="options-grid">
-                        <!-- Botões gerados via JavaScript -->
-                    </div>
+.hidden {
+    display: none !important;
+}
 
-                    <!-- Botão Próxima -->
-                    <div class="next-btn-container">
-                        <button id="btn-next" class="btn-primary-quiz hidden">Próxima</button>
-                    </div>
-                </div>
+/* =========================================
+   CABEÇALHO E BARRA DE PROGRESSO
+========================================= */
+.quiz-header-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
 
-                <!-- TELA DE RESULTADO -->
-                <div id="result-screen" class="quiz-screen hidden">
-                    <h2 id="result-title">Fim da Expedição!</h2>
-                    <p id="result-message">Você completou o Quiz do Explorador.</p>
+.info-text {
+    color: #F8FAFC; /* Branco */
+    font-weight: 800;
+    font-size: 1rem;
+}
 
-                    <div class="score-circle">
-                        <span id="final-score">0</span>
-                        <span>/ 10</span>
-                    </div>
+.progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
 
-                    <button id="btn-restart" class="btn-primary-quiz">Tentar Novamente</button>
-                </div>
+.progress-fill {
+    height: 100%;
+    background-color: #3B82F6; /* Azul */
+    width: 10%;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
 
-            </section>
-        </div>
+/* =========================================
+   PERGUNTA E ALTERNATIVAS
+========================================= */
+#start-screen h2,
+#start-screen p {
+    color: #FFFFFF; /* Letras Brancas */
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
-        <!-- Faixa branca inferior igual a imagem -->
-        <div class="white-band"></div>
-    </main>
+#question-text {
+    color: #FFFFFF; /* Letras Brancas */
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
 
-    <!-- RODAPÉ -->
-    <footer>
-        <div>
-            <img src="../../assets/icons/logo_tellow.png" alt="logo">
-            <p>
-                <strong>Tecno-História Asiática</strong>
-            </p>
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
 
-            <p>
-                Conectando o Passado ao Futuro
-            </p>
-        </div>
+.option-btn {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
 
-        <p>
-            @ 2026 SEPE
-        </p>
-    </footer>
+.option-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    border-color: #F59E0B; /* Borda dourada ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.15);
+}
 
-    <!-- Script JavaScript do Quiz -->
-    <script src="../js/quiz.js"></script>
-</body>
+/* Bolinha da Letra (A, B, C, D) */
+.option-letter {
+    background-color: #FBBF24;
+    color: #2A1708;
+    font-weight: 800;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 1.2rem;
+    flex-shrink: 0;
+}
 
-</html>
+.option-text {
+    color: #FFFFFF; /* Letras Brancas */
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* =========================================
+   ANIMAÇÕES DE ACERTO E ERRO
+========================================= */
+/* Quando acerta */
+.option-btn.correct {
+    background-color: rgba(16, 185, 129, 0.25); /* Verde translúcido */
+    border-color: #10B981; 
+    animation: popIn 0.3s ease;
+}
+
+.option-btn.correct .option-letter {
+    background-color: #10B981;
+    color: white;
+}
+
+/* Quando erra */
+.option-btn.wrong {
+    background-color: rgba(239, 68, 68, 0.25); /* Vermelho translúcido */
+    border-color: #EF4444; 
+    animation: shake 0.4s ease;
+}
+
+.option-btn.wrong .option-letter {
+    background-color: #EF4444;
+    color: white;
+}
+
+/* Animação Tremer (Erro) */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-8px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+}
+
+/* Animação Pular (Acerto) */
+@keyframes popIn {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   BOTÕES DE AÇÃO
+========================================= */
+.next-btn-container, #start-screen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-primary-quiz {
+    background-color: #FBBF24; /* Amarelo dourado */
+    color: #2A1708;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 0 #D97706; 
+    margin-top: 1rem;
+}
+
+.btn-primary-quiz:hover {
+    background-color: #F59E0B;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #D97706; 
+}
+
+/* Tela de Resultados */
+#result-screen {
+    text-align: center;
+    align-items: center;
+}
+
+#result-screen h2 {
+    color: #FFFFFF; /* Letras Brancas */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#result-screen p {
+    color: #E2E8F0; /* Letras Brancas */
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.score-circle {
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo translúcido escuro */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #FBBF24; /* Borda Dourada */
+    margin-bottom: 2rem;
+    color: #FFFFFF; /* Pontuação Branca */
+    font-weight: 800;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.score-circle #final-score {
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .quiz-card { padding: 2rem 1.5rem; }
+    .quiz-title-box h1 { font-size: 1.8rem; }
+    #question-text { font-size: 1.4rem; }
+}
