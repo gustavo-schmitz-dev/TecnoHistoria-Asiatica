@@ -264,19 +264,156 @@ header img{
 .card-membro.rosa { border-color: #EC4899; }
 .card-membro.rosa h3 { color: #EC4899; }
 
-/* Efeito de entrada (a página surge suavemente ao carregar) */
-body {
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in-out forwards;
+/* =========================================
+   SEÇÃO TECNOLOGIAS UTILIZADAS
+========================================= */
+.tecnologias-secao {
+    background-color: #F8FAFC; /* Fundo cinza bem claro */
+    padding: 6rem 5%;
+    text-align: center;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.grid-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* Classe ativada pelo JS quando você clica em um link para sair */
-body.fade-out {
-    opacity: 0 !important;
-    transition: opacity 0.4s ease-in-out !important;
+.card-tech {
+    background-color: #FFFFFF;
+    padding: 2rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+    border: 1px solid #E5E7EB;
+    transition: transform 0.3s ease;
+}
+
+.card-tech:hover {
+    transform: translateY(-5px);
+}
+
+.tech-icon {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.card-tech h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 0.3rem;
+}
+
+.card-tech p {
+    font-size: 0.8rem;
+    color: #6B7280;
+}
+
+/* =========================================
+   SEÇÃO PROCESSO DE DESENVOLVIMENTO
+========================================= */
+.processo-secao {
+    background-color: #2563EB; /* Azul principal */
+    color: #FFFFFF;
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+.processo-secao h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle-processo {
+    color: #DBEAFE;
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+.grid-processo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card-processo {
+    background-color: rgba(255, 255, 255, 0.1); /* Efeito translúcido */
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icon-processo {
+    background-color: #F59E0B; /* Ícone laranja/amarelo */
+    color: #FFFFFF;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.card-processo h4 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.card-processo p {
+    font-size: 0.95rem;
+    color: #E0E7FF;
+    line-height: 1.5;
+}
+
+/* =========================================
+   RESPONSIVIDADE (Celulares e Tablets)
+========================================= */
+@media (max-width: 992px) {
+    .grid-equipe {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-projeto {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-sobre h1 { font-size: 2.2rem; }
+    
+    .grid-equipe, .grid-tecnologias, .grid-processo {
+        grid-template-columns: 1fr;
+    }
+    
+    .badges-container {
+        flex-direction: column;
+    }
+    
+    .info-projeto-secao {
+        margin-top: -2rem;
+    }
+    
+    .equipe-secao h2, .tecnologias-secao h2, .processo-secao h2 {
+        font-size: 2rem;
+    }
 }
