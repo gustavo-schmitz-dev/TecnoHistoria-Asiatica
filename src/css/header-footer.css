@@ -238,3 +238,79 @@ footer div p {
         margin: 0.5vw 0;
     }
 }
+/* =========================================
+   MENU MOBILE
+========================================= */
+
+#menu {
+    display: none;
+}
+
+.botao-menu {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+
+    /* Botão ☰ */
+    .botao-menu {
+        display: block;
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        font-size: 30px;
+        cursor: pointer;
+
+        color: #111827;
+
+        z-index: 1001;
+    }
+
+    /* Header */
+    header {
+        position: relative;
+    }
+
+    /* Menu lateral */
+    header ul {
+        position: fixed;
+
+        top: 0;
+        right: -280px;
+
+        width: 280px;
+        height: 100vh;
+
+        margin: 0;
+        padding: 80px 30px 30px;
+
+        background-color: white;
+
+        list-style: none;
+
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
+
+        transition: right 0.3s ease;
+
+        z-index: 1000;
+    }
+
+    /* Espaçamento dos links */
+    header li {
+        margin: 25px 0;
+    }
+
+    /* Links */
+    header ul a {
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    /* Abre o menu */
+    #menu:checked ~ ul {
+        right: 0;
+    }
+}
