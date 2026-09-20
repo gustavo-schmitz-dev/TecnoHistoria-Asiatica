@@ -37,9 +37,13 @@ header h1 img {
     width: 15vw;
     border-radius: 50%;
 }
-
+header h1{
+    color:#2563EB;
+}
 header span {
-    color: #2563EB;
+    color: black;
+    font-size: 0.8rem;
+    display: block;
 }
 
 /* =========================================
