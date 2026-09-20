@@ -1,26 +1,17 @@
 /* =========================================
-<<<<<<< HEAD
-   CABEÇALHO (Estilos Padrão / Mobile)
-========================================= */
-=======
    CABEÇALHO
 ========================================= */
 
->>>>>>> main
 header {
     padding: 4vw 5vw;
     text-align: center;
     background-color: #FFFFFF;
-<<<<<<< HEAD
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-=======
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 
     /* Header acompanha a página */
     position: sticky;
     top: 0;
     z-index: 1000;
->>>>>>> main
 }
 
 header h1 {
@@ -31,42 +22,9 @@ header h1 {
     flex-direction: column;
     align-items: center;
     gap: 2vw;
-<<<<<<< HEAD
 }
 
 header h1 a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vw;
-    text-decoration: none;
-    color: inherit;
-}
-
-header h1 img {
-    width: 15vw; /* Aumentado um pouco pro mobile */
-    border-radius: 50%; /* Deixa a logo redonda, se ela for quadrada */
-}
-header .asiatica{
-    word-break: break-all;
-}
-header span {
-    color: black;
-}
-header .cor{
-    color: #2563EB;
-}
-/* Links do Menu */
-header ul {
-    list-style: none;
-    padding: 0;
-}
-
-=======
-}
-
-header h1 a {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2vw;
@@ -100,25 +58,13 @@ header ul {
 header li {
     margin: 4vw 0;
 }
-
 header a {
     text-decoration: none;
     color: #333333;
     font-weight: 600;
-<<<<<<< HEAD
-    transition: color 0.3s ease; 
-}
-
-/* =========================================
-   EFEITOS (Hover e Página Atual)
-========================================= */
-
-/* Fica azul quando o mouse passa por cima */
-=======
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
->>>>>>> main
 header a:hover {
     color: #2563EB;
 }
@@ -128,10 +74,6 @@ header a:hover {
 }
 
 /* =========================================
-<<<<<<< HEAD
-   RODAPÉ (Estilos Padrão / Mobile)
-========================================= */
-=======
    MENU MOBILE
 ========================================= */
 
@@ -147,7 +89,6 @@ header a:hover {
    RODAPÉ
 ========================================= */
 
->>>>>>> main
 footer {
     text-align: center;
     padding: 8vw 5vw;
@@ -171,11 +112,7 @@ footer {
 
 .footer-left img {
     width: 20vw;
-<<<<<<< HEAD
-    border-radius: 50%; /* Se a imagem logo.jpeg for quadrada, fica redonda */
-=======
     border-radius: 50%;
->>>>>>> main
 }
 
 footer strong {
@@ -191,14 +128,10 @@ footer div p {
     color: #9CA3AF;
 }
 
-<<<<<<< HEAD
-/* Redes Sociais - Instagram */
-=======
 /* =========================================
    REDES SOCIAIS
 ========================================= */
 
->>>>>>> main
 .footer-social {
     display: flex;
     flex-direction: column;
@@ -226,11 +159,7 @@ footer div p {
 }
 
 .social-icons a:hover {
-<<<<<<< HEAD
-    background-color: #F49F0A; 
-=======
     background-color: #F49F0A;
->>>>>>> main
     color: #111827;
     transform: translateY(-3px);
 }
@@ -247,18 +176,11 @@ footer div p {
 }
 
 /* =========================================
-<<<<<<< HEAD
-   MEDIA QUERIES (Telas Maiores / Desktop)
-========================================= */
-@media (min-width: 768px) {
-    
-=======
    DESKTOP
 ========================================= */
 
 @media (min-width: 768px) {
 
->>>>>>> main
     /* Cabeçalho lado a lado */
     header {
         display: flex;
@@ -269,11 +191,7 @@ footer div p {
     }
 
     header h1 a {
-<<<<<<< HEAD
-        flex-direction: row; /* Fica do lado da escrita no PC */
-=======
         flex-direction: row;
->>>>>>> main
         gap: 1vw;
     }
 
@@ -289,11 +207,7 @@ footer div p {
     header ul {
         display: flex;
         align-items: center;
-<<<<<<< HEAD
-        gap: 2.5vw; 
-=======
         gap: 2.5vw;
->>>>>>> main
     }
 
     header li {
@@ -328,11 +242,6 @@ footer div p {
     .footer-social {
         gap: 0.5vw;
     }
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> main
     .social-icons a {
         width: 3vw;
         height: 3vw;
@@ -347,17 +256,11 @@ footer div p {
         text-align: right;
     }
 
-<<<<<<< HEAD
-    footer p, 
-=======
     footer p,
->>>>>>> main
     footer div p {
         margin: 0.5vw 0;
     }
 }
-<<<<<<< HEAD
-=======
 
 /* =========================================
    MOBILE
@@ -461,4 +364,3 @@ main img {
 main img:hover {
     transform: scale(1.03);
 }
->>>>>>> main
