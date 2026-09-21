@@ -25,6 +25,7 @@ header h1 {
 }
 
 header h1 a {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2vw;
@@ -53,8 +54,6 @@ header ul {
     list-style: none;
     padding: 0;
 }
-
->>>>>>> main
 header li {
     margin: 4vw 0;
 }
