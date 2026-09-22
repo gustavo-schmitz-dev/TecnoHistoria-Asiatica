@@ -85,43 +85,43 @@ section.invencoes ul li h3 {
 
 /* Estilos de Cores por Classe */
 section.invencoes ul li.orange {
-  border-color: #FFA500;
+  border-color: #DFE7F2;
 }
 section.invencoes ul li.orange h3 {
-  color: #FFA500;
+  color: #2B6CB0;
 }
 section.invencoes ul li.orange .impacto {
-  background-color: rgba(255, 166, 0, 0.15);
+  background-color: #c49b3ab0;
 }
 
 section.invencoes ul li.blue {
-  border-color: #2563EB;
+  border-color: #DFE7F2;
 }
 section.invencoes ul li.blue h3 {
-  color: #2563EB;
+  color: #2B6CB0;
 }
 section.invencoes ul li.blue .impacto {
-  background-color: rgba(37, 99, 235, 0.15);
+  background-color:  #c49b3ab0;;
 }
 
 section.invencoes ul li.purple {
-  border-color: #9B0BF5;
+  border-color: #DFE7F2;
 }
 section.invencoes ul li.purple h3 {
-  color: #9B0BF5;
+  color: #C49B3A;
 }
 section.invencoes ul li.purple .impacto {
-  background-color: rgba(155, 11, 245, 0.15);
+  background-color:  #c49b3ab0;;
 }
 
 section.invencoes ul li.green {
-  border-color: #25EB5D;
+  border-color: #DFE7F2;
 }
 section.invencoes ul li.green h3 {
-  color: #25EB5D;
+  color: #C49B3A;
 }
 section.invencoes ul li.green .impacto {
-  background-color: rgba(37, 235, 93, 0.15);
+  background-color:  #c49b3ab0;;
 }
 
 /* Blocos de Versões */
@@ -165,7 +165,7 @@ section.invencoes ul li .impacto h4 {
 /* === CURIOSIDADES === */
 section.curiosidades {
   text-align: center;
-  background-color: #2563EB;
+  background-color: #173E75;
   color: white;
   padding: 3rem 1.5rem;
 }
@@ -191,7 +191,7 @@ section.curiosidades ul {
 }
 
 section.curiosidades ul li {
-  background-color: #467EFA;
+  background-color: #5086d1;
   padding: 1.5rem;
   border-radius: 16px;
   display: flex;
