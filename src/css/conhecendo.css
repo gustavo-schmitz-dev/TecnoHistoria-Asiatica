@@ -25,7 +25,7 @@ a {
    HERO BANNER
 ========================================= */
 .hero-conhecendo {
-    background-color: #1D2638;
+    background-color: #0A1C33;
     color: #FFFFFF;
     text-align: center;
     padding: 5rem 2rem;
@@ -137,14 +137,9 @@ header img{
     padding: 2.5rem 2rem;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    border-top: 6px solid #CBD5E1;
 }
 
 /* Bordas superiores e pontos decorativos */
-.card-civilizacao.china { border-top-color: #EF4444; }
-.card-civilizacao.india { border-top-color: #F97316; }
-.card-civilizacao.japao { border-top-color: #EC4899; }
-.card-civilizacao.coreia { border-top-color: #3B82F6; }
 
 .card-title {
     display: flex;
@@ -166,10 +161,10 @@ header img{
     display: inline-block;
 }
 
-.dot.red { background-color: #EF4444; }
-.dot.orange { background-color: #F97316; }
-.dot.pink { background-color: #EC4899; }
-.dot.blue { background-color: #3B82F6; }
+.dot.red { background-color: #C49B3A; }
+.dot.orange { background-color: #C49B3A; }
+.dot.pink { background-color: #C49B3A; }
+.dot.blue { background-color: #C49B3A; }
 
 .info-group {
     margin-bottom: 1.2rem;
@@ -198,9 +193,9 @@ header img{
    LINHA DO TEMPO
 ========================================= */
 .linha-tempo-secao {
-    background-color: #111827;
-    color: #FFFFFF;
-    padding: 5rem 5%;
+    background-color: #0A1C33;
+    color: #C49B3A;
+    padding: 7rem 5%;
     text-align: center;
 }
 
@@ -222,7 +217,7 @@ header img{
 .timeline-line {
     position: absolute;
     width: 2px;
-    background-color: #3B82F6;
+    background-color: #2B6CB0;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -252,7 +247,7 @@ header img{
     position: absolute;
     width: 12px;
     height: 12px;
-    background-color: #FBBF24;
+    background-color: #C49B3A;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
@@ -268,21 +263,21 @@ header img{
 }
 
 .timeline-content {
-    background-color: #1F2937;
+    background-color: #0A1C33;
     padding: 1.2rem 1.5rem;
     border-radius: 10px;
-    border: 1px solid #374151;
+    border: 1px solid #2B6CB0;
 }
 
 .timeline-content h4 {
-    color: #FBBF24;
+    color: #C49B3A;
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.3rem;
 }
 
 .timeline-content p {
-    color: #D1D5DB;
+    color: #DFE7F2;
     font-size: 0.9rem;
 }
 

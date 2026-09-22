@@ -38,10 +38,10 @@ header h1 img {
     border-radius: 50%;
 }
 header h1{
-    color:#2563EB;
+    color:#2B6CB0;
 }
 header span {
-    color: black;
+    color: #C49B3A;
     font-size: 0.8rem;
     display: block;
 }
@@ -91,7 +91,7 @@ header a:hover {
 footer {
     text-align: center;
     padding: 8vw 5vw;
-    background-color: #0F172A;
+    background-color: #0A1C33;
     color: white;
 }
 
