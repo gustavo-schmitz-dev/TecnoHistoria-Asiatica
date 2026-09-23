@@ -80,21 +80,28 @@ html {
 /* =========================================
    LISTA DE CARTÕES (CARDS)
 ========================================= */
+/*refazer essa bomba inteira*/
 .nacoes-lista {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 15rem;
 }
 
 .nacoes-lista li {
+    padding: 2rem 1rem;
     display: flex;
-    flex-direction: column; 
-    background: #FFFFFF;
+    flex-direction: column;
+    text-align: left;
+    background-color: #FFFFFF;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.china{
+    background: url(../../assets/icons/china.jpg) no-repeat;
 }
 
 .nacoes-lista li:hover {
