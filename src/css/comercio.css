@@ -94,8 +94,9 @@ nav ul li a:hover, nav ul li a.atual {
    ROTA DA SEDA
 ========================================= */
 .rota-seda-secao {
-    background-color: #F3F4F6;
-    padding: 4rem 5%;
+    background: url(../../assets/icons/146.png) no-repeat;
+    background-size: 100% auto;
+    padding: 6rem 5%;
     display: flex;
     justify-content: center;
 }
@@ -140,17 +141,17 @@ nav ul li a:hover, nav ul li a.atual {
 }
 
 .box-stat h3 { font-size: 1.5rem; font-weight: 800; }
-.box-stat p { font-size: 0.9rem; font-weight: 600; color: #4B5563; }
+.box-stat p { font-size: 0.9rem; font-weight: 600; color: #FFFFFF ; }
 
 /* Cores das caixinhas */
-.laranja { background-color: #FEF3C7; color: #D97706; }
-.laranja h3 { color: #D97706; }
+.laranja { background-color: #0a1c33; color: #c49b3a; }
+.laranja h3 { color: #c49b3a; }
 
-.azul { background-color: #DBEAFE; color: #2563EB; }
-.azul h3 { color: #2563EB; }
+.azul { background-color: #0a1c33; color: #c49b3a; }
+.azul h3 { color: #c49b3a; }
 
-.vermelho { background-color: #FCE7F3; color: #BE185D; }
-.vermelho h3 { color: #BE185D; }
+.vermelho { background-color: #0a1c33; color: #c49b3a; }
+.vermelho h3 { color: #c49b3a; }
 
 .texto-rota {
     padding: 0 3rem 3rem 3rem;
@@ -188,7 +189,7 @@ nav ul li a:hover, nav ul li a.atual {
 }
 
 .card-produto {
-    background-color: #FFFFFF;
+    background-color: #f5f8fa;
     border: 1px solid #E5E7EB;
     border-radius: 16px;
     padding: 2rem;
@@ -208,18 +209,18 @@ nav ul li a:hover, nav ul li a.atual {
 .card-produto p.origem, .card-produto p.impacto { font-size: 0.8rem; color: #4B5563; margin-bottom: 0.2rem; }
 
 /* Cores específicas dos títulos dos produtos */
-.cor-seda { color: #DC2626; }
-.cor-cha { color: #16A34A; }
-.cor-especiaria { color: #D97706; }
-.cor-porcelana { color: #2563EB; }
-.cor-pedras { color: #9333EA; }
-.cor-papel { color: #CA8A04; }
+.cor-seda { color: #2b6cb0; }
+.cor-cha { color: #2b6cb0; }
+.cor-especiaria { color: #2b6cb0; }
+.cor-porcelana { color: #2b6cb0; }
+.cor-pedras { color: #2b6cb0; }
+.cor-papel { color: #2b6cb0; }
 
 /* =========================================
    GRÁFICO
 ========================================= */
 .grafico-secao {
-    background-color: #F3F4F6;
+    background-color: #dfe7f2;
     padding: 5rem 5%;
     text-align: center;
 }
@@ -246,7 +247,7 @@ nav ul li a:hover, nav ul li a.atual {
    IMPACTO CULTURAL
 ========================================= */
 .impacto-secao {
-    background-color: #2563EB; /* Azul vibrante */
+    background-color: #2b6cb0; /* Azul vibrante */
     color: #FFFFFF;
     text-align: center;
     padding: 5rem 5%;

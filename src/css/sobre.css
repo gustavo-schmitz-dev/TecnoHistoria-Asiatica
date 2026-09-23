@@ -1,6 +1,4 @@
-/* =========================================
-   IMPORTAÇÃO DE FONTE E RESET BÁSICO
-========================================= */
+/* === IMPORTAÇÃO DE FONTE E RESET BÁSICO === */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -38,9 +36,7 @@ a {
     color: inherit;
 }
 
-/* =========================================
-   HERO - SOBRE O PROJETO
-========================================= */
+/* === HERO - SOBRE O PROJETO === */
 .hero-sobre {
     background-color: #1D2638; /* Fundo escuro */
     color: #FFFFFF;
@@ -70,9 +66,7 @@ header img{
     margin: 0 auto;
 }
 
-/* =========================================
-   CARD INFORMAÇÕES DO PROJETO
-========================================= */
+/* === CARD INFORMAÇÕES DO PROJETO === */
 .info-projeto-secao {
     padding: 0 5%;
     margin-top: -4rem; /* Faz o card sobrepor o fundo escuro do hero */
@@ -83,7 +77,7 @@ header img{
 
 .card-projeto {
     background-color: #FFFFFF;
-    border: 2px solid #F59E0B; /* Borda laranja/amarela */
+    border: 2px solid #c49b3a; /* Borda laranja/amarela */
     border-radius: 20px;
     padding: 3rem 4rem;
     text-align: center;
@@ -100,7 +94,7 @@ header img{
 .card-projeto h2 {
     font-size: 2rem;
     font-weight: 800;
-    color: #111827;
+    color: #0a1c33;
     margin-bottom: 0.5rem;
 }
 
@@ -142,7 +136,7 @@ header img{
 
 .badge p {
     font-size: 0.85rem;
-    color: #4B5563;
+    color: #fff;
 }
 
 .badge-icon {
@@ -150,18 +144,16 @@ header img{
 }
 
 /* Cores de fundo das badges */
-.badge.missao { background-color: #EFF6FF; color: #1E3A8A; }
-.badge.missao h4 { color: #2563EB; }
+.badge.missao { background-color: #0a1c33; color: #1E3A8A; }
+.badge.missao h4 { color: #c49b3a; }
 
-.badge.visao { background-color: #FEF3C7; color: #78350F; }
-.badge.visao h4 { color: #D97706; }
+.badge.visao { background-color: #0a1c33; color: #78350F; }
+.badge.visao h4 { color: #c49b3a; }
 
-.badge.valores { background-color: #FEE2E2; color: #7F1D1D; }
-.badge.valores h4 { color: #DC2626; }
+.badge.valores { background-color: #0a1c33; color: #7F1D1D; }
+.badge.valores h4 { color: #c49b3a; }
 
-/* =========================================
-   SEÇÃO NOSSA EQUIPE
-========================================= */
+/* === SEÇÃO NOSSA EQUIPE === */
 .equipe-secao {
     padding: 4rem 5%;
     text-align: center;
@@ -246,29 +238,27 @@ header img{
 }
 
 /* Bordas coloridas para cada membro */
-.card-membro.azul { border-color: #3B82F6; }
-.card-membro.azul h3 { color: #3B82F6; }
+.card-membro.azul { border-color: #dfe7f2; }
+.card-membro.azul h3 { color: #2b6cb0; }
 
-.card-membro.amarelo { border-color: #EAB308; }
-.card-membro.amarelo h3 { color: #EAB308; }
+.card-membro.amarelo { border-color: #dfe7f2; }
+.card-membro.amarelo h3 { color: #2b6cb0; }
 
-.card-membro.vermelho { border-color: #EF4444; }
-.card-membro.vermelho h3 { color: #EF4444; }
+.card-membro.vermelho { border-color: #dfe7f2; }
+.card-membro.vermelho h3 { color: #2b6cb0; }
 
-.card-membro.verde { border-color: #22C55E; }
-.card-membro.verde h3 { color: #22C55E; }
+.card-membro.verde { border-color: #dfe7f2; }
+.card-membro.verde h3 { color: #2b6cb0; }
 
-.card-membro.roxo { border-color: #A855F7; }
-.card-membro.roxo h3 { color: #A855F7; }
+.card-membro.roxo { border-color: #dfe7f2; }
+.card-membro.roxo h3 { color: #2b6cb0; }
 
-.card-membro.rosa { border-color: #EC4899; }
-.card-membro.rosa h3 { color: #EC4899; }
+.card-membro.rosa { border-color: #dfe7f2; }
+.card-membro.rosa h3 { color: #2b6cb0; }
 
-/* =========================================
-   SEÇÃO TECNOLOGIAS UTILIZADAS
-========================================= */
+/* === SEÇÃO TECNOLOGIAS UTILIZADAS === */
 .tecnologias-secao {
-    background-color: #F8FAFC; /* Fundo cinza bem claro */
+    background-color: #dfe7f2; /* Fundo cinza bem claro */
     padding: 6rem 5%;
     text-align: center;
 }
@@ -317,11 +307,9 @@ header img{
     color: #6B7280;
 }
 
-/* =========================================
-   SEÇÃO PROCESSO DE DESENVOLVIMENTO
-========================================= */
+/* === SEÇÃO PROCESSO DE DESENVOLVIMENTO === */
 .processo-secao {
-    background-color: #2563EB; /* Azul principal */
+    background-color: #173e75; /* Azul principal */
     color: #FFFFFF;
     padding: 6rem 5%;
     text-align: center;
@@ -359,7 +347,7 @@ header img{
 }
 
 .icon-processo {
-    background-color: #F59E0B; /* Ícone laranja/amarelo */
+    background-color: #c49b3a; /* Ícone laranja/amarelo */
     color: #FFFFFF;
     width: 48px;
     height: 48px;
@@ -383,9 +371,7 @@ header img{
     line-height: 1.5;
 }
 
-/* =========================================
-   RESPONSIVIDADE (Celulares e Tablets)
-========================================= */
+/* === RESPONSIVIDADE (Celulares e Tablets) === */
 @media (max-width: 992px) {
     .grid-equipe {
         grid-template-columns: repeat(2, 1fr);
