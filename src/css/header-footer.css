@@ -1,11 +1,17 @@
 /* =========================================
-   CABEÇALHO (Estilos Padrão / Mobile)
+   CABEÇALHO
 ========================================= */
+
 header {
     padding: 4vw 5vw;
     text-align: center;
     background-color: #FFFFFF;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    /* Header acompanha a página */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -28,15 +34,22 @@ header h1 a {
 }
 
 header h1 img {
-    width: 15vw; /* Aumentado um pouco pro mobile */
-    border-radius: 50%; /* Deixa a logo redonda, se ela for quadrada */
+    width: 15vw;
+    border-radius: 50%;
 }
-
+header h1{
+    color:#2563EB;
+}
 header span {
-    color: #2563EB;
+    color: black;
+    font-size: 0.8rem;
+    display: block;
 }
 
-/* Links do Menu */
+/* =========================================
+   LINKS DO MENU
+========================================= */
+
 header ul {
     list-style: none;
     padding: 0;
@@ -50,14 +63,9 @@ header a {
     text-decoration: none;
     color: #333333;
     font-weight: 600;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* =========================================
-   EFEITOS (Hover e Página Atual)
-========================================= */
-
-/* Fica azul quando o mouse passa por cima */
 header a:hover {
     color: #2563EB;
 }
@@ -67,8 +75,21 @@ header a:hover {
 }
 
 /* =========================================
-   RODAPÉ (Estilos Padrão / Mobile)
+   MENU MOBILE
 ========================================= */
+
+#menu {
+    display: none;
+}
+
+.botao-menu {
+    display: none;
+}
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
 footer {
     text-align: center;
     padding: 8vw 5vw;
@@ -92,7 +113,7 @@ footer {
 
 .footer-left img {
     width: 20vw;
-    border-radius: 50%; /* Se a imagem logo.jpeg for quadrada, fica redonda */
+    border-radius: 50%;
 }
 
 footer strong {
@@ -108,7 +129,10 @@ footer div p {
     color: #9CA3AF;
 }
 
-/* Redes Sociais - Instagram */
+/* =========================================
+   REDES SOCIAIS
+========================================= */
+
 .footer-social {
     display: flex;
     flex-direction: column;
@@ -136,7 +160,7 @@ footer div p {
 }
 
 .social-icons a:hover {
-    background-color: #F49F0A; 
+    background-color: #F49F0A;
     color: #111827;
     transform: translateY(-3px);
 }
@@ -153,10 +177,11 @@ footer div p {
 }
 
 /* =========================================
-   MEDIA QUERIES (Telas Maiores / Desktop)
+   DESKTOP
 ========================================= */
+
 @media (min-width: 768px) {
-    
+
     /* Cabeçalho lado a lado */
     header {
         display: flex;
@@ -167,7 +192,7 @@ footer div p {
     }
 
     header h1 a {
-        flex-direction: row; /* Fica do lado da escrita no PC */
+        flex-direction: row;
         gap: 1vw;
     }
 
@@ -183,7 +208,7 @@ footer div p {
     header ul {
         display: flex;
         align-items: center;
-        gap: 2.5vw; 
+        gap: 2.5vw;
     }
 
     header li {
@@ -218,7 +243,7 @@ footer div p {
     .footer-social {
         gap: 0.5vw;
     }
-    
+
     .social-icons a {
         width: 3vw;
         height: 3vw;
@@ -233,8 +258,111 @@ footer div p {
         text-align: right;
     }
 
-    footer p, 
+    footer p,
     footer div p {
         margin: 0.5vw 0;
     }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    /* Botão ☰ */
+    .botao-menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 18px;
+        font-size: 26px;
+        cursor: pointer;
+        color: #111827;
+        z-index: 1001;
+    }
+
+    /* Header menor no celular */
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 10px 20px;
+    }
+
+    /* Logo e nome */
+    header h1 {
+        margin: 0;
+        font-size: 1.1rem;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    header h1 a {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    header h1 img {
+        width: 42px;
+    }
+
+    /* Menu lateral */
+    header ul {
+        position: fixed;
+        top: 0;
+        right: -280px;
+        width: 280px;
+        height: 100vh;
+        margin: 0;
+        padding: 80px 30px 30px;
+        background-color: white;
+        list-style: none;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    /* Links do menu lateral */
+    header li {
+        margin: 20px 0;
+    }
+
+    header ul a {
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    /* Abrir menu */
+    #menu:checked ~ ul {
+        right: 0;
+    }
+}
+
+/* =========================================
+   ANIMAÇÕES
+========================================= */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: aparecer 0.7s ease;
+}
+
+main img {
+    transition: transform 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.03);
 }
