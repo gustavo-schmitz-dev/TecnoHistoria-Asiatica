@@ -1,254 +1,281 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
-/*
-Follow - font-family: "Fredoka", sans-serif;
-Medu - Oswald
-*/
-/* ==========================*/
 
 /* ==== FORMATAÇÃO GERAL === */
 html {
-    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
-    font-family: "Epilogue", sans-serif;
+  font-family: "Epilogue", sans-serif;
+  box-sizing: border-box;
 }
 
-.banner{
-  background-color: #11182A;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* BANNER */
+.banner {
+  background-color: #1D2638;
   color: white;
   text-align: center;
-  padding: 6vw 4vw;
+  padding: 3rem 1.5rem;
+}
+.banner img{
+  width: 9vw;
+}
+header img{
+    width: 4vw;
 }
 
-.banner h1{
-  margin: 2vw 0;
-  font-size: 2.5rem;
+.banner h2 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
   font-weight: 900;
 }
 
-/*===INVENCOES===*/
+.banner p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #9CA3AF;
+}
+
+/* === INVENÇÕES === */
 section.invencoes {
-    text-align: center;
-    margin: 5vw 0 0 0;
+  text-align: center;
+  padding: 3rem 1.5rem;
 }
 
 section.invencoes h1 {
-    font-size: 2rem;
-    font-weight: bolder;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section.invencoes h2 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
 }
 
 section.invencoes ul {
-    margin: 8vw;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 section.invencoes ul li {
-    margin: 5vw 0 0 0;
+  text-align: left;
+  border-style: solid;
+  border-width: 3px;
+  padding: 1.5rem;
+  border-radius: 20px;
 }
 
+section.invencoes ul li img {
+  width: 48px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+section.invencoes ul li h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos de Cores por Classe */
 section.invencoes ul li.orange {
-    text-align: left;
-    border-style: solid;
-    border-width: 3px;
-    border-color: orange;
-    padding: 4vw;
-    border-radius: 20px
+  border-color: #FFA500;
 }
-
 section.invencoes ul li.orange h3 {
-    color: orange;
-    font-size: 2rem;
-    font-weight: bold;
+  color: #FFA500;
 }
-
-section.invencoes ul li div.blocos {
-    display: flex;
-}
-
-section.invencoes ul li div.blocos div.antiga {
-    margin: 3vw;
-    background-color: #E9E9E9;
-    padding: 2vw 1vw 2vw 1vw;
-    border-radius: 20px;
-}
-
-section.invencoes ul li div.blocos div.antiga p {
-    color: #616161;
-    font-size: 0.7rem;
-}
-
-section.invencoes ul li div.blocos div.moderna {
-    margin: 3vw;
-    background-color: #E9E9E9;
-    padding: 2vw 1vw 2vw 1vw;
-    border-radius: 20px;
-}
-
-section.invencoes ul li div.blocos div.moderna p {
-    color: #616161;
-    font-size: 0.7rem;
-}
-
-section.invencoes ul li.orange div.impacto {
-    font-size: 0.6rem;
-    color: #616161;
-    background-color: rgba(255, 166, 0, 0.219);
-    padding: 2vw;
-    border-radius: 20px;
+section.invencoes ul li.orange .impacto {
+  background-color: rgba(255, 166, 0, 0.15);
 }
 
 section.invencoes ul li.blue {
-    text-align: left;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #2563EB;
-    padding: 4vw;
-    border-radius: 20px
+  border-color: #2563EB;
 }
-
 section.invencoes ul li.blue h3 {
-    color: #2563EB;
-    font-size: 2rem;
-    font-weight: bold;
+  color: #2563EB;
 }
-
-section.invencoes ul li.blue div.impacto {
-    font-size: 0.6rem;
-    color: #616161;
-    background-color: #2564eb5c;
-    padding: 2vw;
-    border-radius: 20px;
+section.invencoes ul li.blue .impacto {
+  background-color: rgba(37, 99, 235, 0.15);
 }
 
 section.invencoes ul li.purple {
-    text-align: left;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #9B0BF5;
-    padding: 4vw;
-    border-radius: 20px
+  border-color: #9B0BF5;
 }
-
 section.invencoes ul li.purple h3 {
-    color: #9B0BF5;
-    font-size: 2rem;
-    font-weight: bold;
+  color: #9B0BF5;
 }
-
-section.invencoes ul li.purple div.impacto {
-    font-size: 0.6rem;
-    color: #616161;
-    background-color: #9b0bf549;
-    padding: 2vw;
-    border-radius: 20px;
+section.invencoes ul li.purple .impacto {
+  background-color: rgba(155, 11, 245, 0.15);
 }
 
 section.invencoes ul li.green {
-    text-align: left;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #25EB5D;
-    padding: 4vw;
-    border-radius: 20px
+  border-color: #25EB5D;
 }
-
 section.invencoes ul li.green h3 {
-    color: #25EB5D;
-    font-size: 2rem;
-    font-weight: bold;
+  color: #25EB5D;
+}
+section.invencoes ul li.green .impacto {
+  background-color: rgba(37, 235, 93, 0.15);
 }
 
-section.invencoes ul li.green div.impacto {
-    font-size: 0.6rem;
-    color: #616161;
-    background-color: #25eb5d62;
-    padding: 2vw;
-    border-radius: 20px;
+/* Blocos de Versões */
+section.invencoes ul li .blocos {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
 }
 
-/*===CURIOSIDADES===*/
+section.invencoes ul li .blocos div {
+  flex: 1;
+  background-color: #E9E9E9;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+section.invencoes ul li .blocos p {
+  color: #616161;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+section.invencoes ul li .blocos h4 {
+  font-size: 0.95rem;
+}
+
+section.invencoes ul li .impacto {
+  font-size: 0.9rem;
+  color: #333;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+section.invencoes ul li .impacto h4 {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+
+/* === CURIOSIDADES === */
 section.curiosidades {
-    text-align: center;
-    background-color: #2563EB;
-    color: white;
-}
-
-section.curiosidades ul {
-    padding: 8vw;
+  text-align: center;
+  background-color: #2563EB;
+  color: white;
+  padding: 3rem 1.5rem;
 }
 
 section.curiosidades h1 {
-    padding: 3vw;
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 section.curiosidades h2 {
-    font-size: 0.8rem;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+section.curiosidades ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 section.curiosidades ul li {
-    background-color: #467EFA;
-    margin: 5vw;
-    padding: 2vw;
-    border-radius: 20px;
+  background-color: #467EFA;
+  padding: 1.5rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+section.curiosidades ul li img {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
 }
 
 
+/* =========================================
+   === MEDIA QUERIES (RESPONSIVIDADE) === 
+========================================= */
 
+@media only screen and (min-width: 768px) {
+  
+  .banner {
+    padding: 4rem 2rem;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+  }
 
+  section.invencoes {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 
+  section.invencoes ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 
-/* MEDIA QUERY - DESKTOP */
-@media only screen and (min-width: 600px) {
+  section.curiosidades ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
 
-    /*===INVECOES===*/
-    
-    .banner h1{
-      font-size: 4rem;
-    }
-    
-    section.invencoes {
-        text-align: center;
-    }
+@media only screen and (min-width: 1024px) {
+  
+  .banner {
+    padding: 6rem 2rem;
+  }
 
-    section.invencoes h1 {
-        font-size: 3rem;
-    }
+  .banner h1 {
+    font-size: 4rem;
+  }
 
-    section.invencoes ul {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 3vw;
-    }
+  section.invencoes {
+    max-width: 1200px;
+  }
 
-    section.invencoes ul li img {
-        height: 8vw;
-    }
+  section.curiosidades {
+    padding: 4rem 2rem;
+  }
 
-    section.invencoes ul li {
-        margin: 8vw 20vw 0vw 20vw;
-    }
+  section.curiosidades ul {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+  }
+}
+/* Efeito de entrada (a página surge suavemente ao carregar) */
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
 
-    /*===CURIOSIDADES===*/
-    section.curiosidades h1 {
-        font-size: 5rem;
-    }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-    section.curiosidades h2 {
-        font-size: 1.1rem;
-        margin: 0;
-    }
-
-    section.curiosidades ul {
-        margin: 0vw 3vw 1vw 3vw;
-    }
-
-    section.curiosidades ul li img {
-        height: 4vw;
-    }
-
-    section.curiosidades ul li {
-        text-align: left;
-    }
-
-
-
+/* Classe ativada pelo JS quando você clica em um link para sair */
+body.fade-out {
+    opacity: 0 !important;
+    transition: opacity 0.4s ease-in-out !important;
 }

@@ -1,48 +1,368 @@
-header{
-    padding: 1vw 4vw;
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+header {
+    padding: 4vw 5vw;
     text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    /* Header acompanha a página */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+header h1 {
+    margin: 2vw 0 4vw 0;
+    font-weight: 800;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+header h1 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    text-decoration: none;
+    color: inherit;
+}
+
+header h1 img {
+    width: 15vw;
+    border-radius: 50%;
+}
 header h1{
-  margin: 2vw 0;
-  font-weight: 800;
+    color:#2563EB;
+}
+header span {
+    color: black;
+    font-size: 0.8rem;
+    display: block;
 }
 
-header li{
-  margin: 4vw 0;
+/* =========================================
+   LINKS DO MENU
+========================================= */
+
+header ul {
+    list-style: none;
+    padding: 0;
 }
 
-.atual{
+header li {
+    margin: 4vw 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header a:hover {
     color: #2563EB;
 }
 
-header p{
-    background-color: #1E2A3F;
-    padding: 0.5vw;
-    border-radius: 40px;
-}
-
-header span{
+.atual {
     color: #2563EB;
 }
+
+/* =========================================
+   MENU MOBILE
+========================================= */
+
+#menu {
+    display: none;
+}
+
+.botao-menu {
+    display: none;
+}
+
+/* =========================================
+   RODAPÉ
+========================================= */
 
 footer {
     text-align: center;
-    padding: 6vw 8vw;
+    padding: 8vw 5vw;
     background-color: #0F172A;
     color: white;
 }
 
-footer p{
-    margin: 4vw 0;
-    font-weight: 700;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+    align-items: center;
 }
 
-footer strong{
-  font-weight: 800;
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
 }
 
-footer div p{
-    margin: 4vw 0;
+.footer-left img {
+    width: 20vw;
+    border-radius: 50%;
+}
+
+footer strong {
+    font-weight: 800;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1vw;
+}
+
+footer div p {
+    margin: 2vw 0;
     font-weight: 400;
+    color: #9CA3AF;
+}
+
+/* =========================================
+   REDES SOCIAIS
+========================================= */
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.footer-social span {
+    font-size: 1rem;
+    color: #9CA3AF;
+    font-weight: 600;
+}
+
+.social-icons a {
+    color: #F8FAFC;
+    background-color: #1D2638;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: #F49F0A;
+    color: #111827;
+    transform: translateY(-3px);
+}
+
+.social-icons a svg {
+    width: 5vw;
+    height: 5vw;
+}
+
+.footer-right p {
+    margin: 2vw 0;
+    font-weight: 700;
+    color: #9CA3AF;
+}
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 768px) {
+
+    /* Cabeçalho lado a lado */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5vw 4vw;
+        text-align: left;
+    }
+
+    header h1 a {
+        flex-direction: row;
+        gap: 1vw;
+    }
+
+    header h1 img {
+        width: 3.5vw;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        gap: 2.5vw;
+    }
+
+    header li {
+        margin: 0;
+    }
+
+    /* Rodapé lado a lado */
+    footer {
+        padding: 3vw 6vw;
+        text-align: left;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+    }
+
+    .footer-left {
+        flex-direction: row;
+        gap: 1.5vw;
+        text-align: left;
+    }
+
+    .footer-left img {
+        width: 4vw;
+    }
+
+    /* Instagram no PC */
+    .footer-social {
+        gap: 0.5vw;
+    }
+
+    .social-icons a {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .social-icons a svg {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .footer-right {
+        text-align: right;
+    }
+
+    footer p,
+    footer div p {
+        margin: 0.5vw 0;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    /* Botão ☰ */
+    .botao-menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 18px;
+        font-size: 26px;
+        cursor: pointer;
+        color: #111827;
+        z-index: 1001;
+    }
+
+    /* Header menor no celular */
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 10px 20px;
+    }
+
+    /* Logo e nome */
+    header h1 {
+        margin: 0;
+        font-size: 1.1rem;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    header h1 a {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    header h1 img {
+        width: 42px;
+    }
+
+    /* Menu lateral */
+    header ul {
+        position: fixed;
+        top: 0;
+        right: -280px;
+        width: 280px;
+        height: 100vh;
+        margin: 0;
+        padding: 80px 30px 30px;
+        background-color: white;
+        list-style: none;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    /* Links do menu lateral */
+    header li {
+        margin: 20px 0;
+    }
+
+    header ul a {
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    /* Abrir menu */
+    #menu:checked ~ ul {
+        right: 0;
+    }
+}
+
+/* =========================================
+   ANIMAÇÕES
+========================================= */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: aparecer 0.7s ease;
+}
+
+main img {
+    transition: transform 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.03);
 }
