@@ -11,7 +11,19 @@ body {
     font-family: 'Epilogue', sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #F8F9FA; /* Fundo geral claro */
+    background-color: #F8F9FA;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body.fade-out {
+    opacity: 0 !important;
+    transition: opacity 0.4s ease-in-out !important;
 }
 
 a {
@@ -36,7 +48,8 @@ header {
     font-weight: 700;
     font-size: 1.2rem;
 }
-header img{
+
+header img {
     width: 4vw;
 }
 
@@ -54,12 +67,12 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a.atual {
-    color: #2563EB; /* Azul de destaque */
+    color: #2563EB;
 }
 
 /* === HERO BANNER === */
 .hero-comercio {
-    background-color: #0A1C33; /* Azul escuro */
+    background-color: #0A1C33;
     color: #FFFFFF;
     text-align: center;
     padding: 6rem 2rem;
@@ -67,7 +80,7 @@ nav ul li a:hover, nav ul li a.atual {
 
 .hero-icon {
     font-size: 2.5rem;
-    color: #FBBF24; /* Amarelo */
+    color: #FBBF24;
     margin-bottom: 1rem;
 }
 
@@ -92,10 +105,12 @@ nav ul li a:hover, nav ul li a.atual {
     display: flex;
     justify-content: center;
 }
-.rota-seda-secao h2{
+
+.rota-seda-secao h2 {
     font-size: 1.6rem;
     font-weight: bold;
 }
+
 .card-rota {
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -130,20 +145,21 @@ nav ul li a:hover, nav ul li a.atual {
     text-align: center;
     padding: 1.5rem;
     border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efeito Hover nas caixinhas */
+.box-stat:hover, .box-stat:active {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .box-stat h3 { font-size: 1.5rem; font-weight: 800; }
-.box-stat p { font-size: 0.9rem; font-weight: 600; color: #FFFFFF ; }
+.box-stat p { font-size: 0.9rem; font-weight: 600; color: #FFFFFF; }
 
-/* Cores das caixinhas */
-.laranja { background-color: #0a1c33; color: #c49b3a; }
-.laranja h3 { color: #c49b3a; }
-
-.azul { background-color: #0a1c33; color: #c49b3a; }
-.azul h3 { color: #c49b3a; }
-
-.vermelho { background-color: #0a1c33; color: #c49b3a; }
-.vermelho h3 { color: #c49b3a; }
+.laranja, .azul, .vermelho { background-color: #0a1c33; color: #c49b3a; }
+.laranja h3, .azul h3, .vermelho h3 { color: #c49b3a; }
 
 .texto-rota {
     padding: 0 3rem 3rem 3rem;
@@ -152,7 +168,7 @@ nav ul li a:hover, nav ul li a.atual {
     font-size: 1rem;
 }
 
-/* ===  PRODUTOS (GRID) === */
+/* === PRODUTOS (GRID) === */
 .produtos-secao {
     background-color: #FFFFFF;
     padding: 5rem 5%;
@@ -185,12 +201,14 @@ nav ul li a:hover, nav ul li a.atual {
     padding: 2rem;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
 }
 
-.card-produto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+.card-produto:hover, .card-produto:active {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(43, 108, 176, 0.15); /* Sombra em tom de azul */
+    border-color: #2B6CB0;
 }
 
 .card-produto .icon { font-size: 2rem; margin-bottom: 1rem; }
@@ -198,15 +216,9 @@ nav ul li a:hover, nav ul li a.atual {
 .card-produto .desc { font-size: 0.9rem; color: #6B7280; margin-bottom: 1rem; min-height: 45px;}
 .card-produto p.origem, .card-produto p.impacto { font-size: 0.8rem; color: #4B5563; margin-bottom: 0.2rem; }
 
-/* Cores específicas dos títulos dos produtos */
-.cor-seda { color: #2b6cb0; }
-.cor-cha { color: #2b6cb0; }
-.cor-especiaria { color: #2b6cb0; }
-.cor-porcelana { color: #2b6cb0; }
-.cor-pedras { color: #2b6cb0; }
-.cor-papel { color: #2b6cb0; }
+.cor-seda, .cor-cha, .cor-especiaria, .cor-porcelana, .cor-pedras, .cor-papel { color: #2b6cb0; }
 
-/* ===  GRÁFICO === */
+/* === GRÁFICO === */
 .grafico-secao {
     background-color: #dfe7f2;
     padding: 5rem 5%;
@@ -220,20 +232,24 @@ nav ul li a:hover, nav ul li a.atual {
     background-color: #FFFFFF;
     border-radius: 20px;
     padding: 3rem;
-    max-width: 800px;
+    max-width: 600px; /* Largura otimizada para o gráfico interativo */
     margin: 0 auto;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.card-grafico img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.card-grafico canvas {
+    width: 100% !important;
+    height: auto !important;
+    cursor: pointer;
 }
 
 /* === IMPACTO CULTURAL === */
 .impacto-secao {
-    background-color: #2b6cb0; /* Azul vibrante */
+    background-color: #2b6cb0;
     color: #FFFFFF;
     text-align: center;
     padding: 5rem 5%;
@@ -257,11 +273,18 @@ nav ul li a:hover, nav ul li a.atual {
 }
 
 .box-impacto {
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 12px;
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.box-impacto:hover, .box-impacto:active {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .box-impacto p { font-weight: 600; }
@@ -295,20 +318,17 @@ footer {
 
 /* === MEDIA QUERIES (RESPONSIVIDADE) === */
 @media (max-width: 992px) {
-    /* Tablets */
     .grid-produtos { grid-template-columns: repeat(2, 1fr); }
     .status-boxes { flex-direction: column; }
 }
 
 @media (max-width: 768px) {
-    /* Celulares */
     header { flex-direction: column; gap: 1rem; text-align: center; }
     nav ul { flex-wrap: wrap; justify-content: center; }
     
     .hero-comercio h1 { font-size: 2.2rem; }
-    header img{
-    width: 5vw;
-}
+    header img { width: 5vw; min-width: 40px; }
+    
     .grid-produtos { grid-template-columns: 1fr; }
     .grid-impacto { grid-template-columns: 1fr; }
     
@@ -317,20 +337,4 @@ footer {
     footer { flex-direction: column; text-align: center; gap: 2rem; }
     .footer-left { flex-direction: column; text-align: center; }
     .footer-right { text-align: center; }
-}
-/* Efeito de entrada (a página surge suavemente ao carregar) */
-body {
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Classe ativada pelo JS quando você clica em um link para sair */
-body.fade-out {
-    opacity: 0 !important;
-    transition: opacity 0.4s ease-in-out !important;
 }
