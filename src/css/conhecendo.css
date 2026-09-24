@@ -233,6 +233,7 @@ header img{
     padding: 1rem 0;
     position: relative;
     width: 50%;
+    transition: all 0.8s ease-out; /* <-- Adicionado para a suavidade da animação */
 }
 
 .timeline-item.left {
@@ -315,6 +316,7 @@ header img{
         left: 14px;
     }
 }
+
 /* Efeito de entrada (a página surge suavemente ao carregar) */
 body {
     opacity: 0;
@@ -330,4 +332,54 @@ body {
 body.fade-out {
     opacity: 0 !important;
     transition: opacity 0.4s ease-in-out !important;
+}
+
+/* =========================================
+   ANIMAÇÃO INTERATIVA (SCROLL) DA LINHA DO TEMPO
+========================================= */
+.oculto {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.mostrar {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+/* =========================================
+   EFEITOS DE TOQUE / HOVER NA LINHA DO TEMPO
+========================================= */
+
+/* 1. Prepara o conteúdo para o efeito */
+.timeline-content {
+    cursor: pointer; /* Muda a setinha para a mãozinha de clique */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 2. O que acontece quando passas o rato ou tocas no card */
+.timeline-item:hover .timeline-content,
+.timeline-item:active .timeline-content {
+    transform: scale(1.05); /* Dá um zoom de 5% no card */
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4); /* Cria um brilho azul em volta */
+    background-color: #253142; /* Deixa o fundo levemente mais claro */
+    border-color: #3B82F6; /* A borda fica azul */
+}
+
+/* 3. Prepara a bolinha da linha para animar */
+.timeline-item::after {
+    transition: all 0.3s ease; /* Deixa a animação suave */
+}
+
+/* 4. O que acontece com a bolinha quando tocas no card correspondente */
+.timeline-item:hover::after,
+.timeline-item:active::after {
+    transform: translateY(-50%) scale(1.6); /* A bolinha cresce 60% */
+    background-color: #3B82F6; /* Muda de amarelo para azul */
+    box-shadow: 0 0 15px #3B82F6; /* Adiciona um efeito neon/brilho na bolinha */
+}
+
+/* Faz o título dentro do card brilhar também */
+.timeline-item:hover .timeline-content h4,
+.timeline-item:active .timeline-content h4 {
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.6);
 }
