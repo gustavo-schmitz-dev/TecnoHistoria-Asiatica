@@ -1,6 +1,4 @@
-/* =========================================
-   IMPORTAÇÃO DE FONTE E RESET BÁSICO
-========================================= */
+/* === IMPORTAÇÃO DE FONTE E RESET BÁSICO === */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -21,11 +19,9 @@ a {
     color: inherit;
 }
 
-/* =========================================
-   HERO SEÇÃO
-========================================= */
+/* === HERO SEÇÃO === */
 .hero-home {
-    background-color: #1D2638; /* Fundo azul bem escuro */
+    background-color: #0A1C33; /* Fundo azul bem escuro */
     color: #FFFFFF;
     text-align: center;
     padding: 7rem 2rem;
@@ -36,7 +32,7 @@ a {
 }
 
 .tagline {
-    color: #FBBF24; /* Amarelo/Laranja */
+    color: #C49B3A; /* Amarelo/Laranja */
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -52,7 +48,7 @@ a {
 }
 
 .hero-home h1 .highlight {
-    color: #3B82F6; /* Azul destaque */
+    color: #2B6CB0; /* Azul destaque */
     font-weight: 800; /* Texto mais grosso */
     display: block;
 }
@@ -86,14 +82,14 @@ header img{
 }
 
 .btn-primary {
-    background-color: #3B82F6;
+    background-color: #2B6CB0;
     color: #FFFFFF;
-    border: 2px solid #3B82F6;
+    border: 2px solid #2B6CB0;
 }
 
 .btn-primary:hover {
-    background-color: #2563EB;
-    border-color: #2563EB;
+    background-color: #2B6CB0;
+    border-color: #2B6CB0;
 }
 
 .btn-outline {
@@ -107,9 +103,7 @@ header img{
     border-color: #FFFFFF;
 }
 
-/* =========================================
-   EXPLORE A ÁSIA
-========================================= */
+/* === EXPLORE A ÁSIA === */
 .explore-secao {
     background-color: #FFFFFF;
     padding: 6rem 5%;
@@ -118,7 +112,7 @@ header img{
 
 .explore-secao h2 {
     font-size: 2.8rem;
-    color: #000000;
+    color: #0A1C33;
     font-weight: 800;
     margin-bottom: 1rem;
 }
@@ -139,7 +133,7 @@ header img{
 }
 
 .card-explore {
-    border: 2px solid #111827; /* Borda preta/escura */
+    border: 2px solid #DFE7F2;
     border-radius: 16px;
     padding: 2.5rem 2rem;
     text-align: left;
@@ -184,7 +178,7 @@ header img{
 }
 
 .link-explorar {
-    color: #2563EB;
+    color: #2B6CB0;
     font-weight: 800;
     font-size: 0.95rem;
     margin-top: auto;
@@ -194,16 +188,14 @@ header img{
     text-decoration: underline;
 }
 
-/* =========================================
-   CALL TO ACTION (CTA)
-========================================= */
+/* === CALL TO ACTION (CTA) === */
 .cta-wrapper {
     background-color: #FFFFFF;
     padding-bottom: 4rem; /* Cria a faixa branca no final da página idêntica a imagem */
 }
 
 .cta-secao {
-    background-color: #2563EB; /* Azul vibrante */
+    background-color: #2B6CB0; /* Azul vibrante */
     color: #FFFFFF;
     padding: 5rem 5%;
     text-align: center;
@@ -214,6 +206,7 @@ header img{
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
+/* === RESPONSIVIDADE === */
 
 .cta-secao p {
     font-size: 1.2rem;
@@ -222,7 +215,7 @@ header img{
 }
 
 .btn-quiz {
-    background-color: #F59E0B; /* Laranja vibrante */
+    background-color: #C49B3A; /* Laranja vibrante */
     color: #FFFFFF;
     padding: 1rem 2.5rem;
     border-radius: 8px;
@@ -239,9 +232,7 @@ header img{
     background-color: #D97706; /* Laranja mais escuro no hover */
 }
 
-/* =========================================
-   RESPONSIVIDADE
-========================================= */
+/* ===  RESPONSIVIDADE === */
 @media (max-width: 992px) {
     .grid-explore {
         grid-template-columns: repeat(2, 1fr);

@@ -1,195 +1,194 @@
-// Base de dados das Perguntas (Baseado nas páginas anteriores)
-const quizData = [
+// =========================================
+// BANCO DE PERGUNTAS (10 Perguntas com Explicação)
+// =========================================
+const questions = [
     {
-        question: "Qual país inventou o papel, a bússola e a pólvora?",
-        options: ["Japão", "China", "Índia", "Coreia"],
-        answer: 1 // Índice da resposta correta (China)
+        question: "Qual invenção chinesa do século IX, originalmente criada em busca de um 'elixir da imortalidade', acabou revolucionando as táticas de guerra?",
+        options: ["Bússola", "Pólvora", "Fogo Grego", "Besta"],
+        answer: 1,
+        explanation: "A pólvora foi descoberta por acaso por alquimistas chineses que tentavam criar uma poção para a vida eterna, misturando salitre, enxofre e carvão."
     },
     {
-        question: "Qual civilização desenvolveu o Sistema Numérico e o conceito de Zero?",
-        options: ["China", "Japão", "Coreia", "Índia"],
-        answer: 3 // Índia
+        question: "O primeiro livro impresso com tipos móveis de metal (o 'Jikji') foi criado no século XIII em qual país, séculos antes de Gutenberg na Europa?",
+        options: ["Japão", "China", "Coreia", "Vietnã"],
+        answer: 2,
+        explanation: "Os coreanos inventaram a impressão com tipos móveis de metal em 1234, muito antes da famosa invenção da prensa de Gutenberg na Alemanha."
     },
     {
-        question: "A famosa 'Rota da Seda' servia principalmente para conectar o Oriente ao...",
-        options: ["Ocidente (Europa)", "Extremo Sul da África", "Norte da América", "Oceano Ártico"],
-        answer: 0 // Ocidente
+        question: "O conceito do número Zero, base de toda a matemática e programação de computadores modernos, teve sua origem em qual civilização?",
+        options: ["Índia", "China", "Pérsia", "Babilônia"],
+        answer: 0,
+        explanation: "O zero como número (e não apenas como um espaço vazio) e o sistema de numeração decimal moderno foram desenvolvidos por brilhantes matemáticos na Índia antiga."
     },
     {
-        question: "O K-pop, eletrônicos e a primeira impressão móvel são contribuições de qual país?",
-        options: ["Japão", "Coreia", "China", "Tailândia"],
-        answer: 1 // Coreia
+        question: "Criado no Japão em 1994 pela empresa Denso Wave, qual tecnologia foi desenvolvida originalmente para rastrear peças de carros nas fábricas?",
+        options: ["Código de Barras", "NFC (Aproximação)", "Bluetooth", "QR Code"],
+        answer: 3,
+        explanation: "O QR Code (Quick Response) foi criado porque os códigos de barras tradicionais não armazenavam informações suficientes para a complexa montagem dos carros."
     },
     {
-        question: "Em que ano (aproximadamente) ocorreu a Era de Ouro da Filosofia, com figuras como Buda e Confúcio?",
-        options: ["3000 a.C.", "105 d.C.", "500 a.C.", "1440 d.C."],
-        answer: 2 // 500 a.C.
+        question: "Durante a Dinastia Song (século XI), a China introduziu uma inovação econômica pioneira que o Ocidente demoraria séculos para adotar. Qual foi?",
+        options: ["Cartão de crédito", "Moedas de ouro", "Papel-moeda (Cédulas)", "Cheques bancários"],
+        answer: 2,
+        explanation: "O papel-moeda foi criado na China para substituir as pesadas moedas de cobre que os mercadores precisavam carregar em carroças durante longas viagens comerciais."
     },
     {
-        question: "Tóquio é a capital de qual destes países asiáticos?",
-        options: ["China", "Coreia", "Índia", "Japão"],
-        answer: 3 // Japão
+        question: "Inaugurado em 1964 a tempo para as Olimpíadas de Tóquio, o 'Shinkansen' marcou o início de qual tecnologia de transporte asiática?",
+        options: ["Metrô subterrâneo", "Trens-bala", "Levitação magnética (Maglev)", "Carros autônomos"],
+        answer: 1,
+        explanation: "O Shinkansen foi a primeira rede comercial de trens de alta velocidade (trens-bala) do mundo, mudando para sempre o padrão global do transporte público."
     },
     {
-        question: "Segundo os dados da plataforma, qual é a população aproximada da Ásia?",
-        options: ["1.4 bilhões", "4.7 bilhões", "8.1 bilhões", "125 milhões"],
-        answer: 1 // 4.7 bilhões
+        question: "Atualmente, qual ilha asiática é a sede da TSMC e responsável pela produção de mais de 60% dos semicondutores (chips) avançados do mundo?",
+        options: ["Taiwan", "Coreia do Sul", "Singapura", "Hong Kong"],
+        answer: 0,
+        explanation: "Taiwan é o grande polo mundial na fabricação de chips de última geração, peças essenciais que fazem funcionar smartphones, PCs e inteligências artificiais."
     },
     {
-        question: "Qual destas NÃO é uma contribuição histórica da China?",
-        options: ["Yoga", "Impressão", "Pólvora", "Papel"],
-        answer: 0 // Yoga (É da Índia)
+        question: "Lançado em 1979 pela gigante japonesa Sony, qual aparelho transformou o consumo de música no mundo ao permitir a portabilidade?",
+        options: ["Discman", "iPod", "Rádio Transistor", "Walkman"],
+        answer: 3,
+        explanation: "O Sony Walkman revolucionou a cultura pop nos anos 80. Foi o primeiro dispositivo a tornar a audição de música uma experiência privada, com fones de ouvido e fitas cassete."
     },
     {
-        question: "O Xadrez, um dos jogos de tabuleiro mais famosos do mundo, teve origem em qual civilização?",
-        options: ["Japão", "Rússia", "Índia", "China"],
-        answer: 2 // Índia
+        question: "Inventado por Zhang Heng em 132 d.C. na China, o primeiro sismoscópio do mundo usava esferas de bronze caindo na boca de sapos para:",
+        options: ["Medir a temperatura", "Detectar a direção de terremotos", "Prever a chuva", "Contar as horas do dia"],
+        answer: 1,
+        explanation: "O sismoscópio não previa terremotos, mas quando a terra tremia ao longe, uma esfera caía na boca do sapo indicando exatamente a direção do desastre, permitindo o envio rápido de ajuda."
     },
     {
-        question: "Aproximadamente quantos países compõem o continente Asiático?",
-        options: ["49 países", "30 países", "25 países", "62 países"],
-        answer: 0 // 49 países
+        question: "Criados por Shigetaka Kurita em 1999 no Japão, o que são os pequenos símbolos visuais de 12x12 pixels que mudaram a comunicação digital moderna?",
+        options: ["GIFs animadas", "Emojis", "Avatares 3D", "Figurinhas (Stickers)"],
+        answer: 1,
+        explanation: "A palavra 'Emoji' vem do japonês ('e' = imagem, 'moji' = caractere). Eles foram criados para facilitar a comunicação nos primeiros telefones celulares conectados à internet."
     }
 ];
 
-// Variáveis de Estado
-let currentQuestion = 0;
+// =========================================
+// VARIÁVEIS DE ESTADO
+// =========================================
+let currentQuestionIndex = 0;
 let score = 0;
 
-// Seleção de Elementos do DOM
+// Seleção de elementos no DOM
 const startScreen = document.getElementById('start-screen');
 const questionScreen = document.getElementById('question-screen');
 const resultScreen = document.getElementById('result-screen');
-
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
+const btnNext = document.getElementById('btn-next');
+const btnStart = document.getElementById('btn-start');
+const btnRestart = document.getElementById('btn-restart');
 const questionCounter = document.getElementById('question-counter');
 const scoreDisplay = document.getElementById('score-display');
 const progressFill = document.getElementById('progress-fill');
-
-const btnStart = document.getElementById('btn-start');
-const btnNext = document.getElementById('btn-next');
-const btnRestart = document.getElementById('btn-restart');
+const explanationBox = document.getElementById('explanation-box');
+const explanationText = document.getElementById('explanation-text');
 const finalScore = document.getElementById('final-score');
-const resultMessage = document.getElementById('result-message');
 
-// Eventos de Clique
-btnStart.addEventListener('click', startQuiz);
-btnNext.addEventListener('click', nextQuestion);
-btnRestart.addEventListener('click', restartQuiz);
-
-// Função para Iniciar o Quiz
-function startQuiz() {
+// =========================================
+// INICIAR QUIZ
+// =========================================
+btnStart.addEventListener('click', () => {
     startScreen.classList.remove('active');
-    questionScreen.classList.add('active');
+    startScreen.classList.add('hidden');
     questionScreen.classList.remove('hidden');
-    currentQuestion = 0;
-    score = 0;
+    questionScreen.classList.add('active');
     loadQuestion();
-}
+});
 
-// Função para Carregar a Pergunta Atual
+// =========================================
+// CARREGAR PERGUNTA
+// =========================================
 function loadQuestion() {
-    const currentQuizData = quizData[currentQuestion];
-    
-    // Atualiza Textos
-    questionText.innerText = currentQuizData.question;
-    questionCounter.innerText = `Pergunta ${currentQuestion + 1} de ${quizData.length}`;
-    scoreDisplay.innerText = `Pontuação: ${score}`;
-    
-    // Atualiza Barra de Progresso
-    const progressPercentage = ((currentQuestion + 1) / quizData.length) * 100;
-    progressFill.style.width = `${progressPercentage}%`;
-
-    // Limpa opções anteriores
-    optionsContainer.innerHTML = '';
-    
-    // Esconde o botão Próxima
+    // Esconde a explicação e o botão próximo no início de cada pergunta
+    explanationBox.classList.add('hidden');
     btnNext.classList.add('hidden');
+    
+    const currentQuestion = questions[currentQuestionIndex];
+    questionText.innerText = currentQuestion.question;
+    optionsContainer.innerHTML = ''; // Limpa botões da pergunta anterior
+    
+    // Atualiza o contador e a barra de progresso
+    questionCounter.innerText = `Pergunta ${currentQuestionIndex + 1} de ${questions.length}`;
+    scoreDisplay.innerText = `Pontuação: ${score}`;
+    progressFill.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
 
-    // Letras para as alternativas
     const letters = ['A', 'B', 'C', 'D'];
 
-    // Gera os botões de resposta
-    currentQuizData.options.forEach((option, index) => {
+    // Gera os botões das alternativas
+    currentQuestion.options.forEach((option, index) => {
         const button = document.createElement('button');
         button.classList.add('option-btn');
-        
         button.innerHTML = `
             <div class="option-letter">${letters[index]}</div>
-            <div class="option-text">${option}</div>
+            <span class="option-text">${option}</span>
         `;
-        
-        // Adiciona evento de clique passando o índice da opção
-        button.addEventListener('click', () => selectAnswer(index, button));
+        button.addEventListener('click', () => checkAnswer(index, button));
         optionsContainer.appendChild(button);
     });
 }
 
-// Função para Validar a Resposta
-function selectAnswer(selectedIndex, selectedButton) {
-    const correctIndex = quizData[currentQuestion].answer;
+// =========================================
+// VERIFICAR RESPOSTA E EXIBIR EXPLICAÇÃO
+// =========================================
+function checkAnswer(selectedIndex, selectedButton) {
+    const currentQuestion = questions[currentQuestionIndex];
+    const buttons = document.querySelectorAll('.option-btn');
     
-    // Bloqueia todos os botões para não clicar duas vezes
-    const allButtons = optionsContainer.querySelectorAll('.option-btn');
-    allButtons.forEach(btn => {
-        btn.disabled = true;
-        btn.style.cursor = 'not-allowed';
-    });
+    // Bloqueia cliques adicionais
+    buttons.forEach(btn => btn.disabled = true);
 
-    // Verifica se acertou ou errou
-    if (selectedIndex === correctIndex) {
-        // Acertou: Adiciona classe de animação verde
+    if (selectedIndex === currentQuestion.answer) {
         selectedButton.classList.add('correct');
         score++;
         scoreDisplay.innerText = `Pontuação: ${score}`;
     } else {
-        // Errou: Adiciona classe de animação vermelha (tremida)
         selectedButton.classList.add('wrong');
+        // Destaca a resposta correta em verde
+        buttons[currentQuestion.answer].classList.add('correct');
         
-        // Destaca qual era a resposta certa em verde
-        allButtons[correctIndex].classList.add('correct');
+        // Exibe a explicação correspondente à pergunta errada
+        explanationText.innerText = currentQuestion.explanation;
+        explanationBox.classList.remove('hidden');
     }
 
-    // Mostra o botão para ir para a próxima pergunta
+    // Exibe o botão para a próxima questão
     btnNext.classList.remove('hidden');
 }
 
-// Função para ir para a próxima ou finalizar
-function nextQuestion() {
-    currentQuestion++;
-
-    if (currentQuestion < quizData.length) {
+// =========================================
+// AVANÇAR PERGUNTA
+// =========================================
+btnNext.addEventListener('click', () => {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
         loadQuestion();
     } else {
         showResults();
     }
-}
+});
 
-// Função para mostrar a tela final
+// =========================================
+// TELA FINAL
+// =========================================
 function showResults() {
     questionScreen.classList.remove('active');
     questionScreen.classList.add('hidden');
-    resultScreen.classList.add('active');
     resultScreen.classList.remove('hidden');
-
+    resultScreen.classList.add('active');
     finalScore.innerText = score;
-
-    // Mensagem baseada na pontuação
-    if (score === 10) {
-        resultMessage.innerText = "Incrível! Você é um verdadeiro mestre da História Asiática!";
-    } else if (score >= 7) {
-        resultMessage.innerText = "Muito bom! Seus conhecimentos estão bem afiados.";
-    } else if (score >= 4) {
-        resultMessage.innerText = "Foi um bom começo, mas ainda há muito o que explorar!";
-    } else {
-        resultMessage.innerText = "Parece que você precisa revisar os mapas e livros históricos.";
-    }
 }
 
-// Função para reiniciar o jogo
-function restartQuiz() {
+// =========================================
+// REINICIAR
+// =========================================
+btnRestart.addEventListener('click', () => {
+    currentQuestionIndex = 0;
+    score = 0;
     resultScreen.classList.remove('active');
     resultScreen.classList.add('hidden');
-    startQuiz();
-}
+    questionScreen.classList.remove('hidden');
+    questionScreen.classList.add('active');
+    loadQuestion();
+});

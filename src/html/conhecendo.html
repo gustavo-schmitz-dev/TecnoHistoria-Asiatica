@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conhecendo a asia</title>
-    <script src="script.js"></script>
-	<link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="stylesheet" href="../css/conhecendo.css">
 </head>
 <body>
-	<header>
+    <header>
     <h1>
         <a href="index.html">
             <img src="../../assets/icons/logonew.png" alt="Logo Tecno-História">
@@ -22,40 +21,33 @@
     </h1>
 
     <input type="checkbox" id="menu">
-
     <label for="menu" class="botao-menu">☰</label>
 
     <ul>
         <li>
             <a href="index.html">Home</a>
         </li>
-
         <li>
             <a href="conhecendo.html" class="atual">Conhecendo a Ásia</a>
         </li>
-
         <li>
             <a href="comercio.html">Comércio</a>
         </li>
-
         <li>
             <a href="tecnologias.html">Tecnologias</a>
         </li>
-
         <li>
             <a href="destaques.html">Destaques</a>
         </li>
-
         <li>
             <a href="quiz.html">Quiz</a>
         </li>
-
         <li>
             <a href="sobre.html">Sobre</a>
         </li>
     </ul>
 </header>
-     <main>
+    <main>
         <!-- SEÇÃO HERO -->
         <section class="hero-conhecendo">
             <div class="hero-icon"></div>
@@ -189,56 +181,56 @@
             <div class="timeline-container">
                 <div class="timeline-line"></div>
 
-                <div class="timeline-item left">
+                <div class="timeline-item left oculto">
                     <div class="timeline-content">
                         <h4>3000 a.C.</h4>
                         <p>Primeiras civilizações do Vale do Indo</p>
                     </div>
                 </div>
 
-                <div class="timeline-item right">
+                <div class="timeline-item right oculto">
                     <div class="timeline-content">
                         <h4>2000 a.C.</h4>
                         <p>Início da escrita e dinastias chinesas</p>
                     </div>
                 </div>
 
-                <div class="timeline-item left">
+                <div class="timeline-item left oculto">
                     <div class="timeline-content">
                         <h4>500 a.C.</h4>
                         <p>Era de Ouro da Filosofia (Buda, Confúcio)</p>
                     </div>
                 </div>
 
-                <div class="timeline-item right">
+                <div class="timeline-item right oculto">
                     <div class="timeline-content">
                         <h4>200 a.C.</h4>
                         <p>Abertura da Rota da Seda</p>
                     </div>
                 </div>
 
-                <div class="timeline-item left">
+                <div class="timeline-item left oculto">
                     <div class="timeline-content">
                         <h4>105 d.C.</h4>
                         <p>Invenção do papel na China</p>
                     </div>
                 </div>
 
-                <div class="timeline-item right">
+                <div class="timeline-item right oculto">
                     <div class="timeline-content">
                         <h4>700 d.C.</h4>
                         <p>Era de Ouro do Islã</p>
                     </div>
                 </div>
 
-                <div class="timeline-item left">
+                <div class="timeline-item left oculto">
                     <div class="timeline-content">
                         <h4>1000 d.C.</h4>
                         <p>Desenvolvimento da imprensa de tipos móveis</p>
                     </div>
                 </div>
 
-                <div class="timeline-item right">
+                <div class="timeline-item right oculto">
                     <div class="timeline-content">
                         <h4>1440 d.C.</h4>
                         <p>Impressão com tipos metálicos na Coreia</p>
@@ -247,7 +239,8 @@
             </div>
         </section>
     </main>
-       <!-- RODAPÉ PADRÃO -->
+
+    <!-- RODAPÉ PADRÃO -->
     <footer>
         <div class="footer-content">
             <div class="footer-left">
@@ -275,5 +268,23 @@
             </div>
         </div>
     </footer>
+
+    <!-- SCRIPT DE ANIMAÇÃO DA LINHA DO TEMPO -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver((entradas) => {
+                entradas.forEach((entrada) => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add('mostrar');
+                    }
+                });
+            }, { 
+                threshold: 0.2
+            });
+
+            const eventos = document.querySelectorAll('.oculto');
+            eventos.forEach((evento) => observer.observe(evento));
+        });
+    </script>
 </body>
 </html>
