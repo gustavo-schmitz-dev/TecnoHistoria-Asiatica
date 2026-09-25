@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecno-História Asiática - Quiz do Explorador</title>
-    <!-- Caminhos dos estilos CSS -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="stylesheet" href="../css/quiz.css">
 </head>
-
 <body>
-
-    <!-- CABEÇALHO -->
     <header>
     <h1>
         <a href="index.html">
@@ -24,84 +19,57 @@
             </div>
         </a>
     </h1>
-
     <input type="checkbox" id="menu">
-
     <label for="menu" class="botao-menu">☰</label>
-
     <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-
-        <li>
-            <a href="conhecendo.html">Conhecendo a Ásia</a>
-        </li>
-
-        <li>
-            <a href="comercio.html">Comércio</a>
-        </li>
-
-        <li>
-            <a href="tecnologias.html">Tecnologias</a>
-        </li>
-
-        <li>
-            <a href="destaques.html">Destaques</a>
-        </li>
-
-        <li>
-            <a href="quiz.html" class="atual">Quiz</a>
-        </li>
-
-        <li>
-            <a href="sobre.html">Sobre</a>
-        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="conhecendo.html">Conhecendo a Ásia</a></li>
+        <li><a href="comercio.html">Comércio</a></li>
+        <li><a href="tecnologias.html">Tecnologias</a></li>
+        <li><a href="destaques.html">Destaques</a></li>
+        <li><a href="quiz.html" class="atual">Quiz</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
     </ul>
 </header>
 
     <main class="main-quiz">
         <div class="quiz-content-wrapper">
-            <!-- TÍTULO DO QUIZ -->
             <div class="quiz-title-box">
                 <h1>✨ Quiz do Explorador ✨</h1>
                 <p>Teste seus conhecimentos sobre a Tecno-História Asiática</p>
             </div>
 
-            <!-- CONTAINER DO QUIZ (CARTÃO DOURADO) -->
             <section class="quiz-card" id="quiz-card">
-
                 <!-- TELA INICIAL -->
                 <div id="start-screen" class="quiz-screen active">
                     <h2>Preparado para a Jornada?</h2>
-                    <p>Responda 10 perguntas baseadas nas inovações, países e cultura da Ásia. Cuidado com as
-                        armadilhas!</p>
+                    <p>Responda 10 perguntas baseadas nas inovações, países e cultura da Ásia. Cuidado com as armadilhas!</p>
                     <button id="btn-start" class="btn-primary-quiz">Iniciar Aventura</button>
                 </div>
 
                 <!-- TELA DE PERGUNTAS -->
                 <div id="question-screen" class="quiz-screen hidden">
-
-                    <!-- Cabeçalho do Card: Contador e Pontuação -->
                     <div class="quiz-header-info">
                         <span id="question-counter" class="info-text">Pergunta 1 de 10</span>
                         <span id="score-display" class="info-text">Pontuação: 0</span>
                     </div>
 
-                    <!-- Barra de Progresso -->
                     <div class="progress-bar-container">
                         <div id="progress-fill" class="progress-fill"></div>
                     </div>
 
-                    <!-- Texto da Pergunta -->
                     <h3 id="question-text">Qual país inventou o papel?</h3>
 
-                    <!-- Alternativas -->
                     <div id="options-container" class="options-grid">
-                        <!-- Botões gerados via JavaScript -->
+                        <!-- Alternativas injetadas pelo JS -->
                     </div>
 
-                    <!-- Botão Próxima -->
+                    <!-- CAIXA DE EXPLICAÇÃO -->
+                    <div id="explanation-box" class="explanation-box hidden">
+                        <h4>Você Sabia?</h4>
+                        <p id="explanation-text"></p>
+                    </div>
+
                     <div class="next-btn-container">
                         <button id="btn-next" class="btn-primary-quiz hidden">Próxima</button>
                     </div>
@@ -111,23 +79,17 @@
                 <div id="result-screen" class="quiz-screen hidden">
                     <h2 id="result-title">Fim da Expedição!</h2>
                     <p id="result-message">Você completou o Quiz do Explorador.</p>
-
                     <div class="score-circle">
                         <span id="final-score">0</span>
                         <span>/ 10</span>
                     </div>
-
                     <button id="btn-restart" class="btn-primary-quiz">Tentar Novamente</button>
                 </div>
-
             </section>
         </div>
-
-        <!-- Faixa branca inferior igual a imagem -->
         <div class="white-band"></div>
     </main>
 
-    <!-- RODAPÉ -->
      <footer>
         <div class="footer-content">
             <div class="footer-left">
@@ -140,7 +102,7 @@
             <div class="footer-social">
                 <span>Siga-nos:</span>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/tecnohistoria_asiatica?stkn=Y3NwOWZsYmV5bW9r" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a href="https://www.instagram.com/tecnohistoria_asiatica" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -156,8 +118,6 @@
         </div>
     </footer>
 
-    <!-- Script JavaScript do Quiz -->
     <script src="../js/quiz.js"></script>
 </body>
-
 </html>

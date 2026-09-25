@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap');
 
-html {
-    font-size: clamp(1rem, 0.8vw + 1rem, 1.2rem);
-    font-family: "Epilogue", sans-serif;
-    background-color: #F8FAFC; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Epilogue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #F8F9FA;
 }
 
 /* =========================================
@@ -80,28 +86,21 @@ html {
 /* =========================================
    LISTA DE CARTÕES (CARDS)
 ========================================= */
-/*refazer essa bomba inteira*/
 .nacoes-lista {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 15rem;
+    gap: 4rem;
 }
 
 .nacoes-lista li {
-    padding: 2rem 1rem;
     display: flex;
-    flex-direction: column;
-    text-align: left;
-    background-color: #FFFFFF;
+    flex-direction: column; 
+    background: #FFFFFF;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.china{
-    background: url(../../assets/icons/china.jpg) no-repeat;
 }
 
 .nacoes-lista li:hover {

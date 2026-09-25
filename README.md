@@ -379,3 +379,103 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 	* * •	Davi Lucas: Finalizou o CSS, enviou os arquivos pro GitHub e Criou o documento individual;
 	* * •	Kauã Dias: Organização do GitHub, realização do documento individual e organização das atas de reunião;
 	* * •	Heitor Lisboa: Finalizou o HTML, iniciou o CSS e Criou o documento individual.
+   * ---
+## 29 de Agosto de 2026
+**ata 11**
+
+* **Participantes presentes:**
+  * *Kauã Dias*
+  * *Gustavo schmitz*
+
+ 
+  * * **Participantes ausentes:**
+  *  *Bryan Henrique*
+  * *David dos Santos*
+  * *Davi Lucas*
+  * **Heitor Lisboa*
+
+
+### **Anotações**
+
+**Finalização do CSS, Organização do Github e Realização do documento individual de realizações no segundo trimestre**
+* **Tema:** Comércio e circulação de tecnologia
+* * **Cargos:**
+  * **Líder:** *Gustavo*
+  * **Secretário:** *Kauã*
+  * **Professores do Projeto:** *Ivan* e *Mehran*
+  * **Colaborador do projeto:** *Kennedy Araujo*
+
+* **Responsabilidades:**
+	* * •	Gustavo schmitz: Estudou os comandos, fez a branch e ajustes no CSS;
+	* * •	Kauã Dias: Adiantou HTML e CSS dos outros integrantes;
+* ---
+## 16 de setembro de 2026
+**ata 12**
+
+* **Participantes presentes:**
+  * *Kauã Dias*
+  * *Gustavo schmitz*
+  * *Davi Lucas*
+
+
+ 
+  * * **Participantes ausentes:**
+  *  *Bryan Henrique*
+  * *David dos Santos*
+  * **Heitor Lisboa*
+
+
+### **Anotações**
+
+**Organização do site, aplicação de animações, adicionando imagens no site e organização do header e footer**
+* **Tema:** Comércio e circulação de tecnologia
+* * **Cargos:**
+  * **Líder:** *Gustavo*
+  * **Secretário:** *Kauã*
+  * **Professores do Projeto:** *Ivan* e *Mehran*
+  * **Colaborador do projeto:** *Kennedy Araujo*
+
+* **Responsabilidades:**
+	* * •	Gustavo schmitz: Organizou o header;
+	* * •	Kauã Dias: Finalizou o CSS e HTML de outros participantes ausentes, aplicou animações ás páginas do site e organizou a página sobre;
+    * * •	Davi Lucas: Adicionou as imagens dos integrantes no site e verificou o conteúdo histórico do site;
+ ---
+## 21 de setembro de 2026
+**ata 12**
+
+* **Participantes presentes:**
+  * *Kauã Dias*
+  * *Gustavo schmitz*
+  * *Davi Lucas*
+ *  *Bryan Henrique*
+  * *David dos Santos*
+  * **Heitor Lisboa*
+
+ 
+  * * **Participantes ausentes:**
+
+
+
+### **Anotações**
+
+**Mudança das cores, mudança nos emojis e reformulação das imagens**
+* **Tema:** Comércio e circulação de tecnologia
+* * **Cargos:**
+  * **Líder:** *Gustavo*
+  * **Secretário:** *Kauã*
+  * **Professores do Projeto:** *Ivan* e *Mehran*
+  * **Colaborador do projeto:** *Kennedy Araujo*
+
+* **Responsabilidades:**
+	* * •	Gustavo schmitz: Organizou o header;
+	* * •	Kauã Dias: Finalizou o CSS e HTML de outros participantes ausentes, aplicou animações ás páginas do site e organizou a página sobre;
+    * * •	Davi Lucas: Adicionou as imagens dos integrantes no site e verificou o conteúdo histórico do site;
+  * * •	Bryan: Adicionou as imagens dos integrantes no site e verificou o conteúdo histórico do site;
+    * * •	David: Adicionou as imagens dos integrantes no site e verificou o conteúdo histórico do site;
+      *     * * •	heitor: Adicionou as imagens dos integrantes no site e verificou o conteúdo histórico do site;
+
+
+
+
+
+

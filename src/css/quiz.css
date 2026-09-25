@@ -1,6 +1,3 @@
-/* =========================================
-   IMPORTAÇÃO E RESET
-========================================= */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap');
 
 * {
@@ -11,12 +8,16 @@
 
 body {
     font-family: 'Epilogue', sans-serif;
-    background-color: #111827; /* Fundo azul escuro idêntico a imagem */
+    background-color: #111827; 
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
-/* =========================================
-   ESTRUTURA PRINCIPAL
-========================================= */
+body.fade-out {
+    opacity: 0 !important;
+    transition: opacity 0.4s ease-in-out !important;
+}
+
 .main-quiz {
     display: flex;
     flex-direction: column;
@@ -37,9 +38,6 @@ body {
     width: 100%;
 }
 
-/* =========================================
-   CAIXA DO TÍTULO
-========================================= */
 .quiz-title-box {
     background-color: #1D2638;
     border-radius: 12px;
@@ -54,6 +52,7 @@ body {
     font-weight: 800;
     margin-bottom: 0.5rem;
 }
+
 header img{
     width: 4vw;
 }
@@ -63,24 +62,15 @@ header img{
     font-size: 1.1rem;
 }
 
-/* =========================================
-   CARTÃO DO QUIZ (ESTILO PAPIRO ESCURO)
-========================================= */
 .quiz-card {
-    /* Textura de papiro antigo e escuro para destacar letras brancas */
     background-image: 
         radial-gradient(circle at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.6) 100%),
         repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(255, 255, 255, 0.02) 11px, transparent 12px),
         repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(255, 255, 255, 0.03) 16px, transparent 17px),
         linear-gradient(135deg, #4A2E15 0%, #2A1708 100%);
-    
     border: 2px solid #8B5A2B;
-    border-radius: 4px 12px 6px 15px; /* Bordas levemente irregulares */
-    
-    box-shadow: 
-        0 15px 35px rgba(0,0,0,0.5), 
-        inset 0 0 25px rgba(0, 0, 0, 0.5); /* Sombra interna para profundidade */
-    
+    border-radius: 4px 12px 6px 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5), inset 0 0 25px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 750px;
     padding: 2.5rem 3rem;
@@ -101,9 +91,6 @@ header img{
     display: none !important;
 }
 
-/* =========================================
-   CABEÇALHO E BARRA DE PROGRESSO
-========================================= */
 .quiz-header-info {
     display: flex;
     justify-content: space-between;
@@ -111,7 +98,7 @@ header img{
 }
 
 .info-text {
-    color: #F8FAFC; /* Branco */
+    color: #F8FAFC;
     font-weight: 800;
     font-size: 1rem;
 }
@@ -127,24 +114,20 @@ header img{
 
 .progress-fill {
     height: 100%;
-    background-color: #3B82F6; /* Azul */
+    background-color: #3B82F6;
     width: 10%;
     border-radius: 10px;
     transition: width 0.4s ease;
 }
 
-/* =========================================
-   PERGUNTA E ALTERNATIVAS
-========================================= */
 #start-screen h2,
-#start-screen p {
-    color: #FFFFFF; /* Letras Brancas */
+#start-screen p,
+#question-text {
+    color: #FFFFFF;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 #question-text {
-    color: #FFFFFF; /* Letras Brancas */
     font-size: 1.8rem;
     font-weight: 800;
     margin-bottom: 2rem;
@@ -159,7 +142,7 @@ header img{
 }
 
 .option-btn {
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     padding: 1.2rem;
@@ -173,11 +156,15 @@ header img{
 .option-btn:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    border-color: #F59E0B; /* Borda dourada ao passar o mouse */
+    border-color: #F59E0B;
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Bolinha da Letra (A, B, C, D) */
+.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
 .option-letter {
     background-color: #FBBF24;
     color: #2A1708;
@@ -193,17 +180,13 @@ header img{
 }
 
 .option-text {
-    color: #FFFFFF; /* Letras Brancas */
+    color: #FFFFFF;
     font-size: 1.1rem;
     font-weight: 600;
 }
 
-/* =========================================
-   ANIMAÇÕES DE ACERTO E ERRO
-========================================= */
-/* Quando acerta */
 .option-btn.correct {
-    background-color: rgba(16, 185, 129, 0.25); /* Verde translúcido */
+    background-color: rgba(16, 185, 129, 0.25);
     border-color: #10B981; 
     animation: popIn 0.3s ease;
 }
@@ -213,9 +196,8 @@ header img{
     color: white;
 }
 
-/* Quando erra */
 .option-btn.wrong {
-    background-color: rgba(239, 68, 68, 0.25); /* Vermelho translúcido */
+    background-color: rgba(239, 68, 68, 0.25);
     border-color: #EF4444; 
     animation: shake 0.4s ease;
 }
@@ -225,7 +207,6 @@ header img{
     color: white;
 }
 
-/* Animação Tremer (Erro) */
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
     20% { transform: translateX(-8px); }
@@ -234,7 +215,6 @@ header img{
     80% { transform: translateX(4px); }
 }
 
-/* Animação Pular (Acerto) */
 @keyframes popIn {
     0% { transform: scale(1); }
     50% { transform: scale(1.03); }
@@ -246,9 +226,6 @@ header img{
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* =========================================
-   BOTÕES DE AÇÃO
-========================================= */
 .next-btn-container, #start-screen {
     display: flex;
     justify-content: center;
@@ -257,7 +234,7 @@ header img{
 }
 
 .btn-primary-quiz {
-    background-color: #FBBF24; /* Amarelo dourado */
+    background-color: #FBBF24;
     color: #2A1708;
     border: none;
     border-radius: 8px;
@@ -276,26 +253,25 @@ header img{
     box-shadow: 0 2px 0 #D97706; 
 }
 
-/* Tela de Resultados */
 #result-screen {
     text-align: center;
     align-items: center;
 }
 
 #result-screen h2 {
-    color: #FFFFFF; /* Letras Brancas */
+    color: #FFFFFF;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 #result-screen p {
-    color: #E2E8F0; /* Letras Brancas */
+    color: #E2E8F0;
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
 
 .score-circle {
-    background-color: rgba(0, 0, 0, 0.3); /* Fundo translúcido escuro */
+    background-color: rgba(0, 0, 0, 0.3);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -303,9 +279,9 @@ header img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 5px solid #FBBF24; /* Borda Dourada */
+    border: 5px solid #FBBF24;
     margin-bottom: 2rem;
-    color: #FFFFFF; /* Pontuação Branca */
+    color: #FFFFFF;
     font-weight: 800;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
@@ -315,25 +291,32 @@ header img{
     line-height: 1;
 }
 
-/* Responsividade */
+.explanation-box {
+    background-color: rgba(239, 68, 68, 0.15);
+    border-left: 4px solid #EF4444;
+    border-radius: 0 8px 8px 0;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.explanation-box h4 {
+    color: #EF4444;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.explanation-box p {
+    color: #F8FAFC;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
 @media (max-width: 768px) {
     .quiz-card { padding: 2rem 1.5rem; }
     .quiz-title-box h1 { font-size: 1.8rem; }
     #question-text { font-size: 1.4rem; }
-}
-/* Efeito de entrada (a página surge suavemente ao carregar) */
-body {
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Classe ativada pelo JS quando você clica em um link para sair */
-body.fade-out {
-    opacity: 0 !important;
-    transition: opacity 0.4s ease-in-out !important;
 }

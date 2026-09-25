@@ -24,39 +24,19 @@
     </h1>
 
     <input type="checkbox" id="menu">
-
     <label for="menu" class="botao-menu">☰</label>
 
     <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-
-        <li>
-            <a href="conhecendo.html">Conhecendo a Ásia</a>
-        </li>
-
-        <li>
-            <a href="comercio.html" class="atual">Comércio</a>
-        </li>
-
-        <li>
-            <a href="tecnologias.html">Tecnologias</a>
-        </li>
-
-        <li>
-            <a href="destaques.html">Destaques</a>
-        </li>
-
-        <li>
-            <a href="quiz.html">Quiz</a>
-        </li>
-
-        <li>
-            <a href="sobre.html">Sobre</a>
-        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="conhecendo.html">Conhecendo a Ásia</a></li>
+        <li><a href="comercio.html" class="atual">Comércio</a></li>
+        <li><a href="tecnologias.html">Tecnologias</a></li>
+        <li><a href="destaques.html">Destaques</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
     </ul>
 </header>
+    
     <main>
         <!-- SEÇÃO HERO (BANNER ESCURO) -->
         <section class="hero-comercio">
@@ -103,15 +83,13 @@
             <p>Tesouros que cruzaram continentes e moveram economias</p>
 
             <div class="grid-produtos">
-                <!-- Produto 1 -->
                 <div class="card-produto">
                     <div class="icon">🧵</div>
                     <h3 class="cor-seda">Seda</h3>
-                    <p class="desc">O item mais cobiçado, principalmente pela europa. Era ideal para ser levado na Rota da Seda, já que era leve e de alto valor, podendo ser levado em abundância nas caravanas.</p>
+                    <p class="desc">O item mais cobiçado, principalmente pela europa. Era ideal para ser levado na Rota da Seda, já que era leve e de alto valor.</p>
                     <p class="origem"><strong>Origem:</strong> China</p>
                     <p class="impacto"><strong> Impacto:</strong> Moeda de troca</p>
                 </div>
-                <!-- Produto 2 -->
                 <div class="card-produto">
                     <div class="icon">🍵</div>
                     <h3 class="cor-cha">Chá</h3>
@@ -119,7 +97,6 @@
                     <p class="origem"><strong> Origem:</strong> China</p>
                     <p class="impacto"><strong> Impacto:</strong> Comércio global</p>
                 </div>
-                <!-- Produto 3 -->
                 <div class="card-produto">
                     <div class="icon">🌶️</div>
                     <h3 class="cor-especiaria">Especiarias</h3>
@@ -127,15 +104,13 @@
                     <p class="origem"><strong> Origem:</strong> Índia, Indonésia</p>
                     <p class="impacto"><strong> Impacto:</strong> Explorações</p>
                 </div>
-                <!-- Produto 4 -->
                 <div class="card-produto">
                     <div class="icon">🏺</div>
                     <h3 class="cor-porcelana">Porcelana</h3>
-                    <p class="desc">A cerâmica era muito apreciada, chegando a superar a seda. o século XVII e XVIII foram a era de ouro da exportção de cerâmica chinesa.</p>
+                    <p class="desc">A cerâmica era muito apreciada, chegando a superar a seda nos séculos XVII e XVIII.</p>
                     <p class="origem"><strong> Origem:</strong> China</p>
                     <p class="impacto"><strong> Impacto:</strong> Arte e utilidade</p>
                 </div>
-                <!-- Produto 5 -->
                 <div class="card-produto">
                     <div class="icon">💎</div>
                     <h3 class="cor-pedras">Pedras Preciosas</h3>
@@ -143,7 +118,6 @@
                     <p class="origem"><strong> Origem:</strong> Índia, Sri Lanka</p>
                     <p class="impacto"><strong> Impacto:</strong> Riqueza</p>
                 </div>
-                <!-- Produto 6 -->
                 <div class="card-produto">
                     <div class="icon">📜</div>
                     <h3 class="cor-papel">Papel</h3>
@@ -160,8 +134,7 @@
             <p>Porcentagem de produtos comercializados na Rota da Seda</p>
             
             <div class="card-grafico">
-                <!-- Aqui entra a imagem do gráfico conforme você solicitou -->
-                <img src="../../assets/icons/grafico.png" alt="Gráfico de distribuição comercial: Especiarias 35%, Seda 30%, Chá 20%, Porcelana 10%, Outros 5%">
+                <canvas id="graficoComercio"></canvas>
             </div>
         </section>
 
@@ -188,7 +161,7 @@
         </section>
     </main>
 
-    <!-- RODAPÉ PADRÃO -->
+    <!-- RODAPÉ -->
     <footer>
         <div class="footer-content">
             <div class="footer-left">
@@ -201,7 +174,7 @@
             <div class="footer-social">
                 <span>Siga-nos:</span>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/tecnohistoria_asiatica?stkn=Y3NwOWZsYmV5bW9r" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a href="https://www.instagram.com/tecnohistoria_asiatica" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -216,3 +189,56 @@
             </div>
         </div>
     </footer>
+
+    <!-- SCRIPT DO GRÁFICO INTERATIVO -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('graficoComercio').getContext('2d');
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Seda', 'Especiarias', 'Chá', 'Porcelana', 'Outros'],
+                datasets: [{
+                    label: 'Porcentagem',
+                    data: [30, 25, 20, 15, 10], // Valores atualizados
+                    backgroundColor: [
+                        '#0A1C33', // Azul Escuro (Seda)
+                        '#C49B3A', // Ouro Velho (Especiarias)
+                        '#173E75', // Azul Marinho (Chá)
+                        '#2B6CB0', // Azul Vivo (Porcelana)
+                        '#DFE7F2'  // Azul Claro (Outros)
+                    ],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 3,
+                    hoverOffset: 15 // Efeito de pular ao tocar!
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: { family: "'Epilogue', sans-serif", size: 15, weight: '600' },
+                            color: '#4B5563',
+                            padding: 20
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: '#0A1C33',
+                        titleFont: { family: "'Epilogue', sans-serif", size: 14 },
+                        bodyFont: { family: "'Epilogue', sans-serif", size: 14, weight: 'bold' },
+                        padding: 12,
+                        cornerRadius: 8,
+                        callbacks: {
+                            label: function(context) {
+                                return ' ' + context.label + ': ' + context.raw + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
