@@ -38,10 +38,10 @@ header h1 img {
     border-radius: 50%;
 }
 header h1{
-    color:#2B6CB0;
+    color:#2563EB;
 }
 header span {
-    color: #C49B3A;
+    color: black;
     font-size: 0.8rem;
     display: block;
 }

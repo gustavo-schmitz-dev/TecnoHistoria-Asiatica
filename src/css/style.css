@@ -45,6 +45,7 @@ a {
     font-weight: 300; /* Texto mais fino */
     line-height: 1.1;
     margin-bottom: 1.5rem;
+    background: linear-gradient(45deg #2B6CB0 #173E75);
 }
 
 .hero-home h1 .highlight {
