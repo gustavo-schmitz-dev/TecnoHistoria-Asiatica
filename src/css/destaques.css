@@ -83,62 +83,33 @@ body {
     color: #4B5563;
 }
 
-/* =========================================
-   LISTA DE CARTÕES (CARDS)
-========================================= */
-.nacoes-lista {
-    list-style: none;
+.card{
     display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-.nacoes-lista li {
-    display: flex;
-    flex-direction: column; 
-    background: #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.nacoes-lista li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-}
-
-.nacao-imagem {
-    flex: 1;
-}
-
-.nacao-imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    min-height: 250px;
-}
-
-.nacao-texto {
-    flex: 1.2;
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-.nacao-texto h4 {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #92400E; 
-    margin-bottom: 1rem;
+.card div{
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 4vw;
+    height: auto;
+    text-align: center;
+    margin: 20vw 6vw;
+    opacity: 95%;
 }
 
-.nacao-texto p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #374151;
-    text-align: justify;
+.card h4{
+    color: rgb(212, 57, 0);
+    font-size: 3.5rem;
+    font-weight: 00;
+}
+
+.china{
+    background-image: url(../../assets/icons/china.jpg);
+    background-position: center 70%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 /* =========================================
@@ -148,19 +119,16 @@ body {
     .banner div img{
     width: 9vw;
 }
-    .nacoes-lista li {
-        flex-direction: row;
-        min-height: 400px; 
-    }
-    .nacoes-lista li:nth-child(even) {
-        flex-direction: row-reverse;
-    }
 
-    .nacao-texto {
-        padding: 3rem 4rem;
-    }
+.china{
+    height: 1000px;
 }
-/* Efeito de entrada (a página surge suavemente ao carregar) */
+
+.card div{
+    width: 40%;
+    height: 60%;
+}
+
 body {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
@@ -175,4 +143,5 @@ body {
 body.fade-out {
     opacity: 0 !important;
     transition: opacity 0.4s ease-in-out !important;
+}
 }
