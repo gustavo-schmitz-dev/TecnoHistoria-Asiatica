@@ -43,23 +43,16 @@ body {
 /* =========================================
    SEÇÃO NAÇÕES E IMPÉRIOS
 ========================================= */
-.nacoes {
-    padding: 5rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    color: #1D2638;
-}
-
 .nacoes-intro {
     text-align: center;
-    margin-bottom: 4rem;
+    padding: 4rem 1rem;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .nacoes-intro h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #1D2638;
     margin-bottom: 1.5rem;
@@ -70,10 +63,10 @@ body {
 .nacoes-intro h3::after {
     content: '';
     display: block;
-    width: 60%;
+    width: 100%;
     height: 4px;
     background-color: #F59E0B;
-    margin: 0.5rem auto 0;
+    margin: 0.1rem auto 0;
     border-radius: 2px;
 }
 
@@ -83,62 +76,53 @@ body {
     color: #4B5563;
 }
 
-/* =========================================
-   LISTA DE CARTÕES (CARDS)
-========================================= */
-.nacoes-lista {
-    list-style: none;
+.card{
     display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-.nacoes-lista li {
-    display: flex;
-    flex-direction: column; 
-    background: #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.nacoes-lista li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-}
-
-.nacao-imagem {
-    flex: 1;
-}
-
-.nacao-imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    min-height: 250px;
-}
-
-.nacao-texto {
-    flex: 1.2;
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.nacao-texto h4 {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #92400E; 
-    margin-bottom: 1rem;
+.card div{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    text-align: center;
+    
+    padding: 2rem 1.2rem;   
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.nacao-texto p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #374151;
-    text-align: justify;
+.card h4{
+    color: rgb(212, 57, 0);
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.china, .mongol, .persa, .otomano{
+  padding: 10vw 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.china{
+    background-image: url(../../assets/icons/china.jpg);
+    background-position: center 40%;
+}
+
+.mongol{
+  background-image: url(../../assets/icons/mongolia.jpg);
+  background-position: center 50%;
+}
+
+.persa{
+  background-image: url(../../assets/icons/persa.jpg);
+  background-position: center 30%;
+}
+
+.otomano{
+  background-image: url(../../assets/icons/otomano.jpg);
+  background-position: center 35%;
 }
 
 /* =========================================
@@ -148,19 +132,40 @@ body {
     .banner div img{
     width: 9vw;
 }
-    .nacoes-lista li {
-        flex-direction: row;
-        min-height: 400px; 
-    }
-    .nacoes-lista li:nth-child(even) {
-        flex-direction: row-reverse;
-    }
 
-    .nacao-texto {
-        padding: 3rem 4rem;
-    }
+.nacoes-intro{
+  padding: 4rem;
 }
-/* Efeito de entrada (a página surge suavemente ao carregar) */
+
+.nacoes-intro h3{
+  font-size: 2.5rem;
+}
+
+.card h4 {
+        font-size: 3.5rem; /* Volta a ser grandão só no PC */
+}
+
+.card div{
+    width: 40%;
+    height: 60%;
+    padding: 3rem 2rem; 
+    width: 85%;
+    max-width: 800px;
+    margin: 0;
+}
+
+.china, .mongol, .persa, .otomano{
+  background-size: cover;
+  background-position: center 70%;
+  background-repeat: no-repeat;
+    
+  padding: 6rem 2rem; 
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
@@ -175,4 +180,5 @@ body {
 body.fade-out {
     opacity: 0 !important;
     transition: opacity 0.4s ease-in-out !important;
+}
 }
