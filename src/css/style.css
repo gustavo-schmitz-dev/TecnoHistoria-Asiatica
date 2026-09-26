@@ -21,7 +21,7 @@ a {
 
 /* === HERO SEÇÃO === */
 .hero-home {
-    background-color: #0A1C33; /* Fundo azul bem escuro */
+    background-color: #0A1C33;
     color: #FFFFFF;
     text-align: center;
     padding: 7rem 2rem;
@@ -32,7 +32,7 @@ a {
 }
 
 .tagline {
-    color: #C49B3A; /* Amarelo/Laranja */
+    color: #C49B3A; 
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -42,14 +42,15 @@ a {
 
 .hero-home h1 {
     font-size: 4.5rem;
-    font-weight: 300; /* Texto mais fino */
+    font-weight: 300;
     line-height: 1.1;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .hero-home h1 .highlight {
-    color: #2B6CB0; /* Azul destaque */
-    font-weight: 800; /* Texto mais grosso */
+    color: #2B6CB0;
+    font-weight: 800;
     display: block;
 }
 
@@ -64,9 +65,11 @@ header img{
 }
 
 /* Botões do Hero */
+
 .botoes-hero {
     display: flex;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .btn {
@@ -189,10 +192,10 @@ header img{
 }
 
 /* === CALL TO ACTION (CTA) === */
+
 .cta-wrapper {
     background-color: #FFFFFF;
-    padding-bottom: 4rem; /* Cria a faixa branca no final da página idêntica a imagem */
-}
+    padding-bottom: 0;
 
 .cta-secao {
     background-color: #2B6CB0; /* Azul vibrante */
