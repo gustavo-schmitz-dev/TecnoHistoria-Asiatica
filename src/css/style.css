@@ -12,6 +12,18 @@ body {
     color: #333;
     line-height: 1.6;
     background-color: #FFFFFF;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body.fade-out {
+    opacity: 0 !important;
+    transition: opacity 0.4s ease-in-out !important;
 }
 
 a {
@@ -24,7 +36,7 @@ a {
     background-color: #0A1C33;
     color: #FFFFFF;
     text-align: center;
-    padding: 7rem 2rem;
+    padding: 5rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +53,7 @@ a {
 }
 
 .hero-home h1 {
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     font-weight: 300;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -60,44 +72,38 @@ a {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #E5E7EB;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
     font-weight: 400;
-}
-header img{
-    width: 4vw;
 }
 
 /* Botões do Hero */
-
 .botoes-hero {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .btn {
-    padding: 0.9rem 2rem;
+    padding: 0.9rem 1.8rem;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .btn-primary {
     background-color: #2B6CB0;
     color: #FFFFFF;
     border: 2px solid #2B6CB0;
-}
-
-.btn-primary:hover {
-    background-color: #2B6CB0;
-    border-color: #2B6CB0;
 }
 
 .btn-outline {
@@ -114,21 +120,21 @@ header img{
 /* === EXPLORE A ÁSIA === */
 .explore-secao {
     background-color: #FFFFFF;
-    padding: 6rem 5%;
+    padding: 4rem 5%;
     text-align: center;
 }
 
 .explore-secao h2 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: #0A1C33;
     font-weight: 800;
     margin-bottom: 1rem;
 }
 
 .explore-desc {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: #374151;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     line-height: 1.5;
 }
 
@@ -143,7 +149,7 @@ header img{
 .card-explore {
     border: 2px solid #DFE7F2;
     border-radius: 16px;
-    padding: 2.5rem 2rem;
+    padding: 2rem 1.5rem;
     text-align: left;
     background-color: #FFFFFF;
     display: flex;
@@ -167,29 +173,29 @@ header img{
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
 .icon-box img {
-    width: 3.5rem ;
-    
+    width: 3.5rem;
 }
+
 .icon-box .engrenagem {
-    width: 5rem ;
-    
+    width: 4rem;
 }
 
 .card-explore h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 800;
     color: #000000;
     margin-bottom: 0.8rem;
 }
 
 .card-explore p {
-    font-size: 0.85rem;
-    color: #000000;
-    font-weight: 700;
+    font-size: 0.9rem;
+    color: #333333;
+    font-weight: 600;
     margin-bottom: 2rem;
     line-height: 1.5;
-    flex-grow: 1; /* Empurra o link para baixo */
+    flex-grow: 1;
 }
 
 .link-explorar {
@@ -204,33 +210,32 @@ header img{
 }
 
 /* === CALL TO ACTION (CTA) === */
-
 .cta-wrapper {
     background-color: #FFFFFF;
-    padding-bottom: 0;
+    width: 100%;
+}
 
 .cta-secao {
-    background-color: #2B6CB0; /* Azul vibrante */
+    background-color: #2B6CB0;
     color: #FFFFFF;
-    padding: 5rem 5%;
+    padding: 4rem 1.5rem;
     text-align: center;
 }
 
 .cta-secao h2 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 800;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
-/* === RESPONSIVIDADE === */
 
 .cta-secao p {
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
     font-weight: 600;
 }
 
 .btn-quiz {
-    background-color: #C49B3A; /* Laranja vibrante */
+    background-color: #C49B3A;
     color: #FFFFFF;
     padding: 1rem 2.5rem;
     border-radius: 8px;
@@ -240,14 +245,15 @@ header img{
     transition: background-color 0.3s ease;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
 }
 
 .btn-quiz:hover {
-    background-color: #D97706; /* Laranja mais escuro no hover */
+    background-color: #D97706;
 }
 
-/* ===  RESPONSIVIDADE === */
+/* === RESPONSIVIDADE === */
 @media (max-width: 992px) {
     .grid-explore {
         grid-template-columns: repeat(2, 1fr);
@@ -255,14 +261,22 @@ header img{
 }
 
 @media (max-width: 768px) {
+    .hero-home {
+        padding: 4rem 1rem;
+    }
+
     .hero-home h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .botoes-hero {
         flex-direction: column;
         width: 100%;
-        max-width: 320px;
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 100%;
     }
     
     .grid-explore {
@@ -270,22 +284,10 @@ header img{
     }
     
     .explore-secao h2, .cta-secao h2 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
-}
-/* Efeito de entrada (a página surge suavemente ao carregar) */
-body {
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in-out forwards;
-}
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Classe ativada pelo JS quando você clica em um link para sair */
-body.fade-out {
-    opacity: 0 !important;
-    transition: opacity 0.4s ease-in-out !important;
+    .explore-secao {
+        padding: 3rem 1.5rem;
+    }
 }
