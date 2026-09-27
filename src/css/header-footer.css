@@ -54,11 +54,9 @@ header ul {
     list-style: none;
     padding: 0;
 }
-
 header li {
     margin: 4vw 0;
 }
-
 header a {
     text-decoration: none;
     color: #333333;
@@ -93,7 +91,7 @@ header a:hover {
 footer {
     text-align: center;
     padding: 8vw 5vw;
-    background-color: #0F172A;
+    background-color: #0A1C33;
     color: white;
 }
 
@@ -243,7 +241,6 @@ footer div p {
     .footer-social {
         gap: 0.5vw;
     }
-
     .social-icons a {
         width: 3vw;
         height: 3vw;
