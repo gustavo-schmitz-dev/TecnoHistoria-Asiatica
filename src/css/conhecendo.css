@@ -46,6 +46,12 @@ header img{
     margin-bottom: 1rem;
 }
 
+.hero-conhecendo img {
+    width: 8rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 .hero-conhecendo p {
     font-size: 1.1rem;
     color: #D1D5DB;

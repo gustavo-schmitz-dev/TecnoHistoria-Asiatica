@@ -98,6 +98,12 @@ nav ul li a:hover, nav ul li a.atual {
     margin: 0 auto;
 }
 
+.hero-comercio img {
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 /* === ROTA DA SEDA === */
 .rota-seda-secao {
     background-image: url('../../assets/icons/146.png');
