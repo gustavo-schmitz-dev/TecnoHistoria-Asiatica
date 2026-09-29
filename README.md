@@ -1,6 +1,9 @@
 # TechnoHistoria-Asiatica
 THA (TecnoHistória Asiática) é um site simples sobre a história asiática em um curto período
 
+## Link do vercel: 
+- https://tecnohistoria-asiatica.vercel.app/
+
 ## Atas:
 
 # Atas de Reunião - Projeto Comércio e Circulação de Tecnologia
