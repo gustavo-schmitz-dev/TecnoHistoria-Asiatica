@@ -64,7 +64,7 @@ a {
     color: #2B6CB0;
     font-weight: 800;
     display: block;
-    background-image: linear-gradient(45deg, #2B6CB0, #0c4085, #01122b);
+    background-image: linear-gradient(45deg, #317ed1, #6414a5);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -99,11 +99,14 @@ a {
     justify-content: center;
     text-align: center;
 }
-
 .btn-primary {
     background-color: #2B6CB0;
     color: #FFFFFF;
     border: 2px solid #2B6CB0;
+}
+
+.btn-primary:hover{
+    background-color: #175597;
 }
 
 .btn-outline {
