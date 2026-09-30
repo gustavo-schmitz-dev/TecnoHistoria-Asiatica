@@ -35,8 +35,9 @@ a {
 .hero-home {
     background-color: #0A1C33;
     color: #FFFFFF;
+    background: linear-gradient(90deg, #0A1C33, #052f66);
     text-align: center;
-    padding: 5rem 1.5rem;
+    padding: 15rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +46,7 @@ a {
 
 .tagline {
     color: #C49B3A; 
-    font-size: 0.85rem;
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 1.5px;
     margin-bottom: 1.5rem;
@@ -53,7 +54,7 @@ a {
 }
 
 .hero-home h1 {
-    font-size: 4.5rem;
+    font-size: 5.3rem;
     font-weight: 300;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -72,7 +73,7 @@ a {
 }
 
 .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #E5E7EB;
     margin-bottom: 2.5rem;
     font-weight: 400;
@@ -88,7 +89,7 @@ a {
 }
 
 .btn {
-    padding: 0.9rem 1.8rem;
+    padding: 1.4rem 2.3rem;
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.95rem;
