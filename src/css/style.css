@@ -37,7 +37,7 @@ a {
     color: #FFFFFF;
     background: linear-gradient(90deg, #0A1C33, #052f66);
     text-align: center;
-    padding: 15rem 1.5rem;
+    padding: 6rem 1.5rem 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +89,7 @@ a {
 }
 
 .btn {
-    padding: 1.4rem 2.3rem;
+    padding: 1.2rem 3rem;
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.95rem;

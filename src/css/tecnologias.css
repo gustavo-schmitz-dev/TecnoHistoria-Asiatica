@@ -12,8 +12,8 @@ html {
 
 /* BANNER */
 .banner {
-  background-color: #0A1C33; /* Azul Escuro / Profundo */
-  color: #DFE7F2; /* Azul Claro / Gelo */
+  background-color: #0A1C33; 
+  color: #DFE7F2; 
   text-align: center;
   padding: 3rem 1.5rem;
 }
@@ -34,7 +34,7 @@ header img{
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
-  color: #DFE7F2; /* Azul Claro / Gelo */
+  color: #DFE7F2; 
 }
 
 /* === INVENÇÕES === */
@@ -50,7 +50,7 @@ section.invencoes h1 {
 
 section.invencoes h2 {
   font-size: 1.1rem;
-  color: #173E75; /* Azul Marinho */
+  color: #173E75;
   margin-top: 0.5rem;
 }
 
@@ -66,7 +66,7 @@ section.invencoes ul {
 section.invencoes ul li {
   text-align: left;
   border-style: solid;
-  border-width: 3px;
+  border-width: 2px;
   padding: 1.5rem;
   border-radius: 20px;
 }
@@ -85,47 +85,43 @@ section.invencoes ul li h3 {
 
 /* Estilos de Cores por Classe */
 section.invencoes ul li.orange {
-  border-color: #2B6CB0; /* Ouro Velho / Dourado */
+  border-color: #2B6CB0;
 }
 section.invencoes ul li.orange h3 {
   color: #2B6CB0;
 }
 section.invencoes ul li.orange .impacto {
-  /* Ouro Velho com 15% de opacidade */
-  background-color: #2b6bb093; 
+  background-color: #488acf93; 
 }
 
 section.invencoes ul li.blue {
-  border-color: #2B6CB0; /* Azul Vivo */
+  border-color: #2B6CB0;
 }
 section.invencoes ul li.blue h3 {
   color: #2B6CB0;
 }
 section.invencoes ul li.blue .impacto {
-  /* Azul Vivo com 15% de opacidade */
-  background-color: #2b6bb093; 
+  background-color: #488acf93; 
 }
 
 section.invencoes ul li.purple {
-  border-color: #2B6CB0; /* Azul Marinho */
+  border-color: #2B6CB0; 
 }
 section.invencoes ul li.purple h3 {
   color: #2B6CB0;
 }
 section.invencoes ul li.purple .impacto {
-  /* Azul Marinho com 15% de opacidade */
-  background-color: #2b6bb093; 
+  background-color: #488acf93; 
 }
 
 section.invencoes ul li.green {
-  border-color: #2B6CB0; /* Azul Escuro / Profundo */
+  border-color: #2B6CB0; 
 }
 section.invencoes ul li.green h3 {
   color: #2B6CB0;
 }
 section.invencoes ul li.green .impacto {
-  /* Azul Escuro com 15% de opacidade */
-  background-color: #2b6bb093; 
+  background-color: #488acf93; 
 }
 
 /* Blocos de Versões */
@@ -137,13 +133,13 @@ section.invencoes ul li .blocos {
 
 section.invencoes ul li .blocos div {
   flex: 1;
-  background-color: #DFE7F2; /* Azul Claro / Gelo */
+  background-color: #DFE7F2;
   padding: 1rem;
   border-radius: 12px;
 }
 
 section.invencoes ul li .blocos p {
-  color: #173E75; /* Azul Marinho */
+  color: #173E75; 
   font-size: 0.8rem;
   margin-bottom: 0.25rem;
 }
@@ -154,7 +150,7 @@ section.invencoes ul li .blocos h4 {
 
 section.invencoes ul li .impacto {
   font-size: 0.9rem;
-  color: #0A1C33; /* Azul Escuro / Profundo */
+  color: #0A1C33;
   padding: 1rem;
   border-radius: 12px;
 }
@@ -165,12 +161,15 @@ section.invencoes ul li .impacto h4 {
   letter-spacing: 1px;
   margin-bottom: 0.25rem;
 }
+.impa{
+  font-weight: bold;
+}
 
 /* === CURIOSIDADES === */
 section.curiosidades {
   text-align: center;
-  background-color: #173E75; /* Azul Marinho */
-  color: #DFE7F2; /* Azul Claro / Gelo */
+  background-color: #173E75; 
+  color: #DFE7F2;
   padding: 3rem 1.5rem;
 }
 
@@ -195,13 +194,18 @@ section.curiosidades ul {
 }
 
 section.curiosidades ul li {
-  background-color: #2B6CB0; /* Azul Vivo */
+  background-color: #2B6CB0;
   padding: 1.5rem;
   border-radius: 16px;
   display: flex;
   align-items: center;
   gap: 1rem;
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section.curiosidades ul li:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.438);
 }
 
 section.curiosidades ul li img {

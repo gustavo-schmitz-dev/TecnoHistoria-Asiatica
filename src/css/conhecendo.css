@@ -135,6 +135,7 @@ header img{
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
+   
 }
 
 .card-civilizacao {
@@ -142,7 +143,12 @@ header img{
     border-radius: 16px;
     padding: 2.5rem 2rem;
     text-align: left;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-civilizacao:hover {
+    transform: translateY(-6px) scale(1.015);
+   border: 1px solid #C49B3A;
+   box-shadow: 0 8px 20px rgba(102, 88, 6, 0.623);
 }
 
 /* Bordas superiores e pontos decorativos */
@@ -234,7 +240,7 @@ header img{
     padding: 1rem 0;
     position: relative;
     width: 50%;
-    transition: all 0.8s ease-out; /* <-- Adicionado para a suavidade da animação */
+    transition: all 0.8s ease-out;
 }
 
 .timeline-item.left {
