@@ -76,53 +76,76 @@ body {
     color: #4B5563;
 }
 
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card div{
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 30px;
-    text-align: center;
-    
-    padding: 2rem 1.2rem;   
-    width: 90%;
-    max-width: 500px;
+.carrosel{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
-.card h4{
-    color: rgb(212, 57, 0);
-    font-size: 2.2rem;
-    font-weight: 900;
+.slide{
+    display: none;
+    position: relative;
+    width: 100%;
 }
 
-.china, .mongol, .persa, .otomano{
-  padding: 10vw 0;
-  background-size: cover;
-  background-repeat: no-repeat;
+.slide.active{
+    display: block;
 }
 
-.china{
-    background-image: url(../../assets/icons/china.jpg);
-    background-position: center 40%;
+.slide img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
 }
 
-.mongol{
-  background-image: url(../../assets/icons/mongolia.jpg);
-  background-position: center 50%;
+.overlay-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 650px;
+    text-align: center;
 }
 
-.persa{
-  background-image: url(../../assets/icons/persa.jpg);
-  background-position: center 30%;
+.overlay-card h4{
+    color: #d32f2f;
+    margin-bottom: 0.5rem;
+    font-size: 2.7rem;
+    font-weight: 1000;
 }
 
-.otomano{
-  background-image: url(../../assets/icons/otomano.jpg);
-  background-position: center 35%;
+.carrosel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.carrosel-btn:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carrosel-btn.prev{
+    left: 15px;
+}
+
+.carrosel-btn.next{
+    right: 15px;
 }
 
 /* =========================================
