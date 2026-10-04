@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="ground" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#3a2a10" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#3a2a10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#cfe7ef"/>
+      <stop offset="0.35" stop-color="#f4fbfd"/>
+      <stop offset="1" stop-color="#9cc3cf"/>
+    </linearGradient>
+    <linearGradient id="powder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a4540"/>
+      <stop offset="1" stop-color="#1d1a17"/>
+    </linearGradient>
+    <linearGradient id="cork" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b47a45"/>
+      <stop offset="0.5" stop-color="#d9a06a"/>
+      <stop offset="1" stop-color="#8f5a2e"/>
+    </linearGradient>
+    <radialGradient id="smoke" cx="38%" cy="32%" r="75%">
+      <stop offset="0" stop-color="#9a958f"/>
+      <stop offset="1" stop-color="#4b4743"/>
+    </radialGradient>
+    <radialGradient id="fire" cx="50%" cy="60%" r="60%">
+      <stop offset="0" stop-color="#fff6c8"/>
+      <stop offset="0.45" stop-color="#ffc233"/>
+      <stop offset="1" stop-color="#f06a1d"/>
+    </radialGradient>
+    <clipPath id="bulb">
+      <path d="M216 150 h80 v70 c62 22 102 78 102 140 c0 72 -64 112 -142 112 s-142 -40 -142 -112 c0 -62 40 -118 102 -140z"/>
+    </clipPath>
+  </defs>
+
+  <ellipse cx="256" cy="482" rx="140" ry="16" fill="url(#ground)"/>
+
+  <!-- smoke -->
+  <circle cx="232" cy="86" r="40" fill="url(#smoke)"/>
+  <circle cx="288" cy="70" r="46" fill="url(#smoke)"/>
+  <circle cx="262" cy="40" r="32" fill="url(#smoke)"/>
+
+  <!-- flame bursting from neck -->
+  <path d="M256 150 C220 130 222 100 240 84 C240 104 252 108 256 92 C262 108 276 100 274 82 C292 102 292 132 256 150Z" fill="url(#fire)"/>
+
+  <!-- flask -->
+  <g clip-path="url(#bulb)">
+    <rect x="100" y="140" width="320" height="340" fill="url(#glass)"/>
+    <path d="M100 340 q78 -22 156 0 t164 0 V480 H100z" fill="url(#powder)"/>
+    <circle cx="200" cy="400" r="5" fill="#ffc233"/>
+    <circle cx="300" cy="420" r="4" fill="#ffc233"/>
+    <circle cx="250" cy="380" r="3" fill="#ffe7a0"/>
+  </g>
+  <path d="M216 150 h80 v70 c62 22 102 78 102 140 c0 72 -64 112 -142 112 s-142 -40 -142 -112 c0 -62 40 -118 102 -140z" fill="none" stroke="#6d98a6" stroke-width="6" stroke-linejoin="round"/>
+  <!-- highlights -->
+  <path d="M150 330 c6 -40 30 -70 66 -88" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity="0.8"/>
+  <rect x="228" y="162" width="12" height="54" rx="6" fill="#fff" opacity="0.75"/>
+  <!-- rim -->
+  <rect x="204" y="142" width="104" height="20" rx="10" fill="url(#glass)" stroke="#6d98a6" stroke-width="6"/>
+</svg>

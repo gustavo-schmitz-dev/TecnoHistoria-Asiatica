@@ -79,7 +79,8 @@ body {
 .carrosel{
     position: relative;
     width: 100%;
-    max-width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -87,7 +88,7 @@ body {
 @keyframes fadeIn{
     from{
         opacity: 0;
-        tranform: scale(0.98);
+        transform: scale(0.98);
     }
     to{
         opacity: 1;
@@ -176,31 +177,6 @@ body {
   font-size: 2.5rem;
 }
 
-.card h4 {
-        font-size: 3.5rem; /* Volta a ser grandão só no PC */
-}
-
-.card div{
-    width: 40%;
-    height: 60%;
-    padding: 3rem 2rem; 
-    width: 85%;
-    max-width: 800px;
-    margin: 0;
-}
-
-.china, .mongol, .persa, .otomano{
-  background-size: cover;
-  background-position: center 70%;
-  background-repeat: no-repeat;
-    
-  padding: 6rem 2rem; 
-    
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
@@ -215,5 +191,39 @@ body {
 body.fade-out {
     opacity: 0 !important;
     transition: opacity 0.4s ease-in-out !important;
+}
+}
+@media (max-width: 768px) {
+.slide img{
+    height: 400px;
+}
+
+.overlay-card{
+    width: 88%;
+    padding: 2rem;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.overlay-card h4{
+    font-size: 1.5rem;
+}
+
+.overlay-card p{
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.carrosel-btn{
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+.carrosel-btn.prev{
+    left: 5px;
+}
+
+.carrosel-btn.next{
+    right: 5px;
 }
 }

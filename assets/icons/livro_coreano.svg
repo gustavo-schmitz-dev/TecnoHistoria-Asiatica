@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 30 452 420" width="512" height="512">
+  <defs>
+    <radialGradient id="ground" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#3a2a10" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#3a2a10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paperL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e9d9b4"/>
+      <stop offset="1" stop-color="#fbf2dc"/>
+    </linearGradient>
+    <linearGradient id="paperR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbf2dc"/>
+      <stop offset="1" stop-color="#e3d1a8"/>
+    </linearGradient>
+    <linearGradient id="cover" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8452f"/>
+      <stop offset="1" stop-color="#6e2618"/>
+    </linearGradient>
+    <linearGradient id="topM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6c48a"/>
+      <stop offset="1" stop-color="#b98a4a"/>
+    </linearGradient>
+    <linearGradient id="sideM" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9c7038"/>
+      <stop offset="1" stop-color="#6b4a22"/>
+    </linearGradient>
+    <linearGradient id="sideM2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8894c"/>
+      <stop offset="1" stop-color="#84602e"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="256" cy="400" rx="200" ry="18" fill="url(#ground)"/>
+
+  <!-- book -->
+  <path d="M60 170 Q160 140 256 176 Q352 140 452 170 L452 380 Q352 352 256 388 Q160 352 60 380Z" fill="url(#cover)"/>
+  <path d="M74 156 Q164 128 256 164 L256 372 Q164 338 74 364Z" fill="url(#paperL)" stroke="#c9b083" stroke-width="3"/>
+  <path d="M438 156 Q348 128 256 164 L256 372 Q348 338 438 364Z" fill="url(#paperR)" stroke="#c9b083" stroke-width="3"/>
+  <!-- vertical text columns -->
+  <g stroke="#3b2c1e" stroke-width="7" stroke-linecap="round" opacity="0.75">
+    <path d="M110 175 v40 M110 230 v30 M110 275 v45"/>
+    <path d="M145 168 v55 M145 238 v25 M145 278 v38"/>
+    <path d="M180 166 v30 M180 210 v50 M180 275 v40"/>
+    <path d="M215 170 v45 M215 230 v40 M215 285 v30"/>
+    <path d="M297 170 v35 M297 220 v50 M297 285 v30"/>
+    <path d="M332 166 v50 M332 230 v30 M332 275 v40"/>
+    <path d="M367 168 v30 M367 212 v48 M367 275 v42"/>
+    <path d="M402 175 v45 M402 235 v30 M402 280 v40"/>
+  </g>
+  <path d="M256 164 V372" stroke="#b39a6c" stroke-width="4"/>
+
+</svg>
