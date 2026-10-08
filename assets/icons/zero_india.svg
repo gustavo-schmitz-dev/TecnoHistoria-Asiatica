@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3a0"/>
+      <stop offset="0.4" stop-color="#ffd43b"/>
+      <stop offset="0.75" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#c46f0a"/>
+    </linearGradient>
+    <linearGradient id="inner" x1="1" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#fff3a0"/>
+      <stop offset="1" stop-color="#b8650a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb347" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="shadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3a2a10" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3a2a10" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="256" cy="240" r="215" fill="url(#glow)"/>
+  <ellipse cx="256" cy="452" rx="130" ry="20" fill="url(#shadow)"/>
+  <!-- depth -->
+  <path fill-rule="evenodd" fill="#9a520a" d="M264 66 a140 180 0 1 0 0.1 0 Z M256 136 a62 100 0 1 1 -0.1 0 Z"/>
+  <!-- zero ring -->
+  <path fill-rule="evenodd" fill="url(#gold)" d="M256 56 a140 180 0 1 0 0.1 0 Z M256 136 a62 100 0 1 1 -0.1 0 Z"/>
+  <!-- inner bevel -->
+  <ellipse cx="256" cy="236" rx="62" ry="100" fill="none" stroke="url(#inner)" stroke-width="10"/>
+  <!-- highlight -->
+  <path d="M170 140 Q200 80 256 72" stroke="#fffbe0" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.85"/>
+  <circle cx="160" cy="175" r="7" fill="#fffbe0" opacity="0.8"/>
+  <!-- small Indian-style dot (bindu) on top -->
+  <circle cx="256" cy="30" r="0" fill="none"/>
+  <!-- sparkles -->
+  <g fill="#fff3a0">
+    <path d="M420 110 l6 18 18 6 -18 6 -6 18 -6 -18 -18 -6 18 -6z"/>
+    <path d="M95 330 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z"/>
+  </g>
+</svg>

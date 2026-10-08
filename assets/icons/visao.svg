@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 30 452 452" width="512" height="512">
+  <defs>
+    <radialGradient id="ground" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#3a2a10" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#3a2a10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e4e8ee"/>
+    </linearGradient>
+    <linearGradient id="lid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6c48a"/>
+      <stop offset="1" stop-color="#b98a4a"/>
+    </linearGradient>
+    <radialGradient id="iris" cx="45%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#6fb3d9"/>
+      <stop offset="0.6" stop-color="#2f78a8"/>
+      <stop offset="1" stop-color="#1c4a6e"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="256" cy="400" rx="170" ry="16" fill="url(#ground)"/>
+  <path d="M60 256 Q256 70 452 256 Q256 442 60 256Z" fill="url(#lid)"/>
+  <path d="M84 256 Q256 104 428 256 Q256 408 84 256Z" fill="url(#white)" stroke="#9c7038" stroke-width="4"/>
+  <clipPath id="c"><path d="M84 256 Q256 104 428 256 Q256 408 84 256Z"/></clipPath>
+  <g clip-path="url(#c)">
+    <circle cx="256" cy="256" r="88" fill="url(#iris)"/>
+    <g stroke="#9fd0ea" stroke-width="3" opacity="0.45">
+      <path d="M256 186v28M256 298v28M186 256h28M298 256h28M207 207l20 20M285 285l20 20M305 207l-20 20M227 285l-20 20"/>
+    </g>
+    <circle cx="256" cy="256" r="38" fill="#14202b"/>
+    <path d="M84 256 Q256 104 428 256 L428 150 L84 150Z" fill="#000" opacity="0.08"/>
+  </g>
+  <circle cx="230" cy="228" r="16" fill="#fff" opacity="0.95"/>
+  <circle cx="282" cy="276" r="7" fill="#fff" opacity="0.7"/>
+  <g stroke="#6b4a22" stroke-width="7" stroke-linecap="round">
+    <path d="M140 170 l-18 -28M200 140 l-8 -32M256 132 v-34M312 140 l8 -32M372 170 l18 -28"/>
+  </g>
+</svg>
