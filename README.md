@@ -477,8 +477,21 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
     * * •	David: Adicionou as imagens dos integrantes no site e verificou o conteúdo histórico do site;
       *     * * •	heitor: Adicionou as imagens dos integrantes no site e verificou o conteúdo histórico do site;
 
+---
+## 19 de Outubro de 2026
+**ata 13**
 
+* **Participantes presentes:**
+  * *Kauã Dias*
+  * *Gustavo schmitz*
+ *  *Bryan Henrique*
+  * *David dos Santos*
+  * **Heitor Lisboa*
 
+ 
+  * * **Participantes ausentes:**
+* *Davi Lucas*
 
-
-
+* **Hoje:**
+* Apresentação sobre a experiência da sepe
+* Observação de coisas que poderiamos melhorar, exemplo: áudio ao ganhar uma pontuação alta no site
