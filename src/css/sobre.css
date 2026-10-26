@@ -116,6 +116,7 @@ header img{
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
+    transition: transform 0.3s ease;
 }
 
 .badge {
@@ -124,6 +125,12 @@ header img{
     flex: 1;
     min-width: 200px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.438);
 }
 
 .badge h4 {
@@ -142,13 +149,13 @@ header img{
 }
 
 /* Cores de fundo das badges */
-.badge.missao { background-color: #e3e4e6; color: #1E3A8A; }
+.badge.missao { background-color: #e3e4e6; color: #7F1D1D;}
 .badge.missao h4 { color: #c49b3a; }
 
-.badge.visao { background-color: #e3e4e6; color: #78350F; }
+.badge.visao { background-color: #e3e4e6; color: #1E3A8A; }
 .badge.visao h4 { color: #c49b3a; }
 
-.badge.valores { background-color: #e3e4e6; color: #7F1D1D; }
+.badge.valores { background-color: #e3e4e6; color: #c49b3a; }
 .badge.valores h4 { color: #c49b3a; }
 
 /* === SEÇÃO NOSSA EQUIPE === */
