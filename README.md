@@ -5,7 +5,7 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 - https://tecnohistoriaasiatica.vercel.app/
 
 ## Link do Kennedy (planilha):
-- bit.ly/projetos2026
+- https://docs.google.com/spreadsheets/d/1jI3rs5paXdyp__9qWyYz-ZA2FyP2GrUpUqDWqUoPXAA/edit?gid=0#gid=0
 
 ## Atas:
 
