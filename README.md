@@ -4,6 +4,9 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 ## Link do vercel: 
 - https://tecnohistoriaasiatica.vercel.app/
 
+## Link do Kennedy (planilha):
+-bit.ly/projetos2026
+
 ## Atas:
 
 # Atas de Reunião - Projeto Comércio e Circulação de Tecnologia
