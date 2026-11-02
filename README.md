@@ -4,6 +4,9 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 ## Link do vercel: 
 - https://tecnohistoriaasiatica.vercel.app/
 
+## Link do Kennedy (planilha):
+- https://docs.google.com/spreadsheets/d/1jI3rs5paXdyp__9qWyYz-ZA2FyP2GrUpUqDWqUoPXAA/edit?gid=0#gid=0
+
 ## Atas:
 
 # Atas de Reunião - Projeto Comércio e Circulação de Tecnologia
@@ -495,3 +498,21 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 * **Hoje:**
 * Apresentação sobre a experiência da sepe
 * Observação de coisas que poderiamos melhorar, exemplo: áudio ao ganhar uma pontuação alta no site
+  ---
+## 26 de Outubro de 2026
+**ata 14**
+
+* **Participantes presentes:**
+  * *Kauã Dias*
+  * *Gustavo schmitz*
+ *  *Bryan Henrique*
+  * *David dos Santos*
+  * *Davi Lucas*
+
+ 
+  * * **Participantes ausentes:**
+* *Heitor Lisboa- Com justificativa*
+
+* **Hoje:**
+* Pesquisa de animações do site
+* Melhorias no JS e nas animações
