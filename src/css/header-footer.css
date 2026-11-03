@@ -306,9 +306,16 @@ footer div p {
         margin: 20px 0;
     }
 
+    /* Garante que os textos do menu mobile fiquem visíveis no fundo branco */
     header ul a {
         font-size: 18px;
         text-decoration: none;
+        color: #111827 !important;
+    }
+
+    header ul a:hover,
+    header ul a.atual {
+        color: #2563EB !important;
     }
 
     #menu:checked ~ ul {
