@@ -1,3 +1,4 @@
+
 /* =========================================
    CABEÇALHO
 ========================================= */
@@ -12,7 +13,7 @@ header {
     z-index: 1000;
 }
 
-/* Alinha perfeitamente o logo e o texto do h1 na horizontal */
+/* Logo e título */
 header > a {
     display: inline-flex;
     align-items: center;
@@ -192,6 +193,7 @@ footer div p {
 ========================================= */
 
 @media (min-width: 768px) {
+
     .botao-menu {
         display: none;
     }
@@ -287,18 +289,31 @@ footer div p {
 ========================================= */
 
 @media (max-width: 767px) {
+
     header ul {
         position: fixed;
         top: 0;
-        right: -280px;
-        width: 280px;
+        right: 0;
+
+        width: min(280px, 85vw);
         height: 100vh;
+        height: 100dvh;
+
         margin: 0;
         padding: 80px 30px 30px;
-        background-color: white;
+
+        box-sizing: border-box;
+
+        background-color: #FFFFFF;
         list-style: none;
+
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
-        transition: right 0.3s ease;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+
+        overflow-y: auto;
+
         z-index: 1000;
     }
 
@@ -307,12 +322,13 @@ footer div p {
     }
 
     header ul a {
+        display: block;
         font-size: 18px;
         text-decoration: none;
     }
 
     #menu:checked ~ ul {
-        right: 0;
+        transform: translateX(0);
     }
 }
 

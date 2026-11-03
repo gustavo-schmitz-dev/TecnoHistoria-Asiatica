@@ -1,4 +1,3 @@
-// Inicialização da biblioteca ScrollReveal
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '50px',
@@ -6,11 +5,6 @@ const sr = ScrollReveal({
     delay: 200,
     reset: false
 });
-
-// === CABEÇALHO ===
-sr.reveal('header', { origin: 'top', distance: '30px', delay: 100, cleanup: true });
-sr.reveal('header > a', { origin: 'left', delay: 200 });
-sr.reveal('header ul li', { interval: 100, origin: 'top', delay: 300 });
 
 // === SECÇÃO BANNER ===
 sr.reveal('.banner img', { origin: 'top', distance: '40px', delay: 100 });
@@ -34,9 +28,6 @@ sr.reveal('.curiosidades ul li', {
     origin: 'bottom',
     scale: 0.95
 });
-
-// === RODAPÉ ===
-sr.reveal('footer', { delay: 100 });
 
 // === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
 document.addEventListener("DOMContentLoaded", () => {

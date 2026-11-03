@@ -1,4 +1,3 @@
-// Inicialização do ScrollReveal para a página Sobre o Projeto
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '50px',
@@ -6,11 +5,6 @@ const sr = ScrollReveal({
     delay: 200,
     reset: false
 });
-
-// === CABEÇALHO ===
-sr.reveal('header', { origin: 'top', distance: '30px', delay: 100, cleanup: true });
-sr.reveal('header > a', { origin: 'left', delay: 200 });
-sr.reveal('header ul li', { interval: 100, origin: 'top', delay: 300 });
 
 // === HERO SOBRE ===
 sr.reveal('.hero-sobre .hero-icon', { origin: 'top', distance: '30px', delay: 100 });
@@ -36,9 +30,6 @@ sr.reveal('.card-tech', { interval: 120, origin: 'bottom', scale: 0.9 });
 sr.reveal('.processo-secao h2', { origin: 'top', delay: 100 });
 sr.reveal('.subtitle-processo', { delay: 200 });
 sr.reveal('.card-processo', { interval: 150, origin: 'bottom' });
-
-// === RODAPÉ ===
-sr.reveal('footer', { delay: 100 });
 
 // === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
 document.addEventListener("DOMContentLoaded", () => {
