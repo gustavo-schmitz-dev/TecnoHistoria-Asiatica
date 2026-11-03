@@ -15,21 +15,19 @@ const sr = ScrollReveal({
     reset: false
 });
 
-sr.reveal('header', { origin: 'top', distance: '30px', delay: 100, cleanup: true });
-sr.reveal('header > a', { origin: 'left', delay: 200 });
-sr.reveal('header ul li', { interval: 100, origin: 'top', delay: 300 });
-
+// === BANNER ===
 sr.reveal('.banner-content img', { origin: 'top', distance: '30px', delay: 100 });
 sr.reveal('.banner h2', { delay: 250 });
 sr.reveal('.banner p', { delay: 400 });
 
+// === INTRO NAÇÕES ===
 sr.reveal('.nacoes-intro h3', { origin: 'top', delay: 100 });
 sr.reveal('.nacoes-intro p', { delay: 200 });
 
+// === CARROSSEL ===
 sr.reveal('.carrosel', { origin: 'bottom', distance: '60px', delay: 300 });
 
-sr.reveal('footer', { delay: 100, cleanup: true });
-
+// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
 document.addEventListener("DOMContentLoaded", () => {
     const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
     const linksMenu = document.querySelectorAll("header ul li a");

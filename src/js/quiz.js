@@ -30,7 +30,7 @@ const questions = [
         explanation: "O papel-moeda foi criado na China para substituir as pesadas moedas de cobre que os mercadores precisavam carregar em carroças durante longas viagens comerciais."
     },
     {
-        question: "Inaugurado em 1964 a tempo para as Olimpíadas de Tóquio, o 'Shinkansen' marcou o início de qual tecnologia de transporte asiática?",
+        question: "Inaugurado em 1964 a tempo para las Olimpíadas de Tóquio, o 'Shinkansen' marcou o início de qual tecnologia de transporte asiática?",
         options: ["Metrô subterrâneo", "Trens-bala", "Levitação magnética (Maglev)", "Carros autônomos"],
         answer: 1,
         explanation: "O Shinkansen foi a primeira rede comercial de trens de alta velocidade (trens-bala) do mundo, mudando para sempre o padrão global do transporte público."
@@ -168,15 +168,11 @@ const sr = ScrollReveal({
     reset: false
 });
 
-sr.reveal('header', { origin: 'top', distance: '30px', delay: 100, cleanup: true });
-sr.reveal('header > a', { origin: 'left', delay: 200 });
-sr.reveal('header ul li', { interval: 100, origin: 'top', delay: 300 });
-
+// === QUIZ TÍTULO E CARD ===
 sr.reveal('.quiz-title-box', { origin: 'top', delay: 100 });
 sr.reveal('.quiz-card', { origin: 'bottom', distance: '60px', delay: 300 });
 
-sr.reveal('footer', { delay: 100, cleanup: true });
-
+// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
 document.addEventListener("DOMContentLoaded", () => {
     const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
     const linksMenu = document.querySelectorAll("header ul li a");
