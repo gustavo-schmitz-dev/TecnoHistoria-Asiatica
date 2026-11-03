@@ -1,4 +1,3 @@
-// Inicialização da biblioteca ScrollReveal
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '50px',
@@ -7,17 +6,14 @@ const sr = ScrollReveal({
     reset: false
 });
 
-// === CABEÇALHO ===
 sr.reveal('header', { origin: 'top', distance: '30px', delay: 100, cleanup: true });
 sr.reveal('header > a', { origin: 'left', delay: 200 });
 sr.reveal('header ul li', { interval: 100, origin: 'top', delay: 300 });
 
-// === SECÇÃO BANNER ===
 sr.reveal('.banner img', { origin: 'top', distance: '40px', delay: 100 });
 sr.reveal('.banner h2', { delay: 250 });
 sr.reveal('.banner p', { delay: 400 });
 
-// === SECÇÃO INVENÇÕES ===
 sr.reveal('.invencoes h2', { origin: 'top', delay: 100 });
 sr.reveal('.invencoes h3', { delay: 200 });
 sr.reveal('.invencoes ul li', { 
@@ -26,7 +22,6 @@ sr.reveal('.invencoes ul li', {
     distance: '60px'
 });
 
-// === SECÇÃO CURIOSIDADES ===
 sr.reveal('.curiosidades h2', { origin: 'top', delay: 100 });
 sr.reveal('.curiosidades h3', { delay: 200 });
 sr.reveal('.curiosidades ul li', { 
@@ -35,10 +30,8 @@ sr.reveal('.curiosidades ul li', {
     scale: 0.95
 });
 
-// === RODAPÉ ===
-sr.reveal('footer', { delay: 100 });
+sr.reveal('footer', { delay: 100, cleanup: true });
 
-// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
 document.addEventListener("DOMContentLoaded", () => {
     const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
     const linksMenu = document.querySelectorAll("header ul li a");

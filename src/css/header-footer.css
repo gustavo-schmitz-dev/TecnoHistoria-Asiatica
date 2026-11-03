@@ -12,7 +12,6 @@ header {
     z-index: 1000;
 }
 
-/* Alinha perfeitamente o logo e o texto do h1 na horizontal */
 header > a {
     display: inline-flex;
     align-items: center;
@@ -48,7 +47,7 @@ header a img {
 }
 
 /* =========================================
-   LINKS DO MENU
+   LINKS DO MENU (DESKTOP)
 ========================================= */
 
 header ul {
@@ -76,7 +75,7 @@ header a:hover {
 }
 
 /* =========================================
-   MENU MOBILE
+   MENU MOBILE (BASE)
 ========================================= */
 
 #menu {
@@ -92,6 +91,7 @@ header a:hover {
     cursor: pointer;
     color: #111827;
     z-index: 1001;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* =========================================
@@ -283,7 +283,7 @@ footer div p {
 }
 
 /* =========================================
-   MOBILE (max-width: 767px)
+   MOBILE (max-width: 767px) - Blindado
 ========================================= */
 
 @media (max-width: 767px) {
@@ -299,15 +299,14 @@ footer div p {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 260px;
+        width: 270px;
         height: 100vh;
         margin: 0;
         padding: 80px 25px 30px;
         background-color: #FFFFFF;
         list-style: none;
         box-shadow: -5px 0 25px rgba(0, 0, 0, 0.25);
-        visibility: hidden;
-        transition: right 0.35s ease-in-out, visibility 0.35s ease-in-out;
+        transition: right 0.35s ease-in-out;
         z-index: 9999;
         overflow-y: auto;
     }
@@ -316,10 +315,12 @@ footer div p {
         margin: 20px 0;
     }
 
+    /* FORÇA OS TEXTOS DO MENU A APARECEREM ESCUROS NO FUNDO BRANCO */
     header ul a {
         font-size: 18px;
         text-decoration: none;
         color: #111827 !important;
+        font-weight: 600;
         display: block;
         width: 100%;
     }
@@ -331,7 +332,6 @@ footer div p {
 
     #menu:checked ~ ul {
         right: 0;
-        visibility: visible;
     }
 }
 

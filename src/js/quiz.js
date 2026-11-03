@@ -1,6 +1,3 @@
-// =========================================
-// BANCO DE PERGUNTAS (10 Perguntas com Explicação)
-// =========================================
 const questions = [
     {
         question: "Qual invenção chinesa do século IX, originalmente criada em busca de um 'elixir da imortalidade', acabou revolucionando as táticas de guerra?",
@@ -64,13 +61,9 @@ const questions = [
     }
 ];
 
-// =========================================
-// VARIÁVEIS DE ESTADO
-// =========================================
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Seleção de elementos no DOM
 const startScreen = document.getElementById('start-screen');
 const questionScreen = document.getElementById('question-screen');
 const resultScreen = document.getElementById('result-screen');
@@ -86,9 +79,6 @@ const explanationBox = document.getElementById('explanation-box');
 const explanationText = document.getElementById('explanation-text');
 const finalScore = document.getElementById('final-score');
 
-// =========================================
-// INICIAR QUIZ
-// =========================================
 btnStart.addEventListener('click', () => {
     startScreen.classList.remove('active');
     startScreen.classList.add('hidden');
@@ -97,26 +87,20 @@ btnStart.addEventListener('click', () => {
     loadQuestion();
 });
 
-// =========================================
-// CARREGAR PERGUNTA
-// =========================================
 function loadQuestion() {
-    // Esconde a explicação e o botão próximo no início de cada pergunta
     explanationBox.classList.add('hidden');
     btnNext.classList.add('hidden');
     
     const currentQuestion = questions[currentQuestionIndex];
     questionText.innerText = currentQuestion.question;
-    optionsContainer.innerHTML = ''; // Limpa botões da pergunta anterior
+    optionsContainer.innerHTML = '';
     
-    // Atualiza o contador e a barra de progresso
     questionCounter.innerText = `Pergunta ${currentQuestionIndex + 1} de ${questions.length}`;
     scoreDisplay.innerText = `Pontuação: ${score}`;
     progressFill.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
 
     const letters = ['A', 'B', 'C', 'D'];
 
-    // Gera os botões das alternativas
     currentQuestion.options.forEach((option, index) => {
         const button = document.createElement('button');
         button.classList.add('option-btn');
@@ -129,14 +113,10 @@ function loadQuestion() {
     });
 }
 
-// =========================================
-// VERIFICAR RESPOSTA E EXIBIR EXPLICAÇÃO
-// =========================================
 function checkAnswer(selectedIndex, selectedButton) {
     const currentQuestion = questions[currentQuestionIndex];
     const buttons = document.querySelectorAll('.option-btn');
     
-    // Bloqueia cliques adicionais
     buttons.forEach(btn => btn.disabled = true);
 
     if (selectedIndex === currentQuestion.answer) {
@@ -145,21 +125,14 @@ function checkAnswer(selectedIndex, selectedButton) {
         scoreDisplay.innerText = `Pontuação: ${score}`;
     } else {
         selectedButton.classList.add('wrong');
-        // Destaca a resposta correta em verde
         buttons[currentQuestion.answer].classList.add('correct');
-        
-        // Exibe a explicação correspondente à pergunta errada
         explanationText.innerText = currentQuestion.explanation;
         explanationBox.classList.remove('hidden');
     }
 
-    // Exibe o botão para a próxima questão
     btnNext.classList.remove('hidden');
 }
 
-// =========================================
-// AVANÇAR PERGUNTA
-// =========================================
 btnNext.addEventListener('click', () => {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -169,9 +142,6 @@ btnNext.addEventListener('click', () => {
     }
 });
 
-// =========================================
-// TELA FINAL
-// =========================================
 function showResults() {
     questionScreen.classList.remove('active');
     questionScreen.classList.add('hidden');
@@ -180,9 +150,6 @@ function showResults() {
     finalScore.innerText = score;
 }
 
-// =========================================
-// REINICIAR
-// =========================================
 btnRestart.addEventListener('click', () => {
     currentQuestionIndex = 0;
     score = 0;
@@ -193,7 +160,6 @@ btnRestart.addEventListener('click', () => {
     loadQuestion();
 });
 
-// Inicialização do ScrollReveal para a página Quiz
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '50px',
@@ -202,19 +168,15 @@ const sr = ScrollReveal({
     reset: false
 });
 
-// === CABEÇALHO ===
 sr.reveal('header', { origin: 'top', distance: '30px', delay: 100, cleanup: true });
 sr.reveal('header > a', { origin: 'left', delay: 200 });
 sr.reveal('header ul li', { interval: 100, origin: 'top', delay: 300 });
 
-// === QUIZ TÍTULO E CARD ===
 sr.reveal('.quiz-title-box', { origin: 'top', delay: 100 });
 sr.reveal('.quiz-card', { origin: 'bottom', distance: '60px', delay: 300 });
 
-// === RODAPÉ ===
-sr.reveal('footer', { delay: 100 });
+sr.reveal('footer', { delay: 100, cleanup: true });
 
-// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
 document.addEventListener("DOMContentLoaded", () => {
     const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
     const linksMenu = document.querySelectorAll("header ul li a");
