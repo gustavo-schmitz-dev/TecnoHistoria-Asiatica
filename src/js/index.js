@@ -1,9 +1,9 @@
 const sr = ScrollReveal({
-    origin: 'bottom',
-    distance: '50px',
-    duration: 1000,
-    delay: 200,
-    reset: false
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    delay: 200,
+    reset: false
 });
 
 // === SEÇÃO HERO ===
@@ -17,18 +17,18 @@ sr.reveal('.explore-secao h2', { origin: 'top' });
 sr.reveal('.explore-desc', { delay: 300 });
 sr.reveal('.card-explore', { interval: 200, origin: 'bottom' });
 
-// === SEÇÃO CTA ===
+// === SEÇÃO CALL TO ACTION (CTA) ===
 sr.reveal('.cta-secao', { duration: 1200 });
 
 // === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
 document.addEventListener("DOMContentLoaded", () => {
-    const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
-    const linksMenu = document.querySelectorAll("header ul li a");
+    const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
+    const linksMenu = document.querySelectorAll("header ul li a");
 
-    linksMenu.forEach(link => {
-        const hrefLink = link.getAttribute("href");
-        if (hrefLink === caminhoAtual || (caminhoAtual === "" && hrefLink.includes("index.html"))) {
-            link.classList.add("atual");
-        }
-    });
+    linksMenu.forEach(link => {
+        const hrefLink = link.getAttribute("href");
+        if (hrefLink === caminhoAtual || (caminhoAtual === "" && hrefLink.includes("index.html"))) {
+            link.classList.add("atual");
+        }
+    });
 });
