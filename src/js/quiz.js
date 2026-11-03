@@ -192,3 +192,37 @@ btnRestart.addEventListener('click', () => {
     questionScreen.classList.add('active');
     loadQuestion();
 });
+
+// Inicialização do ScrollReveal para a página Quiz
+const sr = ScrollReveal({
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    delay: 200,
+    reset: false
+});
+
+// === CABEÇALHO ===
+sr.reveal('header', { origin: 'top', distance: '30px', delay: 100, cleanup: true });
+sr.reveal('header > a', { origin: 'left', delay: 200 });
+sr.reveal('header ul li', { interval: 100, origin: 'top', delay: 300 });
+
+// === QUIZ TÍTULO E CARD ===
+sr.reveal('.quiz-title-box', { origin: 'top', delay: 100 });
+sr.reveal('.quiz-card', { origin: 'bottom', distance: '60px', delay: 300 });
+
+// === RODAPÉ ===
+sr.reveal('footer', { delay: 100 });
+
+// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
+document.addEventListener("DOMContentLoaded", () => {
+    const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
+    const linksMenu = document.querySelectorAll("header ul li a");
+
+    linksMenu.forEach(link => {
+        const hrefLink = link.getAttribute("href");
+        if (hrefLink === caminhoAtual || (caminhoAtual === "" && hrefLink.includes("index.html"))) {
+            link.classList.add("atual");
+        }
+    });
+});
