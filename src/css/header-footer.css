@@ -290,16 +290,17 @@ footer div p {
     header ul {
         position: fixed;
         top: 0;
-        right: -280px;
-        width: 280px;
+        right: -100%; /* Esconde totalmente para fora da tela no celular */
+        width: 260px;
         height: 100vh;
         margin: 0;
-        padding: 80px 30px 30px;
+        padding: 80px 25px 30px;
         background-color: white;
         list-style: none;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
-        transition: right 0.3s ease;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+        transition: right 0.35s ease-in-out;
         z-index: 1000;
+        overflow-y: auto; /* Evita corte se o conteúdo for longo */
     }
 
     header li {
@@ -311,6 +312,7 @@ footer div p {
         font-size: 18px;
         text-decoration: none;
         color: #111827 !important;
+        display: block;
     }
 
     header ul a:hover,
@@ -319,7 +321,7 @@ footer div p {
     }
 
     #menu:checked ~ ul {
-        right: 0;
+        right: 0; /* Desliza o menu para dentro da tela perfeitamente */
     }
 }
 
