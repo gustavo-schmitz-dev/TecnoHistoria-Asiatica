@@ -124,6 +124,8 @@ header img{
     flex: 1;
     min-width: 200px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
 .badge h3 {
@@ -134,21 +136,26 @@ header img{
 
 .badge p {
     font-size: 0.85rem;
-    color: #fff;
+    color: black;
 }
 
 .badge-icon {
     font-size: 2rem;
 }
 
+.badge:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.426);
+}
+
 /* Cores de fundo das badges */
-.badge.missao { background-color: #0a1c33; color: #1E3A8A; }
+.badge.missao { background-color: #e7e7e8; color: black; }
 .badge.missao h3 { color: #c49b3a; }
 
-.badge.visao { background-color: #0a1c33; color: #78350F; }
+.badge.visao { background-color: #e7e7e8; color: black; }
 .badge.visao h3 { color: #c49b3a; }
 
-.badge.valores { background-color: #0a1c33; color: #7F1D1D; }
+.badge.valores { background-color: #e7e7e8; color: black; }
 .badge.valores h3 { color: #c49b3a; }
 
 /* === SEÇÃO NOSSA EQUIPE === */
@@ -282,11 +289,12 @@ header img{
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.03);
     border: 1px solid #E5E7EB;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
 .card-tech:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.361);
 }
 
 .tech-icon {
@@ -349,10 +357,18 @@ header img{
     gap: 1.5rem;
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card-processo:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.361);
 }
 
 .icon-processo {
-    background-color: #c49b3a; /* Ícone laranja/amarelo */
+    background-color: #c49b3a; /* Ícone transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.361);laranja/amarelo */
     color: #FFFFFF;
     width: 48px;
     height: 48px;
