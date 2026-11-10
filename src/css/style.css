@@ -31,7 +31,6 @@ a {
     color: inherit;
 }
 
-/* === HERO SEÇÃO === */
 .hero-home {
     background-color: #0A1C33;
     color: #FFFFFF;
@@ -158,12 +157,13 @@ a {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: translate 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .card-explore:hover {
-    transform: translateY(-5px);
+    translate: 0 -5px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: #C49B3A;
 }
 
 .icon-box {
