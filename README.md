@@ -578,3 +578,4 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 - Ajustes no hover das páginas
 - Revisão do site
 - Melhorias no código
+- Realização do documento Final
