@@ -555,3 +555,26 @@ THA (TecnoHistória Asiática) é um site simples sobre a história asiática em
 ### Hoje
 - Ajustes de animação
 - estudo dos códigos para a apresentação
+
+---
+
+## 16 de Novembro de 2026
+
+**ata 16**
+
+### Participantes presentes
+- Kauã Dias
+- Gustavo schmitz
+- Bryan Henrique
+- David dos Santos
+- Davi Lucas
+- Heitor Lisboa
+
+
+### Participantes ausentes
+
+### Hoje
+- Mudanças nos comentários do código
+- Ajustes no hover das páginas
+- Revisão do site
+- Melhorias no código
