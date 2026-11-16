@@ -31,7 +31,7 @@ a {
     color: inherit;
 }
 
-/* === CABEÇALHO (HEADER) === */
+/* === header === */
 header {
     background-color: #FFFFFF;
     display: flex;
@@ -71,7 +71,7 @@ nav ul li a:hover, nav ul li a.atual {
     color: #2563EB;
 }
 
-/* === HERO BANNER === */
+/* === hero banner === */
 .hero-comercio {
     background-color: #0A1C33;
     color: #FFFFFF;
@@ -104,7 +104,7 @@ nav ul li a:hover, nav ul li a.atual {
     margin-bottom: 1rem;
 }
 
-/* === ROTA DA SEDA === */
+/* === rota da seda === */
 .rota-seda-secao {
     background-image: url('../../assets/icons/146.png');
     background-repeat: no-repeat;
