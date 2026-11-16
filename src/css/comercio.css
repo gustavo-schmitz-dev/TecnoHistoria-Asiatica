@@ -106,7 +106,7 @@ nav ul li a:hover, nav ul li a.atual {
     background-image: url('../../assets/icons/146.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; /* No PC, ocupa todo o espaço do fundo cobrindo a tela */
+    background-size: cover;
     padding: 6rem 5%;
     display: flex;
     justify-content: center;
