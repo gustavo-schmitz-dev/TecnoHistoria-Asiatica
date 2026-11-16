@@ -287,11 +287,12 @@ header img{
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.03);
     border: 1px solid #E5E7EB;
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    transition: translate 0.5s ease,scale 0.3s ease , box-shadow 0.3s ease;
 }
 
 .card-tech:hover {
-    transform: translateY(-8px) scale(1.03);
+    translate: 0 -8px;
+    scale: 1.03;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.361);
 }
 
