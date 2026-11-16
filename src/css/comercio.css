@@ -31,7 +31,6 @@ a {
     color: inherit;
 }
 
-/* === header === */
 header {
     background-color: #FFFFFF;
     display: flex;
@@ -71,7 +70,6 @@ nav ul li a:hover, nav ul li a.atual {
     color: #2563EB;
 }
 
-/* === hero banner === */
 .hero-comercio {
     background-color: #0A1C33;
     color: #FFFFFF;
@@ -104,7 +102,6 @@ nav ul li a:hover, nav ul li a.atual {
     margin-bottom: 1rem;
 }
 
-/* === rota da seda === */
 .rota-seda-secao {
     background-image: url('../../assets/icons/146.png');
     background-repeat: no-repeat;
@@ -157,12 +154,12 @@ nav ul li a:hover, nav ul li a.atual {
     text-align: center;
     padding: 1.5rem;
     border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: translate 0.5s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .box-stat:hover, .box-stat:active {
-    transform: translateY(-8px);
+    translate: 0 -4px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
@@ -179,7 +176,6 @@ nav ul li a:hover, nav ul li a.atual {
     font-size: 1rem;
 }
 
-/* === PRODUTOS (GRID) === */
 .produtos-secao {
     background-color: #FFFFFF;
     padding: 5rem 5%;
@@ -212,12 +208,12 @@ nav ul li a:hover, nav ul li a.atual {
     padding: 2rem;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: translate 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     cursor: pointer;
 }
 
 .card-produto:hover, .card-produto:active {
-    transform: translateY(-8px);
+    translate: 0 -8px;
     box-shadow: 0 12px 20px rgba(43, 108, 176, 0.15);
     border-color: #2B6CB0;
 }

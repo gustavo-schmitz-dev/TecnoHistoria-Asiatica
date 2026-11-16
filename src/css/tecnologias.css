@@ -9,7 +9,7 @@ html {
   box-sizing: inherit;
 }
 
-/* BANNER */
+/* === Banner === */
 .banner {
   background-color: #0A1C33; 
   color: #DFE7F2; 
@@ -36,7 +36,8 @@ header img{
   color: #DFE7F2; 
 }
 
-/* === INVENÇÕES === */
+/* === Invenções === */
+
 section.invencoes {
   text-align: center;
   padding: 3rem 1.5rem;
@@ -162,7 +163,8 @@ section.invencoes ul li .impacto h4 {
   font-weight: bold;
 }
 
-/* === CURIOSIDADES === */
+/* === Curiosidades === */
+
 section.curiosidades {
   text-align: center;
   background-color: #173E75; 
@@ -170,12 +172,12 @@ section.curiosidades {
   padding: 3rem 1.5rem;
 }
 
-section.curiosidades h1 {
+section.curiosidades h2 {
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-section.curiosidades h2 {
+section.curiosidades h3 {
   font-size: 1.1rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
@@ -198,10 +200,11 @@ section.curiosidades ul li {
   align-items: center;
   gap: 1rem;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: translate 0.3s ease,scale 0.3s ease, box-shadow 0.3s ease;
 }
 section.curiosidades ul li:hover{
-    transform: translateY(-8px) scale(1.02);
+    translate: 0 -2px;
+    scale: 1.02;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.438);
 }
 
@@ -212,7 +215,6 @@ section.curiosidades ul li img {
 }
 
 
-/* === MEDIA QUERIES (RESPONSIVIDADE) ==== */
 
 @media only screen and (min-width: 768px) {
   
@@ -266,7 +268,6 @@ section.curiosidades ul li img {
     max-width: 1200px;
   }
 }
-/* Efeito de entrada */
 body {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
@@ -277,7 +278,6 @@ body {
     to { opacity: 1; }
 }
 
-/* Classe ativada pelo JS quando você clica em um link para sair */
 body.fade-out {
     opacity: 0 !important;
     transition: opacity 0.4s ease-in-out !important;

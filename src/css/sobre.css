@@ -1,4 +1,3 @@
-/* === IMPORTAÇÃO DE FONTE E RESET BÁSICO === */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -34,7 +33,7 @@ a {
     color: inherit;
 }
 
-/* === HERO - SOBRE O PROJETO === */
+/* === SOBRE O PROJETO === */
 .hero-sobre {
     background-color: #1D2638; 
     color: #FFFFFF;
@@ -110,7 +109,6 @@ header img{
     margin-bottom: 3rem;
 }
 
-/* Badges (Missão, Visão, Valores) */
 .badges-container {
     display: flex;
     justify-content: center;
@@ -148,7 +146,6 @@ header img{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.426);
 }
 
-/* Cores de fundo das badges */
 .badge.missao { background-color: #e7e7e8; color: black; }
 .badge.missao h3 { color: #c49b3a; }
 
@@ -200,10 +197,11 @@ header img{
     flex-direction: column;
     align-items: center;
     border: 2px solid transparent;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: translate 0.3s ease,scale 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 .card-membro:hover{
-    transform: translateY(-8px) scale(1.02);
+    translate: 0 -8px;
+    scale: 1.02;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.438);
     outline: 2px solid #2B6CB0;
     outline-offset: -2px;
@@ -249,7 +247,7 @@ header img{
     margin-bottom: 0.3rem;
 }
 
-/* Bordas coloridas para cada membro */
+
 .card-membro.azul { border-color: #dfe7f2; }
 .card-membro.azul h3 { color: #2b6cb0; }
 
@@ -270,7 +268,7 @@ header img{
 
 /* === SEÇÃO TECNOLOGIAS UTILIZADAS === */
 .tecnologias-secao {
-    background-color: #dfe7f2; /* Fundo cinza bem claro */
+    background-color: #dfe7f2;
     padding: 6rem 5%;
     text-align: center;
 }
