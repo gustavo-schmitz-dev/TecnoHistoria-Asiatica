@@ -63,7 +63,6 @@ const questions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-
 const startScreen = document.getElementById('start-screen');
 const questionScreen = document.getElementById('question-screen');
 const resultScreen = document.getElementById('result-screen');
@@ -78,7 +77,6 @@ const progressFill = document.getElementById('progress-fill');
 const explanationBox = document.getElementById('explanation-box');
 const explanationText = document.getElementById('explanation-text');
 const finalScore = document.getElementById('final-score');
-
 btnStart.addEventListener('click', () => {
     startScreen.classList.remove('active');
     startScreen.classList.add('hidden');
@@ -86,21 +84,16 @@ btnStart.addEventListener('click', () => {
     questionScreen.classList.add('active');
     loadQuestion();
 });
-
 function loadQuestion() {
     explanationBox.classList.add('hidden');
     btnNext.classList.add('hidden');
-    
     const currentQuestion = questions[currentQuestionIndex];
     questionText.innerText = currentQuestion.question;
-    optionsContainer.innerHTML = '';
-    
+    optionsContainer.innerHTML = ''
     questionCounter.innerText = `Pergunta ${currentQuestionIndex + 1} de ${questions.length}`;
     scoreDisplay.innerText = `Pontuação: ${score}`;
     progressFill.style.width = `${((currentQuestionIndex + 1) / questions.length) * 100}%`;
-
     const letters = ['A', 'B', 'C', 'D'];
-
     currentQuestion.options.forEach((option, index) => {
         const button = document.createElement('button');
         button.classList.add('option-btn');
@@ -112,13 +105,10 @@ function loadQuestion() {
         optionsContainer.appendChild(button);
     });
 }
-
 function checkAnswer(selectedIndex, selectedButton) {
     const currentQuestion = questions[currentQuestionIndex];
     const buttons = document.querySelectorAll('.option-btn');
-    
     buttons.forEach(btn => btn.disabled = true);
-
     if (selectedIndex === currentQuestion.answer) {
         selectedButton.classList.add('correct');
         score++;
@@ -129,10 +119,8 @@ function checkAnswer(selectedIndex, selectedButton) {
         explanationText.innerText = currentQuestion.explanation;
         explanationBox.classList.remove('hidden');
     }
-
     btnNext.classList.remove('hidden');
 }
-
 btnNext.addEventListener('click', () => {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -141,7 +129,6 @@ btnNext.addEventListener('click', () => {
         showResults();
     }
 });
-
 function showResults() {
     questionScreen.classList.remove('active');
     questionScreen.classList.add('hidden');
@@ -149,7 +136,6 @@ function showResults() {
     resultScreen.classList.add('active');
     finalScore.innerText = score;
 }
-
 btnRestart.addEventListener('click', () => {
     currentQuestionIndex = 0;
     score = 0;
@@ -159,7 +145,6 @@ btnRestart.addEventListener('click', () => {
     questionScreen.classList.add('active');
     loadQuestion();
 });
-
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '50px',
@@ -167,16 +152,11 @@ const sr = ScrollReveal({
     delay: 200,
     reset: false
 });
-
-// === QUIZ TÍTULO E CARD ===
 sr.reveal('.quiz-title-box', { origin: 'top', delay: 100 });
 sr.reveal('.quiz-card', { origin: 'bottom', distance: '60px', delay: 300 });
-
-// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
 document.addEventListener("DOMContentLoaded", () => {
     const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
     const linksMenu = document.querySelectorAll("header ul li a");
-
     linksMenu.forEach(link => {
         const hrefLink = link.getAttribute("href");
         if (hrefLink === caminhoAtual || (caminhoAtual === "" && hrefLink.includes("index.html"))) {

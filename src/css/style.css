@@ -1,12 +1,10 @@
-/* === IMPORTAÇÃO DE FONTE E RESET BÁSICO === */
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Epilogue', sans-serif;
     color: #333;
@@ -15,7 +13,6 @@ body {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
 }
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -30,7 +27,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
 .hero-home {
     background-color: #0A1C33;
     color: #FFFFFF;
@@ -78,7 +74,6 @@ a {
     font-weight: 400;
 }
 
-/* Botões do Hero */
 .botoes-hero {
     display: flex;
     gap: 1rem;
@@ -86,7 +81,6 @@ a {
     flex-wrap: wrap;
     width: 100%;
 }
-
 .btn {
     padding: 1.2rem 3rem;
     border-radius: 8px;
@@ -120,7 +114,6 @@ a {
     border-color: #FFFFFF;
 }
 
-/* === EXPLORE A ÁSIA === */
 .explore-secao {
     background-color: #FFFFFF;
     padding: 4rem 5%;
@@ -213,7 +206,6 @@ a {
     text-decoration: underline;
 }
 
-/* === CALL TO ACTION (CTA) === */
 .cta-wrapper {
     background-color: #FFFFFF;
     width: 100%;
@@ -257,7 +249,6 @@ a {
     background-color: #D97706;
 }
 
-/* === RESPONSIVIDADE === */
 @media (max-width: 992px) {
     .grid-explore {
         grid-template-columns: repeat(2, 1fr);

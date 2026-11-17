@@ -6,21 +6,17 @@ const sr = ScrollReveal({
     reset: false
 });
 
-// === SEÇÃO HERO ===
 sr.reveal('.tagline', { delay: 100, origin: 'top' });
 sr.reveal('.hero-home h1', { delay: 200 });
 sr.reveal('.hero-subtitle', { delay: 300 });
 sr.reveal('.botoes-hero', { delay: 400 });
 
-// === SEÇÃO EXPLORE ===
 sr.reveal('.explore-secao h2', { origin: 'top' });
 sr.reveal('.explore-desc', { delay: 300 });
 sr.reveal('.card-explore', { interval: 200, origin: 'bottom' });
 
-// === SEÇÃO CALL TO ACTION (CTA) ===
 sr.reveal('.cta-secao', { duration: 1200 });
 
-// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
 document.addEventListener("DOMContentLoaded", () => {
     const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
     const linksMenu = document.querySelectorAll("header ul li a");
