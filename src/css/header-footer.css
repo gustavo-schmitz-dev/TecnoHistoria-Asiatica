@@ -37,7 +37,13 @@ header a img {
    object-fit: cover;
    border-radius: 50%;
    margin: 0;
+   transition: transform 0.5s ease-in-out;
 }
+
+header a img:hover {
+  transform: rotate(180deg);
+}
+
 
 header ul {
    list-style: none;
