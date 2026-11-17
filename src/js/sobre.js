@@ -30,16 +30,3 @@ sr.reveal('.card-tech', { interval: 120, origin: 'bottom', scale: 0.9 });
 sr.reveal('.processo-secao h2', { origin: 'top', delay: 100 });
 sr.reveal('.subtitle-processo', { delay: 200 });
 sr.reveal('.card-processo', { interval: 150, origin: 'bottom' });
-
-// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
-document.addEventListener("DOMContentLoaded", () => {
-    const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
-    const linksMenu = document.querySelectorAll("header ul li a");
-
-    linksMenu.forEach(link => {
-        const hrefLink = link.getAttribute("href");
-        if (hrefLink === caminhoAtual || (caminhoAtual === "" && hrefLink.includes("index.html"))) {
-            link.classList.add("atual");
-        }
-    });
-});

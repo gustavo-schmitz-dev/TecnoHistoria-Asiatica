@@ -154,13 +154,3 @@ const sr = ScrollReveal({
 });
 sr.reveal('.quiz-title-box', { origin: 'top', delay: 100 });
 sr.reveal('.quiz-card', { origin: 'bottom', distance: '60px', delay: 300 });
-document.addEventListener("DOMContentLoaded", () => {
-    const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
-    const linksMenu = document.querySelectorAll("header ul li a");
-    linksMenu.forEach(link => {
-        const hrefLink = link.getAttribute("href");
-        if (hrefLink === caminhoAtual || (caminhoAtual === "" && hrefLink.includes("index.html"))) {
-            link.classList.add("atual");
-        }
-    });
-});

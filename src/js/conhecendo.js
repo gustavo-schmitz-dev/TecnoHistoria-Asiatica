@@ -24,16 +24,3 @@ sr.reveal('.card-civilizacao', { interval: 200, origin: 'bottom' });
 // === LINHA DO TEMPO ===
 sr.reveal('.linha-tempo-secao h2', { origin: 'top', delay: 100 });
 sr.reveal('.linha-tempo-secao .subtitulo', { delay: 200 });
-
-// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
-document.addEventListener("DOMContentLoaded", () => {
-    const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
-    const linksMenu = document.querySelectorAll("header ul li a");
-
-    linksMenu.forEach(link => {
-        const hrefLink = link.getAttribute("href");
-        if (hrefLink === caminhoAtual || (caminhoAtual === "" && hrefLink.includes("index.html"))) {
-            link.classList.add("atual");
-        }
-    });
-});

@@ -29,16 +29,3 @@ sr.reveal('.card-grafico', { scale: 0.9, delay: 300 });
 sr.reveal('.impacto-secao h2', { origin: 'top', delay: 100 });
 sr.reveal('.impacto-secao > p', { delay: 200 });
 sr.reveal('.box-impacto', { interval: 150, origin: 'bottom' });
-
-// === CORREÇÃO AUTOMÁTICA DO MENU ATUAL ===
-document.addEventListener("DOMContentLoaded", () => {
-    const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
-    const linksMenu = document.querySelectorAll("header ul li a");
-
-    linksMenu.forEach(link => {
-        const hrefLink = link.getAttribute("href");
-        if (hrefLink === caminhoAtual || (caminhoAtual === "" && hrefLink.includes("index.html"))) {
-            link.classList.add("atual");
-        }
-    });
-});

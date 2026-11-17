@@ -16,15 +16,3 @@ sr.reveal('.explore-desc', { delay: 300 });
 sr.reveal('.card-explore', { interval: 200, origin: 'bottom' });
 
 sr.reveal('.cta-secao', { duration: 1200 });
-
-document.addEventListener("DOMContentLoaded", () => {
-    const caminhoAtual = window.location.pathname.split("/").pop() || "index.html";
-    const linksMenu = document.querySelectorAll("header ul li a");
-
-    linksMenu.forEach(link => {
-        const hrefLink = link.getAttribute("href");
-        if (hrefLink === caminhoAtual || (caminhoAtual === "" && hrefLink.includes("index.html"))) {
-            link.classList.add("atual");
-        }
-    });
-});
