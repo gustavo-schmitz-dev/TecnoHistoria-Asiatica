@@ -57,7 +57,6 @@ a {
 }
 
 .hero-home h1 .highlight {
-    color: #2B6CB0;
     font-weight: 800;
     display: block;
     background-image: linear-gradient(45deg, #317ed1, #6414a5);
@@ -155,7 +154,7 @@ a {
 
 .card-explore:hover {
     translate: 0 -5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 7px 14px #C49B3A;
     border-color: #C49B3A;
 }
 
@@ -170,11 +169,6 @@ a {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
-.icon-box img {
-    width: 3.5rem;
-}
-
 .icon-box .engrenagem {
     width: 4rem;
 }
@@ -231,22 +225,25 @@ a {
 }
 
 .btn-quiz {
-    background-color: #C49B3A;
+    background-color: #cfa747;
     color: #FFFFFF;
     padding: 1rem 2.5rem;
     border-radius: 8px;
     font-weight: 800;
     font-size: 1.1rem;
-    border: none;
+    border: 2px solid #a8873b;
     transition: background-color 0.3s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    transition: translate 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-quiz:hover {
-    background-color: #D97706;
+    background-color: #f0b52bdc;
+    translate: 0 -5px ;
+    box-shadow: 0 0 15px 7px #ffb404;
 }
 
 @media (max-width: 992px) {
@@ -261,7 +258,7 @@ a {
     }
 
     .hero-home h1 {
-        font-size: 3rem;
+        font-size: 4.5rem;
     }
     
     .botoes-hero {
@@ -269,6 +266,39 @@ a {
         width: 100%;
         max-width: 100%;
     }
+
+    .card-explore h3 {
+    font-size: 1.8rem;
+}
+
+
+.icon-box {
+    color: #3B82F6;
+    width: 115px;
+    height: 115px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* aumentar o icon box da engrenaagem!!!!! */
+.icon-box img {
+    color: #3B82F6;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 
     .btn {
         width: 100%;
